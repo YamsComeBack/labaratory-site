@@ -3,7 +3,7 @@ import { projectsData } from "@/app/projects/data";
 import { getProjectBySlug } from "@/app/projects/data";
 
 type PageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export const generateStaticParams = () =>
@@ -19,5 +19,6 @@ export default async function ProjectPage({ params }: PageProps) {
     notFound();
   }
 
-  return <div>{project.title}</div>;
+  const ProjectContent = project.Component;
+  return <ProjectContent />;
 }
