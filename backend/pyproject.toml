@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["Sergey <Sergey.antonyanets@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = { extras = ["all"], version = "^0.115.12" }
+tortoise-orm = { extras = ["asyncpg"], version = "^0.25.0" }
+pyyaml = "^6.0.2"
+aiosmtplib = "^4.0.1"
+pydantic-extra-types = {extras = ["phonenumbers"], version = "^2.10.4"}
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.15.0"
+aerich = "^0.8.2"
+types-pyyaml = "^6.0.12.20250402"
+tomlkit = "^0.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+strict = true
+
+[tool.aerich]
+src_folder = "src"
+tortoise_orm = "db.config.TORTOISE_ORM_CONFIG"
+location = "./migrations"

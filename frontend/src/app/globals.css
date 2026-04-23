@@ -1,0 +1,281 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #cbff00;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-form: #414141;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input[type="checkbox"].accent-primary {
+  accent-color: var(--color-primary);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GoshaSans";
+  src: url("/fonts/GoshaSans/GoshaSans-Ultrabold.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer components {
+  /* Основной текст: Roboto, 32px, Regular */
+  .text-main {
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+
+  .text-writing {
+    font-family: "Roboto", sans-serif;
+    font-size: 96px;
+    line-height: 10%;
+    font-weight: 600; /* Bold */
+  }
+
+  /* Особый текст: Roboto, 38px, ExtraBold */
+  .text-special {
+    font-family: "Roboto", sans-serif;
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: 800; /* ExtraBold */
+  }
+
+  /* Особый текст: Roboto, 36px, ExtraBold */
+  .text-special-2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 800; /* ExtraBold */
+  }
+
+  /* Текст для формы: Roboto, 24px, Light */
+  .text-form {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 300; /* Light */
+  }
+
+  /* Текст для формы 2: Roboto, 24px, Regular */
+  .text-form-2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: normal;
+  }
+
+  /* Текст для формы 3: Roboto, 22px, Regular */
+  .text-form-3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: normal;
+  }
+
+  /* Контакты: Roboto, 35px, Regular */
+  .text-contacts {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: normal;
+  }
+
+  /* Для ФИО: Roboto, 24px, Medium */
+  .text-name {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500; /* Medium */
+  }
+
+  /* Описание: Roboto, 17px, Light */
+  .text-description {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 300; /* Light */
+  }
+
+  /* Описание: Roboto, 17px, Medium */
+  .text-quote {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 500; /* Medium */
+  }
+
+  /* Описание: Roboto, 17px, Medium */
+  .text-card {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500; /* Medium */
+  }
+
+  /* Заголовок: Gosha Sans, 115px, Ultrabold */
+  .text-title {
+    font-family: "Gosha Sans", sans-serif;
+    font-size: 115px;
+    line-height: 138px;
+    font-weight: 800; /* Ultrabold */
+  }
+
+  /* Подзаголовок: Gosha Sans, 75px, Ultrabold */
+  .text-subtitle {
+    font-family: "Gosha Sans", sans-serif;
+    font-size: 60px;
+    line-height: 90px;
+    font-weight: 800; /* Ultrabold */
+  }
+
+  /* Заголовок: Gosha Sans, 90px, Bold */
+  .text-not-found {
+    font-family: "Gosha Sans", sans-serif;
+    font-size: 90px;
+    line-height: 90px;
+    font-weight: 600; /* Ultrabold */
+  }
+}
+
+@layer utilities {
+  @keyframes slider-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes blink {
+    0%,
+    49% {
+      opacity: 1;
+    }
+    50%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .bg-black {
+    background-color: var(--color-black);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+
+  .hover-underline-animation {
+  --underline-color: theme(--color-black); /* Значение по умолчанию */
+  position: relative;
+  display: inline-block;
+}
+
+  .hover-underline-animation::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    height: 2px;
+    background-color: var(--underline-color);
+    transition: all 0.3s ease;
+    width: 0;
+    opacity: 1;
+  }
+
+  .hover-underline-animation:hover::after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+
+  .animate-slider-scroll {
+    animation-name: slider-scroll;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .animate-blink {
+    animation: blink 1s step-start infinite;
+  }
+
+  .hover-button-animation {
+    border: 3px solid transparent; /* Прозрачная рамка для плавного перехода */
+    transition: color 0.3s ease, border-color 0.3s ease; /* Анимация цвета рамки */
+  }
+  .hover-button-animation:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: black; /* Цвет фона при наведении */
+    border: none; /* Убираем обводку у псевдоэлемента */
+    transition: all 0.3s ease;
+  }
+  .hover-button-animation:hover {
+    color: #cbff00 !important; /* Цвет текста при наведении */
+    border-color: #cbff00 !important; /* Меняем только цвет рамки, а не всю рамку */
+  }
+  .hover-button-animation:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .hover-button-animation:active {
+    top: 2px;
+  }
+}

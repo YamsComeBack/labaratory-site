@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: laboratory_sait_db
+    environment:
+      WP_VERSION:
+      POSTGRES_USER: ${laboratory_sait__db__username}
+      POSTGRES_PASSWORD: ${laboratory_sait__db__password}
+      POSTGRES_DB: ${laboratory_sait__db__name}
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    ports:
+      - "${laboratory_sait__db__port}:${laboratory_sait__db__port}"
+    networks:
+      - backend_network
+
+networks:
+  backend_network:
+    driver: bridge
