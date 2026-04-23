@@ -1,11 +1,43 @@
 "use client";
 
 import Image from "next/image";
+import { useCallback, useEffect, useRef, useState } from "react";
+
+const PHONE = "+7 (962)-444-98-96";
+const EMAIL = "laboratory_media_design@mail.ru";
+
+type CopiedField = "phone" | "email" | null;
 
 export const Footer = () => {
+  const [copied, setCopied] = useState<CopiedField>(null);
+  const hideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const clearHideTimer = useCallback(() => {
+    if (hideTimer.current) {
+      clearTimeout(hideTimer.current);
+      hideTimer.current = null;
+    }
+  }, []);
+
+  const copyToClipboard = useCallback(
+    async (text: string, field: Exclude<CopiedField, null>) => {
+      try {
+        await navigator.clipboard.writeText(text);
+        clearHideTimer();
+        setCopied(field);
+        hideTimer.current = setTimeout(() => setCopied(null), 1000);
+      } catch {
+        /* ignore */
+      }
+    },
+    [clearHideTimer]
+  );
+
+  useEffect(() => () => clearHideTimer(), [clearHideTimer]);
+
   return (
     <section className="flex flex-col xl:flex-row items-start gap-14 w-full bg-black pb-11 px-[clamp(40px,calc(-137px+23.07vw),195px)] xl:px-[clamp(50px,6vw,112px)]">
-      <div className="relative inline-block order-1 xl:order-2 flex-shrink-0">
+      <div className="relative inline-block order-1 xl:order-2 shrink-0">
         <Image
           src="/svg/Footer/Star.svg"
           alt="star"
@@ -14,9 +46,60 @@ export const Footer = () => {
           priority
           unoptimized
         />
-        <p className="absolute inset-0 mx-auto flex max-w-[320px] items-center justify-center text-contacts text-black text-center whitespace-pre-line">
-          {"+7 (962)-444-98-96\nlaboratory_media_design@mail.ru"}
-        </p>
+        <div className="absolute inset-0 mx-auto flex max-w-[min(520px,calc(100%-32px))] flex-col items-center justify-center gap-1 overflow-visible px-2 text-center text-contacts text-black">
+          <div className="relative inline-block">
+            {copied === "phone" && (
+              <div
+                className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 -translate-x-1/2"
+                role="status"
+                aria-live="polite"
+              >
+                <div
+                  className="inline-flex min-h-[80px] w-max max-w-[min(340px,calc(100vw-48px))] items-center justify-center bg-center bg-no-repeat px-14 py-4"
+                  style={{
+                    backgroundImage: "url(/svg/Footer/blob.svg)",
+                    backgroundSize: "100% 100%",
+                  }}
+                >
+                  <span className="text-form text-white whitespace-nowrap">Скопировано!</span>
+                </div>
+              </div>
+            )}
+            <button
+              type="button"
+              onClick={() => copyToClipboard(PHONE, "phone")}
+              className="max-w-full cursor-pointer whitespace-nowrap rounded-sm hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              {PHONE}
+            </button>
+          </div>
+          <div className="relative inline-block">
+            {copied === "email" && (
+              <div
+                className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 -translate-x-1/2"
+                role="status"
+                aria-live="polite"
+              >
+                <div
+                  className="inline-flex min-h-[80px] w-max max-w-[min(340px,calc(100vw-48px))] items-center justify-center bg-center bg-no-repeat px-14 py-4"
+                  style={{
+                    backgroundImage: "url(/svg/Footer/blob.svg)",
+                    backgroundSize: "100% 100%",
+                  }}
+                >
+                  <span className="text-form text-white whitespace-nowrap">Скопировано!</span>
+                </div>
+              </div>
+            )}
+            <button
+              type="button"
+              onClick={() => copyToClipboard(EMAIL, "email")}
+              className="max-w-full cursor-pointer whitespace-nowrap rounded-sm hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              {EMAIL}
+            </button>
+          </div>
+        </div>
       </div>
       <div className="flex flex-col gap-16 flex-1 order-2 xl:order-1">
         <p className="text-primary text-main xl:max-w-[758px]">
@@ -49,7 +132,7 @@ export const Footer = () => {
           </a>
         </nav>
         <p className="text-white text-form">
-          © Лаборатория медиа и дизайна, 2025
+          © Лаборатория, 2026
         </p>
       </div>
     </section>

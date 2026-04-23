@@ -55,7 +55,7 @@ export const Contact = () => {
           xl:px-[clamp(50px,calc(21.875vw-225px),195px)] 
           text-subtitle text-black whitespace-pre-line"
           >
-            {"Присоединяйся\nк команде"}x
+            {"Присоединяйся\nк команде"}
           </p>
         </div>
         <div className="flex flex-col gap-6 px-[clamp(40px,calc(-137px+23.07vw),195px)] xl:px-[clamp(50px,6vw,112px)]">

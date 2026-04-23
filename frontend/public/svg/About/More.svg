@@ -1,3 +1,13 @@
-<svg width="45" height="58" viewBox="0 0 45 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M3.48166 0L45 29L3.48166 58L0 53.1829L34.6219 29L2.38859e-07 4.81708L3.48166 0Z" fill="#CBFF00"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 45 58">
+  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #dedc00;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="st0" d="M3.5,0l41.5,29L3.5,58l-3.5-4.8,34.6-24.2L0,4.8,3.5,0Z"/>
 </svg>
