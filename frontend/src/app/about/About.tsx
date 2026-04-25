@@ -5,10 +5,11 @@ import { useRotateTyping } from "@/hooks/useRotateTyping";
 import { useHoverTyping } from "@/hooks/useHoverTyping";
 
 const images = [
-  "/images/about/slider-1.png",
-  "/images/about/slider-2.png",
-  "/images/about/slider-3.png",
-  "/images/about/slider-4.png",
+  "/images/about/slider-1.jpg",
+  "/images/about/slider-2.jpg",
+  "/images/about/slider-3.jpg",
+  "/images/about/slider-4.jpg",
+  "/images/about/slider-5.jpg",
 ];
 
 const phrases = [
@@ -43,7 +44,7 @@ export const About = () => {
   return (
     <section className="relative w-full bg-black pb-[clamp(208px,17vw,400px)] z-[1]">
       <Image
-        src="/images/about/first-image.png"
+        src="/images/about/first-image1.jpg"
         alt=""
         width={1920}
         height={1080}
@@ -115,7 +116,7 @@ export const About = () => {
           <div className="flex items-start gap-[20px]">
             <div
               lang="ru"
-              className="relative w-[clamp(490px,calc(58.12px+68.73vw),1377px)] text-writing text-primary leading-snug hyphens-auto break-words"
+              className="relative min-h-[264px] w-[clamp(490px,calc(58.12px+68.73vw),1377px)] text-writing text-primary leading-snug hyphens-auto break-words"
             >
               {text}
               <span className="inline-block align-text-bottom w-[15px] h-[1.2em] bg-white ml-1 animate-blink" />

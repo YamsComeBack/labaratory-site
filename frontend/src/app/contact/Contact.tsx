@@ -122,6 +122,7 @@ export const Contact = () => {
             <Image
               src="/svg/Contact/Cat.svg"
               alt="cat"
+              className="hidden md:block"
               width={226}
               height={209}
               priority
