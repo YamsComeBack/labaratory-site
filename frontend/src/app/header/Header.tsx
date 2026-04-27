@@ -26,7 +26,7 @@ export const Header = () => {
     <>
       <header
         data-site-header
-        className={`fixed inset-x-0 top-0 z-50 h-[69px] transition-colors ${
+        className={`fixed left-0 top-0 z-50 h-[69px] w-dvw max-w-full transition-colors ${
           isScrolled ? "bg-primary" : "bg-transparent"
         }`}
       >
@@ -76,50 +76,53 @@ export const Header = () => {
       {menuOpen && (
         <div
           onClick={() => setMenuOpen(false)}
-          className="fixed inset-0 z-40 bg-black/60 md:hidden"
+          className="fixed left-0 top-0 z-40 h-dvh w-dvw bg-black/60 md:hidden"
         />
       )}
-      <aside
-        className={`fixed right-0 top-0 z-50 h-screen w-1/2 max-w-[320px] bg-black transition-transform duration-300 md:hidden ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="flex h-full flex-col items-end px-[clamp(40px,calc(-137px+23.07vw),195px)]">
-          <button
-            onClick={() => setMenuOpen(false)}
-            aria-label="Закрыть меню"
-            className="pt-6"
+      {menuOpen && (
+        <aside
+          className="fixed left-0 top-0 z-50 flex h-dvh w-dvw justify-end md:hidden"
+        >
+          <div
+            data-mobile-menu
+            className="flex h-full w-1/2 max-w-[320px] flex-col items-end bg-black px-[clamp(40px,calc(-137px+23.07vw),195px)]"
           >
-            <Image
-              src="/svg/Header/burger-off.svg"
-              alt=""
-              width={40}
-              height={40}
-              priority
-              unoptimized
-            />
-          </button>
+            <button
+              onClick={() => setMenuOpen(false)}
+              aria-label="Закрыть меню"
+              className="pt-6"
+            >
+              <Image
+                src="/svg/Header/burger-off.svg"
+                alt=""
+                width={40}
+                height={40}
+                priority
+                unoptimized
+              />
+            </button>
 
-          <nav className="mt-12 flex flex-col items-end gap-12.5">
-            {navItems.map(({ href, name }) => (
-              <a key={href} href={href} onClick={() => setMenuOpen(false)}>
-                <span className="text-form-2 text-white">{name}</span>
-              </a>
-            ))}
-          </nav>
+            <nav className="mt-12 flex flex-col items-end gap-12.5">
+              {navItems.map(({ href, name }) => (
+                <a key={href} href={href} onClick={() => setMenuOpen(false)}>
+                  <span className="text-form-2 text-white">{name}</span>
+                </a>
+              ))}
+            </nav>
 
-          <div className="mt-auto mb-8 flex justify-center">
-            <Image
-              src="/svg/Logo_white.svg"
-              alt="logo"
-              width={157}
-              height={102}
-              priority
-              unoptimized
-            />
-          </div>
+            <div className="mt-auto mb-8 flex justify-center">
+              <Image
+                src="/svg/Logo_white.svg"
+                alt="logo"
+                width={157}
+                height={102}
+                priority
+                unoptimized
+              />
+            </div>
         </div>
-      </aside>
+        </aside>
+      )}
     </>
   );
 };

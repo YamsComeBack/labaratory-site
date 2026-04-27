@@ -15,7 +15,7 @@ const HERO_DESCRIPTION =
 export const SuncMerchHeroSection = () => {
   return (
     <section
-      className="relative isolate mt-4 min-h-[min(100svh,960px)] w-full overflow-x-clip overflow-y-visible bg-black md:min-h-[min(88svh,920px)] md:max-h-[min(100svh,980px)]"
+      className="relative isolate mt-4 min-h-[min(100svh,960px)] max-w-[1920px] aspect-48/27 w-full overflow-x-clip overflow-y-visible bg-black"
       aria-labelledby="sunc-merch-hero-title"
     >
       <Image
@@ -46,37 +46,30 @@ export const SuncMerchHeroSection = () => {
             />
           </svg>
 
-          {/* Footprint is % of vector box only → moves/scales with vector; 2× via scale from bottom-right = glued corner */}
+          {/* Hoodie: one box, % of vector column — right/bottom glued to blob; extends upward like prior layout */}
           <div
-            className="pointer-events-none absolute bottom-[clamp(0.75rem,3vw,4.3125rem)] right-[-3%] z-15 aspect-636/939 min-h-[820px]"
-            style={{ left: "540px", top: "-1022px", width: "1161px", height: "1622px" }}
+            className="pointer-events-none absolute right-[-40%] top-[-42%] bottom-[-42%] z-15 w-[108%]"
             aria-hidden
           >
-            <div
-              className="relative h-full w-full"
-              style={{ width: "1105px", height: "1831px" }}
-            >
-              <Image
-                src={HERO_HOODIE}
-                alt="Худи с принтом СКФУ"
-                fill
-                className="object-contain object-bottom-right"
-                style={{ marginLeft: "51px" }}
-                sizes="(max-width: 768px) 55vw, (max-width: 1280px) 42vw, 636px"
-                priority
-                unoptimized
-              />
-            </div>
+            <Image
+              src={HERO_HOODIE}
+              alt="Худи с принтом СКФУ"
+              fill
+              className="object-contain object-bottom-right"
+              sizes="55vw, 42vw, 636px"
+              priority
+              unoptimized
+            />
           </div>
 
           <div className="absolute inset-0 z-20 flex flex-col items-start justify-center overflow-visible py-[clamp(0.75rem,2.5vw,2rem)] pl-[clamp(1.25rem,6vw,10.5rem)] pr-[clamp(2rem,4vw,4.6875rem)]">
             <h1
               id="sunc-merch-hero-title"
-              className="font-['SF Compact Text',sans-serif] text-[clamp(1.65rem,3.6vw,3rem)] font-extrabold leading-[1.08] tracking-tight text-black"
+              className="text-title text-[clamp(1.65rem,3.6vw,3rem)] leading-[1.08]  text-black"
             >
               Мерч для СУНЦ СКФУ
             </h1>
-            <p className="mt-4 w-[min(800px,calc(100vw-3rem))] shrink-0 self-start text-[20px] text-form-2 leading-snug text-black md:mt-6">
+            <p className="mt-4 w-[min(800px,calc(100vw-3rem))] shrink-0 self-start text-[clamp(0.875rem,2.1vw,1.25rem)] text-form-2 leading-[clamp(1.35rem,2.4vw,1.75rem)] text-black md:mt-6">
               {HERO_DESCRIPTION}
             </p>
           </div>

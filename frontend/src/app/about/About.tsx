@@ -44,7 +44,7 @@ export const About = () => {
   return (
     <section className="relative w-full bg-black pb-[clamp(208px,17vw,400px)] z-[1]">
       <Image
-        src="/images/about/first-image1.jpg"
+        src="/images/about/first-image.jpg"
         alt=""
         width={1920}
         height={1080}
@@ -110,13 +110,13 @@ export const About = () => {
         </div>
       </div>
 
-      <div className="w-full text-white px-[clamp(40px,calc(-137px+23.07vw),195px)] whitespace-pre-line">
+      <div className="box-border w-full max-w-full text-white px-[clamp(24px,7vw,80px)] whitespace-pre-line">
         <div className="mx-auto max-w-[1530px] flex flex-col gap-15">
           <h2 className="text-main">Давай к нам, у нас есть</h2>
           <div className="flex items-start gap-[20px]">
             <div
               lang="ru"
-              className="relative min-h-[264px] w-[clamp(490px,calc(58.12px+68.73vw),1377px)] text-writing text-primary leading-snug hyphens-auto break-words"
+              className="relative min-h-[264px] w-full max-w-[1377px] text-writing text-primary leading-snug hyphens-auto break-words"
             >
               {text}
               <span className="inline-block align-text-bottom w-[15px] h-[1.2em] bg-white ml-1 animate-blink" />
@@ -126,7 +126,7 @@ export const About = () => {
               alt="logo"
               width={135}
               height={155}
-              className="shrink-0 object-contain self-start
+              className="hidden sm:block shrink-0 object-contain self-start
                w-[clamp(68px,calc(43.35px+4.77vw),135px)] "
               priority
               unoptimized

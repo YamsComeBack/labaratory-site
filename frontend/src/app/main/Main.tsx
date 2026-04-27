@@ -14,8 +14,8 @@ export const Main = () => {
         loop
         playsInline
       />
-      <div className="relative flex items-center -mt-[clamp(88px,16vw,228px)] z-[2] bg-[url('/svg/Main/Wave.svg')] bg-no-repeat bg-cover bg-bottom">
-        <div className=" grid place-items-center w-full max-w-[1530px] 
+      <div className="relative flex items-center -mt-[clamp(118px,16vw,228px)] z-[2] bg-[url('/svg/Main/Wave.svg')] bg-no-repeat bg-cover bg-bottom">
+        <div className=" grid box-border place-items-center w-full max-w-[1530px] 
           h-[clamp(682px,calc(593px+11.61vw),760px)]
           px-[clamp(40px,calc(-137px+23.07vw),195px)]
           pt-[clamp(145px,calc(431px-13.54vw),236px)] 

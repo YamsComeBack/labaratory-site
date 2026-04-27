@@ -40,25 +40,27 @@ export const Contact = () => {
   return (
     <section id="contacts" className="pt-26 pb-25 bg-black">
       <div className="flex flex-col gap-y-30 xl:flex-row xl:gap-y-0 xl:items-center">
-        <div className="relative">
+        <div className="relative w-full max-w-[792px] overflow-x-clip">
           <Image
             src="/svg/Contact/Circle.svg"
             alt="Логотип"
             width={792}
             height={519}
+            className="h-auto w-full"
             priority
             unoptimized
           />
           <p
             className="absolute top-1/2 -translate-y-1/2
-          px-[clamp(70px,calc(17.578125vw-65px),160px)] 
+          inset-x-0 box-border w-full max-w-full
+          px-[clamp(24px,7vw,70px)] 
           xl:px-[clamp(50px,calc(21.875vw-225px),195px)] 
-          text-subtitle text-black whitespace-pre-line"
+          text-[clamp(2rem,10vw,3.75rem)] leading-[1.1] text-black whitespace-pre-line break-words"
           >
             {"Присоединяйся\nк команде"}
           </p>
         </div>
-        <div className="flex flex-col gap-6 px-[clamp(40px,calc(-137px+23.07vw),195px)] xl:px-[clamp(50px,6vw,112px)]">
+        <div className="box-border flex w-full max-w-full flex-col gap-6 px-[clamp(24px,7vw,80px)] xl:px-[clamp(50px,6vw,112px)]">
           <div className="flex flex-row items-end gap-6">
             <form
               onSubmit={handleSubmit}

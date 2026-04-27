@@ -24,11 +24,13 @@ export default function PeopleSection({
   const rows = useChunkSmart(people)
 
   return (
-    <section id={id} className={`flex flex-col items-center ${className ?? ''}`}>
-      <h2 className="mb-[50px] text-center text-primary text-title">{title}</h2>
+    <section id={id} className={`flex w-full flex-col items-center ${className ?? ''}`}>
+      <h2 className="mb-[50px] box-border max-w-full px-4 text-center text-[clamp(2.5rem,11vw,9.375rem)] text-primary leading-[0.95]">
+        {title}
+      </h2>
       <div className="flex flex-col items-center gap-y-[60px] sm:gap-y-[40px]">
         {rows.map((row, i) => (
-          <div key={i} className="flex justify-center gap-x-10 lg:gap-x-25 max-[420px]:gap-x-[32px]">
+          <div key={i} className="flex justify-center gap-x-4 lg:gap-x-25">
             {row.map(p => (<PersonCard key={p.name} {...p} />))}
           </div>
         ))}
