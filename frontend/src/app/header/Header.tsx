@@ -65,8 +65,8 @@ export const Header = () => {
             <Image
               src="/svg/Header/burger-on.svg"
               alt=""
-              width={40}
-              height={40}
+              width={30}
+              height={30}
               priority
               unoptimized
             />

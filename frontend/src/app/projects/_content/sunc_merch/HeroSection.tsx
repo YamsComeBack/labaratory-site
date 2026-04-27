@@ -15,7 +15,7 @@ const HERO_DESCRIPTION =
 export const SuncMerchHeroSection = () => {
   return (
     <section
-      className="relative isolate mt-4 min-h-[min(100svh,960px)] max-w-[1920px] aspect-48/27 w-full overflow-x-clip overflow-y-visible bg-black"
+      className="relative isolate mt-4 aspect-48/27 w-full overflow-x-clip overflow-y-visible bg-black"
       aria-labelledby="sunc-merch-hero-title"
     >
       <Image
@@ -28,10 +28,10 @@ export const SuncMerchHeroSection = () => {
         unoptimized
       />
 
-      <div className="absolute inset-0 z-1 flex items-center justify-start overflow-visible pt-12 md:overflow-visible md:py-0">
+      <div className="absolute inset-0 z-1 flex items-center justify-start overflow-visible md:overflow-visible md:py-0">
         {/* One box: vector + hoodie scale together; hoodie is % of this box */}
         {/* min inner width ≈ 674px copy + px clamp + pr-56 so body text can actually hit max-w-[674px] */}
-        <div className="relative w-[min(108vw,1040px)] max-w-[1131px] translate-x-[-4%] md:w-[min(max(74vw,786px),1131px)] xl:max-w-[1294px] xl:w-[min(max(74vw,786px),1294px)] md:translate-x-[-2%]">
+        <div className="relative translate-x-[-4%] w-[min(max(74vw,350px),1131px)] xl:max-w-[1294px] xl:w-[min(max(74vw,786px),1294px)] md:translate-x-[-2%]">
           <svg
             viewBox="0 0 1116 511"
             className="relative z-0 h-auto w-full"
@@ -62,14 +62,14 @@ export const SuncMerchHeroSection = () => {
             />
           </div>
 
-          <div className="absolute inset-0 z-20 flex flex-col items-start justify-center overflow-visible py-[clamp(0.75rem,2.5vw,2rem)] pl-[clamp(1.25rem,6vw,10.5rem)] pr-[clamp(2rem,4vw,4.6875rem)]">
+          <div className="absolute inset-0 z-20 flex flex-col items-start justify-center overflow-visible py-[clamp(0.75rem,2.5vw,2rem)] pl-[clamp(1.25rem,6vw,10.5rem)] pr-[25%]">
             <h1
               id="sunc-merch-hero-title"
-              className="text-title text-[clamp(1.65rem,3.6vw,3rem)] leading-[1.08]  text-black"
+              className="text-title text-[clamp(1rem,3.6vw,3rem)] leading-[clamp(0.1rem,1vw,1rem)] text-black"
             >
               Мерч для СУНЦ СКФУ
             </h1>
-            <p className="mt-4 w-[min(800px,calc(100vw-3rem))] shrink-0 self-start text-[clamp(0.875rem,2.1vw,1.25rem)] text-form-2 leading-[clamp(1.35rem,2.4vw,1.75rem)] text-black md:mt-6">
+            <p className="mt-4 w-[min(700px,)] shrink-0 self-start text-[clamp(0.1rem,1.5vw,1.25rem)] text-form-2 leading-[clamp(0.5rem,2vw,1.75rem)] text-black md:mt-6">
               {HERO_DESCRIPTION}
             </p>
           </div>
