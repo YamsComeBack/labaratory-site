@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 import { useMuteVideo } from "@/hooks/useMuteVideo";
 import { useScrolled } from "@/hooks/useScrolled";
@@ -17,18 +18,19 @@ const navItems = [
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const { muted, toggleMuted } = useMuteVideo("bg-video");
   const isScrolled = useScrolled();
   useBodyScrollLock(menuOpen);
+  const isMainPage = pathname === "/";
+  const headerBgClass = isMainPage && !isScrolled ? "bg-transparent" : "bg-primary";
 
   return (
     <>
       <header
         data-site-header
-        className={`fixed left-0 top-0 z-50 h-[69px] w-dvw max-w-full transition-colors ${
-          isScrolled ? "bg-primary" : "bg-transparent"
-        }`}
+        className={`fixed left-0 z-50 h-[69px] w-dvw max-w-full transition-colors ${headerBgClass}`}
       >
         <div className="mx-auto flex h-full w-full max-w-[1920px] items-center justify-between px-[clamp(40px,4vw,160px)]">
           <nav className="mx-auto hidden items-center gap-[clamp(16px,calc(13.89vw-90.67px),176px)] whitespace-nowrap md:flex">

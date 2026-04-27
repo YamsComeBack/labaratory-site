@@ -37,7 +37,7 @@ export const Footer = () => {
 
   return (
     <section className="flex flex-col xl:flex-row items-start gap-14 w-full bg-black pb-11 px-[clamp(40px,calc(-137px+23.07vw),195px)] xl:px-[clamp(50px,6vw,112px)]">
-      <div className="relative inline-block order-1 xl:order-2 shrink-0">
+      <div className="relative w-[115%] sm:w-2xl translate-[-30px] sm:translate-0 inline-block order-1 xl:order-2 shrink-0 overflow-visible">
         <Image
           src="/svg/Footer/Star.svg"
           alt="star"
@@ -46,7 +46,7 @@ export const Footer = () => {
           priority
           unoptimized
         />
-        <div className="absolute inset-0 mx-auto flex max-w-[min(520px,calc(100%-32px))] flex-col items-center justify-center gap-1 overflow-visible px-2 text-center text-contacts text-black">
+        <div className="absolute inset-0 mx-auto flex max-w-[min(720px,calc(100%-32px))] flex-col items-center justify-center gap-1 overflow-visible px-2 pb-4 text-center font-[roboto] text-[1.4rem] sm:text-[30px] text-black">
           <div className="relative inline-block">
             {copied === "phone" && (
               <div
@@ -105,7 +105,7 @@ export const Footer = () => {
         <p className="text-primary text-main xl:max-w-[758px]">
           Интересует сотрудничество или обучение с нами? Обращайтесь сюда
         </p>
-        <nav className="flex justify-between items-center xl:max-w-[758px] whitespace-nowrap text-main text-white">
+        <nav className="flex flex-col items-start gap-6 whitespace-nowrap text-main text-white sm:max-w-[758px] sm:flex-row sm:items-center sm:justify-between sm:gap-0">
           <a href="#home" className="shrink-0 w-[clamp(156px,12vw,212px)]">
             <Image
               src="/svg/Logo_white.svg"
@@ -116,24 +116,24 @@ export const Footer = () => {
               unoptimized
             />
           </a>
-          <a
-            href="#about"
-            className="hover-underline-animation"
-            style={{ "--underline-color": "white" } as React.CSSProperties}
-          >
-            О нас
-          </a>
-          <a
-            href="#projects"
-            className="hover-underline-animation"
-            style={{ "--underline-color": "white" } as React.CSSProperties}
-          >
-            Проекты
-          </a>
+          <div className="flex items-center gap-8 sm:contents">
+            <a
+              href="#about"
+              className="hover-underline-animation"
+              style={{ "--underline-color": "white" } as React.CSSProperties}
+            >
+              О нас
+            </a>
+            <a
+              href="#projects"
+              className="hover-underline-animation"
+              style={{ "--underline-color": "white" } as React.CSSProperties}
+            >
+              Проекты
+            </a>
+          </div>
         </nav>
-        <p className="text-white text-form">
-          © Лаборатория, 2026
-        </p>
+        <p className="text-white text-form">© Лаборатория, {new Date().getFullYear()}</p>
       </div>
     </section>
   );

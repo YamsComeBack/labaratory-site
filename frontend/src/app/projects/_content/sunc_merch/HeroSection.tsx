@@ -15,7 +15,7 @@ const HERO_DESCRIPTION =
 export const SuncMerchHeroSection = () => {
   return (
     <section
-      className="relative isolate mt-4 aspect-48/27 w-full overflow-x-clip overflow-y-visible bg-black"
+      className="relative isolate aspect-48/27 w-full overflow-x-clip overflow-y-visible bg-black"
       aria-labelledby="sunc-merch-hero-title"
     >
       <Image
