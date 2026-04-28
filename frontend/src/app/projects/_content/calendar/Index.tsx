@@ -9,7 +9,6 @@ export const CalendarProject = () => {
     "/images/projects/_content/calendar/3-image.png",
     "/images/projects/_content/calendar/4-image.png",
     "/images/projects/_content/calendar/5-image.png",
-    "/images/projects/_content/calendar/6-image.png",
   ];
 
   return (
@@ -21,7 +20,7 @@ export const CalendarProject = () => {
           className="block h-auto w-full"
         />
 
-        <div className="pointer-events-none absolute bottom-0 left-0 z-10 w-full translate-y-1/2">
+        <div className="pointer-events-none absolute bottom-[-8%] left-0 z-10 w-full translate-y-1/2">
           <div className="relative">
             <Image
               src="/images/projects/_content/calendar/vector.svg"
@@ -40,7 +39,7 @@ export const CalendarProject = () => {
         </div>
       </section>
 
-      <section className="mt-[clamp(84px,26.67vw,512px)]">
+      <section className="mt-[10%]">
         {images.map((src, i) => (
           <div key={i} className="w-full">
             <img src={src} alt={`Календарь ${i + 2}`} className="block h-auto w-full" />

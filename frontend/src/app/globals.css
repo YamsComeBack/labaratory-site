@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #dedc00;
+  /* --color-primary: #dedc00; */
+  --color-primary: #CBFF00;
   --color-black: #000000;
   --color-white: #ffffff;
   --color-form: #414141;
@@ -55,8 +56,19 @@ input[type="checkbox"].accent-primary {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Gosha Sans";
+  src: url("/fonts/GoshaSans/GoshaSans-Ultrabold.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer components {
   /* Основной текст: Roboto, 32px, Regular */
+  .font-gosha {
+    font-family: "Gosha Sans", sans-serif;
+  }
   .text-main {
     font-family: "Roboto", sans-serif;
     font-size: 32px;

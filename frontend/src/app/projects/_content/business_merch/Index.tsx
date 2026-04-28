@@ -16,7 +16,7 @@ export const BusinessMerchProject = () => {
       <section className="relative w-full">
         <img src={headerImage} alt="Мерч для интенсива «Открой свой бизнес»" className="block h-auto w-full" />
 
-        <div className="pointer-events-none absolute bottom-0 left-0 z-10 w-full translate-y-1/2">
+        <div className="pointer-events-none absolute top-[55%] left-0 z-10 w-full translate-y-1/2">
           <div className="relative">
             <Image
               src="/images/projects/_content/business_merch/vector.svg"
@@ -43,7 +43,7 @@ export const BusinessMerchProject = () => {
         </div>
       </section>
 
-      <section className="mt-[clamp(120px,38.3vw,736px)]">
+      <section className="mt-[19%]">
         {images.map((src, i) => (
           <div key={i} className="w-full">
             <img src={src} alt={`Бизнес мерч ${i + 2}`} className="block h-auto w-full" />

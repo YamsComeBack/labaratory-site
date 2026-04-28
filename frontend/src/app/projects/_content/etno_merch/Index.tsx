@@ -17,7 +17,7 @@ export const EtnoMerchProject = () => {
       <section className="relative w-full">
         <img src={headerImage} alt="Этномерч" className="block h-auto w-full" />
 
-        <div className="pointer-events-none absolute left-0 top-[15%] z-10 w-[44%]">
+        <div className="pointer-events-none absolute left-0 top-[11%] z-10 w-[38%]">
           <div className="relative">
             <Image
               src="/images/projects/_content/etno_merch/vector.svg"
@@ -27,7 +27,7 @@ export const EtnoMerchProject = () => {
               className="h-auto w-full"
               unoptimized
             />
-            <div className="pointer-events-auto absolute inset-0 flex items-center px-[clamp(10px,2.6vw,50px)] py-[clamp(12px,2.4vw,46px)]">
+            <div className="pointer-events-auto absolute inset-0 flex items-center mt-[-5%] pl-[15%]">
               <div className="w-[72%]">
                 <h2 className="text-title text-[clamp(0.28rem,2.1vw,2.5rem)] leading-[1.03] text-black">
                   Этномерч

@@ -13,11 +13,11 @@ export const NotaBeneProject = () => {
   ];
 
   return (
-    <article className="w-full">
+    <article className="w-full overflow-hidden">
       <section className="relative w-full">
         <img src={headerImage} alt="Многостраничная вёрстка" className="block h-auto w-full" />
 
-        <div className="pointer-events-none absolute bottom-0 right-0 z-10 w-[63%] translate-y-1/2">
+        <div className="pointer-events-none absolute top-[58%] right-[-9%] z-10 w-[63%] translate-y-1/2">
           <div className="relative">
             <Image
               src="/images/projects/_content/nota_bene/vector.svg"
@@ -44,7 +44,7 @@ export const NotaBeneProject = () => {
         </div>
       </section>
 
-      <section className="mt-[clamp(72px,22.5vw,432px)]">
+      <section>
         {images.map((src, i) => (
           <div key={i} className="w-full">
             <img src={src} alt={`Nota Bene ${i + 2}`} className="block h-auto w-full" />

@@ -15,11 +15,11 @@ export const MerchNcfuProject = () => {
       <section className="relative w-full">
         <img src={headerImage} alt="Одеждомагазин" className="block h-auto w-full" />
 
-        <div className="pointer-events-none absolute left-[37%] top-[12%] w-[54%]">
+        <div className="pointer-events-none absolute left-[37%] top-[8%] w-[45%]">
           <h2 className="text-title text-[clamp(0.3rem,2.7vw,3.2rem)] leading-[1.03] text-black">
             Одеждомагазин
           </h2>
-          <p className="mt-[clamp(6px,1.1vw,20px)] text-main text-[clamp(0.12rem,0.9vw,1.06rem)] leading-[1.16] text-black">
+          <p className="mt-[1%] text-main text-[clamp(0.12rem,0.9vw,1.06rem)] text-black">
             Мы переосмыслили идею университетского мерча, основывая дизайн одежды и сувенирной
             продукции на юморе и актуальных темах для студентов и сотрудников СКФУ. Наш мерч — это
             способ выразить себя и свою уникальность в контексте большого дружного сообщества

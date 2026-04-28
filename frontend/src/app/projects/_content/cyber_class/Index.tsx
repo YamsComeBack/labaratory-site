@@ -24,8 +24,8 @@ export const CyberClassProject = () => {
               className="h-auto w-full"
               unoptimized
             />
-            <div className="pointer-events-auto absolute inset-0 px-[clamp(16px,4vw,74px)] py-[clamp(18px,4.4vw,82px)]">
-              <h2 className="text-title text-[clamp(0.28rem,2.3vw,2.7rem)] leading-[1.03] text-black">
+            <div className="pointer-events-auto absolute inset-0 px-[12%] pt-[19%]">
+              <h2 className="text-title text-[clamp(0.28rem,2.3vw,2.7rem)] leading-[0.2] text-black">
                 Оформление кибер-класса СКФУ
               </h2>
               <p className="mt-[clamp(8px,1.2vw,20px)] max-w-[73%] text-main text-[clamp(0.13rem,0.94vw,1.1rem)] leading-[1.17] text-black">
@@ -38,7 +38,7 @@ export const CyberClassProject = () => {
         </div>
       </section>
 
-      <section className="mt-[clamp(86px,19.7vw,378px)]">
+      <section>
         {images.map((src, i) => (
           <div key={i} className="w-full">
             <img src={src} alt={`Кибер класс ${i + 2}`} className="block h-auto w-full" />

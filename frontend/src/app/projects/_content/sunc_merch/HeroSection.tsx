@@ -31,10 +31,10 @@ export const SuncMerchHeroSection = () => {
       <div className="absolute inset-0 z-1 flex items-center justify-start overflow-visible md:overflow-visible md:py-0">
         {/* One box: vector + hoodie scale together; hoodie is % of this box */}
         {/* min inner width ≈ 674px copy + px clamp + pr-56 so body text can actually hit max-w-[674px] */}
-        <div className="relative translate-x-[-4%] w-[min(max(74vw,350px),1131px)] xl:max-w-[1294px] xl:w-[min(max(74vw,786px),1294px)] md:translate-x-[-2%]">
+        <div className="relative w-[65%]">
           <svg
             viewBox="0 0 1116 511"
-            className="relative z-0 h-auto w-full"
+            className="relative z-0"
             aria-hidden
             preserveAspectRatio="xMinYMid meet"
           >
@@ -48,15 +48,14 @@ export const SuncMerchHeroSection = () => {
 
           {/* Hoodie: one box, % of vector column — right/bottom glued to blob; extends upward like prior layout */}
           <div
-            className="pointer-events-none absolute right-[-40%] top-[-42%] bottom-[-42%] z-15 w-[108%]"
+            className="pointer-events-none absolute right-[-50%] top-[-42%] bottom-[-42%] z-15 w-[150%]"
             aria-hidden
           >
             <Image
               src={HERO_HOODIE}
               alt="Худи с принтом СКФУ"
               fill
-              className="object-contain object-bottom-right"
-              sizes="55vw, 42vw, 636px"
+              className="object-contain object-bottom-right scale-[110%]"
               priority
               unoptimized
             />
@@ -69,7 +68,7 @@ export const SuncMerchHeroSection = () => {
             >
               Мерч для СУНЦ СКФУ
             </h1>
-            <p className="mt-4 w-[min(700px,)] shrink-0 self-start text-[clamp(0.1rem,1.5vw,1.25rem)] text-form-2 leading-[clamp(0.5rem,2vw,1.75rem)] text-black md:mt-6">
+            <p className="mt-4 w-[115%] shrink-0 self-start text-[clamp(0.1rem,1.5vw,1.25rem)] text-form-2 leading-[clamp(0.5rem,2vw,1.75rem)] text-black md:mt-6">
               {HERO_DESCRIPTION}
             </p>
           </div>
