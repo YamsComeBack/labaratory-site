@@ -48,7 +48,7 @@ export default function PersonCard({
               transition-opacity duration-300 group-hover:opacity-100
             "
           >
-            <p className="max-w-[190px] text-center leading-snug text-black text-quote">
+            <p className="max-w-[190px] text-center whitespace-pre-line leading-snug text-black text-quote">
               {hoverText}
             </p>
           </div>
@@ -60,7 +60,7 @@ export default function PersonCard({
       </p>
 
       {descriptor && (
-        <p className="mt-2 max-w-[133px] text-center text-description text-white">
+        <p className="mt-2 max-w-[133px] text-center whitespace-pre-line text-description text-white">
           {descriptor}
         </p>
       )}

@@ -20,11 +20,19 @@ export type ProjectItem = {
 };
 
 export const projectsData: readonly ProjectItem[] = [
+  // {
+  //   size: "large",
+  //   img: "Priemnaya_company.png",
+  //   title: "Приёмная кампания СКФУ",
+  //   descriptor: "Университет в медиа-трендах – на одной волне\n с абитуриентами",
+  //   slug: "Priemnaya_company",
+  //   Component: PriemnayaCompanyProject,
+  // },
   {
     size: "large",
     img: "Priemnaya_company.png",
     title: "Приёмная кампания СКФУ",
-    descriptor: "Университет в медиа-трендах – на одной волне с абитуриентами",
+    descriptor: "Университет в медиа-трендах – на одной волне\n с абитуриентами",
     slug: "Priemnaya_company",
     Component: PriemnayaCompanyProject,
   },

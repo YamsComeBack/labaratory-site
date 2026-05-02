@@ -22,7 +22,7 @@ export const Projects = () => {
         <h1 className="box-border w-full max-w-full pb-15 font-gosha text-[clamp(2.5rem,11vw,9.375rem)] leading-[0.95]">
           Наши проекты
         </h1>
-        <div className="grid grid-cols-1 gap-y-10 gap-x-0 lg:grid-cols-2 lg:gap-y-[70px] lg:gap-x-[70px]">
+        <div className="grid grid-cols-1 gap-y-10 gap-x-0 lg:grid-cols-2 lg:gap-y-[10px] lg:gap-x-[10px]">
           {projects.map((p) => (
             <ProjectCard
               key={p.img}

@@ -92,7 +92,7 @@ export default function ProjectCard({
           {descriptor && (
             <p
               className={c(
-                "text-form-2 leading-snug text-center break-words",
+                "text-form-2 leading-snug text-center break-words whitespace-pre-line",
                 "w-fit",
                 maxTextW
               )}

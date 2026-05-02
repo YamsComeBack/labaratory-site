@@ -27,19 +27,14 @@ const tutors = [
 
 const supports = [
   {
-    src: "/images/team/Daniil.png",
+    src: "/images/team/Daniil-1.png",
     name: "Даниил Слезавин",
     hoverText: "Категорически всех приветствую",
   },
   {
-    src: "/images/team/Anna.png",
-    name: "Анна Егазарян",
-    hoverText: "Если смысла нет, выдумай его",
-  },
-  {
     src: "/images/team/Margo.png",
     name: "Маргарита Гриценко",
-    hoverText: "Здесь могла быть ваша реклама",
+    hoverText: "Здесь могла быть\n ваша реклама",
   },
   {
     src: "/images/team/Sopha.png",
@@ -47,19 +42,19 @@ const supports = [
     hoverText: "Не копайся в себе, докапывайся до других",
   },
   {
-    src: "/images/team/Lisa.png",
-    name: "Елизавета Исакова",
-    hoverText: "Не забудь дать дань уважения дверям",
-  },
-  {
     src: "/images/team/Arina.png",
     name: "Чотчаева Арина",
-    hoverText: "Меня попросили здесь что-то написать",
+    hoverText: "Меня попросили здесь\n что-то написать",
   },
   {
     src: "/images/team/Islam.png",
     name: "Кагазежев Ислам",
-    hoverText: "Дал бог Adobe - даст ист фантастиш",
+    hoverText: "Убери, я ничего не вижу",
+  },
+  {
+    src: "/images/team/Islam.png",
+    name: "Варвара Долгорук",
+    hoverText: "Лучше иметь друга\n чем друг друга",
   },
 ] as const;
 
