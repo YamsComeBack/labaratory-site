@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/cn";
 
 interface PersonCardProps {
-  src: string;
+  src: string | readonly string[];
   alt?: string;
   name: string;
   hoverText: string;
@@ -20,6 +21,17 @@ export default function PersonCard({
   hoverText,
   className,
 }: PersonCardProps) {
+  const images = Array.isArray(src) ? (src as readonly string[]) : [src as string];
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    if (images.length <= 1) return;
+    const id = setInterval(() => {
+      setActiveIndex((i) => (i + 1) % images.length);
+    }, 500);
+    return () => clearInterval(id);
+  }, [images.length]);
+
   return (
     <div
       className={cn(
@@ -30,15 +42,23 @@ export default function PersonCard({
     >
       <div className="relative group aspect-square w-full">
         {/* используем fill, чтобы картинка масштабировалась ровно как родитель */}
-        <Image
-          src={src}
-          alt={alt}
-          fill
-          sizes="200px"
-          className="rounded-full object-cover transition-opacity duration-300 group-hover:opacity-0"
-          priority
-          unoptimized
-        />
+        <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0">
+          {images.map((s, i) => (
+            <Image
+              key={s}
+              src={s}
+              alt={alt}
+              fill
+              sizes="200px"
+              className={cn(
+                "object-cover",
+                i === activeIndex ? "opacity-100" : "opacity-0"
+              )}
+              priority
+              unoptimized
+            />
+          ))}
+        </div>
 
         {hoverText && (
           <div

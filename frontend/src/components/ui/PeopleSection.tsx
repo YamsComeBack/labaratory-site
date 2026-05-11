@@ -4,7 +4,7 @@ import PersonCard from '@/components/ui/PersonCard'
 import useChunkSmart from '@/hooks/useChunkSmart'
 
 interface Person {
-  src: string
+  src: string | readonly string[]
   name: string
   hoverText: string
   descriptor?: string
@@ -25,7 +25,7 @@ export default function PeopleSection({
 
   return (
     <section id={id} className={`flex w-full flex-col items-center ${className ?? ''}`}>
-      <h2 className="mb-[50px] box-border max-w-full px-4 text-center text-[clamp(2.5rem,11vw,9.375rem)] text-primary leading-[0.95]">
+      <h2 className="mb-[50px] box-border max-w-full px-4 text-title text-center text-[clamp(2.5rem,11vw,9.375rem)] leading-[0.95] text-primary">
         {title}
       </h2>
       <div className="flex flex-col items-center gap-y-[60px] sm:gap-y-[40px]">

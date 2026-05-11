@@ -8,14 +8,14 @@ const tutors = [
     src: "/images/team/Andre.png",
     name: "Андрей Охонько",
     descriptor: "руководитель направления «Дизайн»",
-    hoverText: "Лучше ответственное неделание, чем безответственное делание",
+    hoverText: "Лучше ответственное неделание,\n чем безответственное\n делание",
   },
   {
     src: "/images/team/Max.png",
     name: "Максим Тизенгаузен",
     descriptor: "руководитель направления «Медиа»",
     hoverText:
-      "Ты что, не знаешь главный закон физики? Всё прикольное стоит минимум восемь баксов",
+      "Ты что, не знаешь\n главный закон физики?\n Всё прикольное стоит минимум восемь баксов",
   },
   {
     src: "/images/team/Zahar.png",
@@ -27,35 +27,55 @@ const tutors = [
 
 const supports = [
   {
-    src: "/images/team/Daniil-1.png",
+    src: [
+      "/images/team/Daniil-1.png",
+      "/images/team/Daniil-2.png",
+      "/images/team/Daniil-3.png",
+    ],
     name: "Даниил Слезавин",
     hoverText: "Категорически всех приветствую",
   },
   {
-    src: "/images/team/Margo.png",
+    src: [
+      "/images/team/Margo-1.png",
+      "/images/team/Margo-2.png",
+      "/images/team/Margo-3.png",
+    ],
     name: "Маргарита Гриценко",
     hoverText: "Здесь могла быть\n ваша реклама",
   },
   {
-    src: "/images/team/Sopha.png",
+    src: [
+      "/images/team/Sopha-1.png",
+      "/images/team/Sopha-2.png",
+      "/images/team/Sopha-3.png",
+    ],
     name: "София Акопян",
     hoverText: "Не копайся в себе, докапывайся до других",
   },
   {
-    src: "/images/team/Arina.png",
+    src: [
+      "/images/team/Arina-1.png",
+      "/images/team/Arina-2.png",
+      "/images/team/Arina-3.png",
+    ],
     name: "Чотчаева Арина",
     hoverText: "Меня попросили здесь\n что-то написать",
   },
   {
-    src: "/images/team/Islam.png",
+    src: [
+      "/images/team/Islam-1.png",
+      "/images/team/Islam-2.png",
+      "/images/team/Islam-3.png",
+    ],
     name: "Кагазежев Ислам",
     hoverText: "Убери, я ничего не вижу",
   },
-  {
-    src: "/images/team/Islam.png",
-    name: "Варвара Долгорук",
-    hoverText: "Лучше иметь друга\n чем друг друга",
-  },
+  // {
+  //   src: "/images/team/Islam.png",
+  //   name: "Варвара Долгорук",
+  //   hoverText: "Лучше иметь друга\n чем друг друга",
+  // },
 ] as const;
 
 export const Team = () => {
@@ -67,7 +87,7 @@ export const Team = () => {
       lg:pt-[clamp(77px,calc(77px+(100vw-1024px)*0.1975446),254px)]
       md:pt-[clamp(20px,calc(20px+(100vw-768px)*0.1484375),77px)]
       pt-[20px]
-      text-center text-[clamp(2.5rem,11vw,9.375rem)] leading-[0.95]"
+      text-title text-center text-[clamp(2.5rem,11vw,9.375rem)] leading-[0.95]"
       >
         командос
       </h1>
@@ -76,7 +96,7 @@ export const Team = () => {
         alt=""
         width={1920}
         height={1080}
-        className="h-full w-full object-cover -mb-30 sm:-mb-100"
+        className="h-full w-full max-w-none object-cover -mb-30 sm:-mb-100"
         priority
         unoptimized
       />

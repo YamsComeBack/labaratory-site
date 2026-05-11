@@ -41,7 +41,7 @@ export default function ProjectCard({
         };
 
   const gap = "gap-[15px]";
-  const maxTextW = "max-w-[485px]";
+  const maxTextW = "max-w-[585px]";
 
   return (
     <Link
@@ -80,7 +80,7 @@ export default function ProjectCard({
           <h3
             lang="ru"
             className={c(
-              "text-special leading-tight text-center hyphens-auto break-words",
+              "font-gosha text-[clamp(1.75rem,3vw,2.375rem)] font-black leading-tight text-center hyphens-auto break-words",
               "w-fit",
               maxTextW
             )}

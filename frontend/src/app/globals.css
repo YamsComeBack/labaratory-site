@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  /* --color-primary: #dedc00; */
-  --color-primary: #CBFF00;
+  --color-primary: #D3D800;
+  /* --color-primary: #CBFF00; */
   --color-black: #000000;
   --color-white: #ffffff;
   --color-form: #414141;
@@ -14,54 +14,6 @@ html {
 
 input[type="checkbox"].accent-primary {
   accent-color: var(--color-primary);
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/fonts/Roboto/Roboto.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/fonts/Roboto/Roboto-ExtraBold.woff2") format("woff2");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/fonts/Roboto/Roboto-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/fonts/Roboto/Roboto-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "GoshaSans";
-  src: url("/fonts/GoshaSans/GoshaSans-Ultrabold.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Gosha Sans";
-  src: url("/fonts/GoshaSans/GoshaSans-Ultrabold.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
 }
 
 @layer components {

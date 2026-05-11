@@ -43,6 +43,7 @@ export const Footer = () => {
           alt="star"
           width={646}
           height={331}
+          className="h-auto w-full"
           priority
           unoptimized
         />
@@ -112,6 +113,7 @@ export const Footer = () => {
               alt="logo"
               width={212}
               height={138}
+              className="h-auto w-full"
               priority
               unoptimized
             />

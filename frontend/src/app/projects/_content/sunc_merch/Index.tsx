@@ -6,14 +6,13 @@ import { SuncMerchHeroSection } from "./HeroSection";
 // Tune these values to make backgrounds shorter/taller everywhere.
 // Bigger first number or smaller second number => shorter section.
 const SHARED_BG_ASPECT_RATIO = "48 / 30";
-const FULL_BLEED_BG_ASPECT_RATIO = "48 / 26";
 
 export const SuncMerchProject = () => {
   return (
     <article className="w-full overflow-x-clip bg-black text-black">
       <SuncMerchHeroSection />
       <section className="w-full overflow-hidden bg-white">
-        <div className="relative mx-auto w-full max-w-[1920px] overflow-hidden" style={{ aspectRatio: SHARED_BG_ASPECT_RATIO }}>
+        <div className="relative w-full overflow-hidden" style={{ aspectRatio: SHARED_BG_ASPECT_RATIO }}>
           <div className="absolute bottom-0 right-[10%] h-full w-[34%]">
             <Image
               src="/images/projects/_content/sunc_merch/2-image.png"
@@ -39,7 +38,7 @@ export const SuncMerchProject = () => {
       </section>
 
       <section className="w-full overflow-hidden" style={{ backgroundColor: "#ECECEC" }}>
-        <div className="relative mx-auto w-full max-w-[1920px] overflow-hidden" style={{ aspectRatio: SHARED_BG_ASPECT_RATIO }}>
+        <div className="relative w-full overflow-hidden" style={{ aspectRatio: SHARED_BG_ASPECT_RATIO }}>
           <div className="absolute bottom-0 left-0 h-full w-[40%]">
             <Image
               src="/images/projects/_content/sunc_merch/3-image.png"
@@ -64,7 +63,7 @@ export const SuncMerchProject = () => {
       </section>
 
       <section className="w-full overflow-hidden bg-white">
-        <div className="relative mx-auto w-full max-w-[1920px] overflow-hidden" style={{ aspectRatio: SHARED_BG_ASPECT_RATIO }}>
+        <div className="relative w-full overflow-hidden" style={{ aspectRatio: SHARED_BG_ASPECT_RATIO }}>
           <div className="absolute bottom-[-4%] right-[10%] h-full w-[41%]">
             <Image
               src="/images/projects/_content/sunc_merch/4-image.png"
@@ -89,7 +88,7 @@ export const SuncMerchProject = () => {
       </section>
 
       <section className="w-full overflow-hidden" style={{ backgroundColor: "#ECECEC" }}>
-        <div className="relative mx-auto w-full max-w-[1920px] overflow-hidden" style={{ aspectRatio: SHARED_BG_ASPECT_RATIO }}>
+        <div className="relative w-full overflow-hidden" style={{ aspectRatio: SHARED_BG_ASPECT_RATIO }}>
           <div className="absolute bottom-[5%] left-[9%] h-full w-[38%]">
             <Image
               src="/images/projects/_content/sunc_merch/5-image.png"

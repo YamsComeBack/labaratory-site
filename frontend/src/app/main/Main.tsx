@@ -8,15 +8,15 @@ export const Main = () => {
       <video
         id="bg-video"
         src="/_next-video/lab-video.mp4"
-        className="z-[1]"
+        className="relative z-1 block h-auto w-full max-w-none"
         muted
         autoPlay
         loop
         playsInline
       />
-      <div className="relative flex items-center -mt-[clamp(118px,16vw,228px)] z-[2] bg-[url('/svg/Main/Wave.svg')] bg-no-repeat bg-cover bg-bottom">
+      <div className="relative flex w-full items-center -mt-[clamp(118px,16vw,228px)] z-2 bg-[url('/svg/Main/Wave.svg')] bg-no-repeat bg-cover bg-bottom">
         <div className=" grid box-border place-items-center w-full max-w-[1530px] 
-          h-[clamp(682px,calc(593px+11.61vw),760px)]
+          h-[max(clamp(682px,calc(593px+11.61vw),760px),39.583vw)]
           px-[clamp(40px,calc(-137px+23.07vw),195px)]
           pt-[clamp(145px,calc(431px-13.54vw),236px)] 
           pb-[clamp(121px,calc(272px-7.14vw),169px)]"

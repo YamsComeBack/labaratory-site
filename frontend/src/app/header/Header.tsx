@@ -32,7 +32,7 @@ export const Header = () => {
         data-site-header
         className={`fixed left-0 z-50 h-[69px] w-dvw max-w-full transition-colors ${headerBgClass}`}
       >
-        <div className="mx-auto flex h-full w-full max-w-[1920px] items-center justify-between px-[clamp(40px,4vw,160px)]">
+        <div className="mx-auto flex h-full w-full items-center justify-between px-[clamp(40px,4vw,160px)]">
           <nav className="mx-auto hidden items-center gap-[clamp(16px,calc(13.89vw-90.67px),176px)] whitespace-nowrap md:flex">
             {navItems.map(({ href, name }) => (
               <a
@@ -55,6 +55,7 @@ export const Header = () => {
               alt=""
               width={60}
               height={60}
+              className="h-[60px] w-auto"
               priority
               unoptimized
             />
@@ -69,6 +70,7 @@ export const Header = () => {
               alt=""
               width={30}
               height={30}
+              className="h-[30px] w-auto"
               priority
               unoptimized
             />
@@ -99,6 +101,7 @@ export const Header = () => {
                 alt=""
                 width={40}
                 height={40}
+                className="h-[40px] w-auto"
                 priority
                 unoptimized
               />
@@ -118,6 +121,7 @@ export const Header = () => {
                 alt="logo"
                 width={157}
                 height={102}
+                className="h-auto w-[157px]"
                 priority
                 unoptimized
               />

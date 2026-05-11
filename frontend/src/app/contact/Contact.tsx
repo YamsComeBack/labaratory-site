@@ -55,7 +55,7 @@ export const Contact = () => {
           inset-x-0 box-border w-full max-w-full
           px-[clamp(24px,7vw,70px)] 
           xl:px-[clamp(50px,calc(21.875vw-225px),195px)] 
-          text-[clamp(2rem,10vw,3.75rem)] leading-[1.1] text-black whitespace-pre-line break-words"
+          text-subtitle text-[clamp(2rem,10vw,3.75rem)] leading-[1.1] text-black whitespace-pre-line break-words"
           >
             {"Присоединяйся\nк команде"}
           </p>
@@ -124,7 +124,7 @@ export const Contact = () => {
             <Image
               src="/svg/Contact/Cat.svg"
               alt="cat"
-              className="hidden md:block"
+              className="hidden h-auto w-[226px] md:block"
               width={226}
               height={209}
               priority

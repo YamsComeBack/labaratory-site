@@ -48,7 +48,7 @@ export const About = () => {
         alt=""
         width={1920}
         height={1080}
-        className="-mt-[clamp(140px,12vw,170px)]"
+        className="-mt-[clamp(140px,12vw,170px)] h-auto w-full max-w-none"
         priority
         unoptimized
       />
@@ -67,7 +67,7 @@ export const About = () => {
                 alt={`slide-${idx}`}
                 width={664}
                 height={507}
-                className="w-full h-full object-cover"
+                className="h-auto w-full object-cover"
                 priority={idx < 2}
                 unoptimized
               />
@@ -103,7 +103,7 @@ export const About = () => {
             alt="cat"
             width={125}
             height={138}
-            className="shrink-0 cursor-pointer"
+            className="h-auto w-[125px] shrink-0 cursor-pointer"
             priority
             unoptimized
           />
@@ -127,7 +127,7 @@ export const About = () => {
               width={135}
               height={155}
               className="hidden sm:block shrink-0 object-contain self-start
-               w-[clamp(68px,calc(43.35px+4.77vw),135px)] "
+               h-auto w-[clamp(68px,calc(43.35px+4.77vw),135px)] "
               priority
               unoptimized
             />
@@ -149,7 +149,7 @@ export const About = () => {
               alt="more"
               width={45}
               height={68}
-              className="rotate-90 xl:rotate-0 object-contain"
+              className="h-auto w-[45px] rotate-90 object-contain xl:rotate-0"
               priority
               unoptimized
             />
@@ -164,7 +164,7 @@ export const About = () => {
               alt="plus"
               width={58}
               height={58}
-              className="object-contain"
+              className="h-[58px] w-auto object-contain"
               priority
               unoptimized
             />
