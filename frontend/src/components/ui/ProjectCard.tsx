@@ -14,6 +14,7 @@ export interface ProjectCardProps {
   descriptor?: string;
   logo: { src: string; alt?: string };
   image: { src: string; alt?: string };
+  isUnderConstruction?: boolean;
   className?: string;
 }
 
@@ -24,6 +25,7 @@ export default function ProjectCard({
   descriptor,
   logo,
   image,
+  isUnderConstruction = false,
   className,
 }: ProjectCardProps) {
   /* адаптивные параметры для двух размеров карточек */
@@ -42,6 +44,28 @@ export default function ProjectCard({
 
   const gap = "gap-[15px]";
   const maxTextW = "max-w-[585px]";
+
+  if (isUnderConstruction) {
+    return (
+      <div
+        className={c(
+          "relative block overflow-hidden rounded-2xl",
+          v.aspect,
+          className
+        )}
+      >
+        <Image
+          src={image.src}
+          alt={image.alt ?? "Under construction"}
+          fill
+          sizes={v.imgSz}
+          className="object-cover"
+          priority
+          unoptimized
+        />
+      </div>
+    );
+  }
 
   return (
     <Link
