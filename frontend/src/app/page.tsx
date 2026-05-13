@@ -14,7 +14,7 @@ export default function HomePage() {
       <About />
       <Projects />
       <Team />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </>
   );

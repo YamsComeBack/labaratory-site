@@ -30,7 +30,7 @@ export const Header = () => {
     <>
       <header
         data-site-header
-        className={`fixed left-0 z-50 h-[69px] w-dvw max-w-full transition-colors ${headerBgClass}`}
+        className={`fixed left-0 right-0 z-50 h-[69px] w-full max-w-full transition-colors ${headerBgClass}`}
       >
         <div className="mx-auto flex h-full w-full items-center justify-between px-[clamp(40px,4vw,160px)]">
           <nav className="mx-auto hidden items-center gap-[clamp(16px,calc(13.89vw-90.67px),176px)] whitespace-nowrap md:flex">
@@ -48,14 +48,14 @@ export const Header = () => {
           <button
             onClick={toggleMuted}
             aria-label={muted ? "Включить звук" : "Выключить звук"}
-            className="h-[60px] w-[60px]"
+            className="h-[90px] w-[90px] translate-x-[-30px]"
           >
             <Image
               src={muted ? "/svg/Header/din-off.svg" : "/svg/Header/din-on.svg"}
               alt=""
-              width={60}
-              height={60}
-              className="h-[60px] w-auto"
+              width={90}
+              height={90}
+              className="h-[90px] w-auto"
               priority
               unoptimized
             />
@@ -80,12 +80,12 @@ export const Header = () => {
       {menuOpen && (
         <div
           onClick={() => setMenuOpen(false)}
-          className="fixed left-0 top-0 z-40 h-dvh w-dvw bg-black/60 md:hidden"
+          className="fixed inset-0 z-40 h-dvh w-full bg-black/60 md:hidden"
         />
       )}
       {menuOpen && (
         <aside
-          className="fixed left-0 top-0 z-50 flex h-dvh w-dvw justify-end md:hidden"
+          className="fixed inset-0 z-50 flex h-dvh w-full justify-end md:hidden"
         >
           <div
             data-mobile-menu

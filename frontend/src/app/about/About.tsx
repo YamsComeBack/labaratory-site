@@ -48,7 +48,7 @@ export const About = () => {
         alt=""
         width={1920}
         height={1080}
-        className="-mt-[clamp(140px,12vw,170px)] h-auto w-full max-w-none"
+        className="-mt-[clamp(160px,13vw,190px)] h-auto w-full max-w-none"
         priority
         unoptimized
       />
