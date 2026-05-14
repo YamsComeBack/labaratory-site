@@ -13,14 +13,14 @@ const navItems = [
   { name: "о нас", href: "/#about" },
   { name: "проекты", href: "/#projects" },
   { name: "командос", href: "/#team" },
-  { name: "контакты", href: "/#contacts" },
+  { name: "контакты", href: "/#footer" },
 ];
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const { muted, toggleMuted } = useMuteVideo("bg-video");
+  const { muted, toggleMuted } = useMuteVideo(["bg-video", "napetchatano-fest-video"]);
   const isScrolled = useScrolled();
   useBodyScrollLock(menuOpen);
   const isMainPage = pathname === "/";
