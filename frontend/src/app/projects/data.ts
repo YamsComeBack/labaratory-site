@@ -62,7 +62,7 @@ export const projectsData: readonly ProjectItem[] = [
   {
     size: "small",
     img: "cover_printstore.png",
-    title: 'Онлайн-магазин «Отпечатано»',
+    title: 'Онлайн-магазин\n «Отпечатано»',
     descriptor: "Наш магазин крутого мерча",
     slug: "Otpechatano_shop",
     Component: OtpechatanoShopProject,
@@ -103,7 +103,7 @@ export const projectsData: readonly ProjectItem[] = [
   {
     size: "large",
     img: "Calendar.png",
-    title: "Календарь\nСКФУ\n2024",
+    title: "Календарь СКФУ 2024",
     descriptor: "Три календаря — три взгляда на жизнь университета",
     slug: "Calendar",
     Component: CalendarProject,

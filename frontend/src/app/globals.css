@@ -62,6 +62,18 @@ input[type="checkbox"].accent-primary {
     font-weight: 800; /* ExtraBold */
   }
 
+  /* заголовок Н3 на картах проектов при хавере*/
+  .title-project-card {
+    font-family: "Roboto", sans-serif;
+    line-height: normal;
+    font-weight: 800; /* Medium */
+  }
+  .text-project-card {
+    font-family: "Roboto", sans-serif;
+    line-height: normal;
+    font-weight: 400; /* Medium */
+  }
+
   /* Текст для формы: Roboto, 24px, Light */
   .text-form {
     font-family: "Roboto", sans-serif;

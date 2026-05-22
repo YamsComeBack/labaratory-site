@@ -14,7 +14,6 @@ export interface ProjectCardProps {
   descriptor?: string;
   logo: { src: string; alt?: string };
   image: { src: string; alt?: string };
-  isUnderConstruction?: boolean;
   className?: string;
 }
 
@@ -25,7 +24,6 @@ export default function ProjectCard({
   descriptor,
   logo,
   image,
-  isUnderConstruction = false,
   className,
 }: ProjectCardProps) {
   /* адаптивные параметры для двух размеров карточек */
@@ -44,28 +42,6 @@ export default function ProjectCard({
 
   const gap = "gap-[15px]";
   const maxTextW = "max-w-[585px]";
-
-  if (isUnderConstruction) {
-    return (
-      <div
-        className={c(
-          "relative block overflow-hidden rounded-2xl",
-          v.aspect,
-          className
-        )}
-      >
-        <Image
-          src={image.src}
-          alt={image.alt ?? "Under construction"}
-          fill
-          sizes={v.imgSz}
-          className="object-cover"
-          priority
-          unoptimized
-        />
-      </div>
-    );
-  }
 
   return (
     <Link
@@ -104,8 +80,8 @@ export default function ProjectCard({
           <h3
             lang="ru"
             className={c(
-              "font-gosha text-[clamp(1.75rem,3vw,2.375rem)] font-black leading-tight text-center hyphens-auto break-words",
-              "w-fit",
+              "title-project-card text-[1.75rem] font-black leading-tight mb-[-10] mt-[-10] text-center",
+              "w-full hyphens-auto wrap-break-word whitespace-pre-line",
               maxTextW
             )}
           >
@@ -115,9 +91,10 @@ export default function ProjectCard({
           {/* Описание */}
           {descriptor && (
             <p
+              lang="ru"
               className={c(
-                "text-form-2 leading-snug text-center break-words whitespace-pre-line",
-                "w-fit",
+                "text-project-card text-[1.16rem] leading-snug text-center",
+                "w-full hyphens-auto wrap-break-word whitespace-pre-line",
                 maxTextW
               )}
             >
