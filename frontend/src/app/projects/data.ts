@@ -1,10 +1,7 @@
 import type { JSX } from "react";
-import { BusinessMerchProject } from "./_content/business_merch/Index";
 import { CalendarProject } from "./_content/calendar/Index";
-import { CyberClassProject } from "./_content/cyber_class/Index";
 import { ErnestPrintIdentityProject } from "@/app/projects/_content/ernest_print_identity/Index";
 import { EtnoMerchProject } from "./_content/etno_merch/Index";
-import { JellyFishProject } from "./_content/jelly_fish/Index";
 import { KavkazLegendsCalendarProject } from "@/app/projects/_content/kavkaz_legends_calendar/Index";
 import { KavkazLegendsGameProject } from "@/app/projects/_content/kavkaz_legends_game/Index";
 import { MerchNcfuProject } from "./_content/merch_ncfu/Index";
@@ -118,11 +115,11 @@ export const projectsData: readonly ProjectItem[] = [
   },
   {
     size: "small",
-    img: "Jelly_fish.png",
-    title: "Jelly Fish",
-    descriptor: "Остроумная упаковка для студенческого стартапа",
-    slug: "Jelly_fish",
-    Component: JellyFishProject,
+    img: "Merch_ncfu.png",
+    title: "Одеждомагазин",
+    descriptor: "Стиль и ирония в университетском мерче",
+    slug: "Merch_ncfu",
+    Component: MerchNcfuProject,
   },
   {
     size: "large",
@@ -131,14 +128,6 @@ export const projectsData: readonly ProjectItem[] = [
     descriptor: "Удобство и коммуникация в современном университете",
     slug: "Navigation",
     Component: NavigationProject,
-  },
-  {
-    size: "large",
-    img: "Merch_ncfu.png",
-    title: "Одеждомагазин",
-    descriptor: "Стиль и ирония в университетском мерче",
-    slug: "Merch_ncfu",
-    Component: MerchNcfuProject,
   },
 ] as const;
 

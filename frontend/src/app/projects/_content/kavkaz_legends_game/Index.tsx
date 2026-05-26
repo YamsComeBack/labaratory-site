@@ -8,7 +8,7 @@ const topSliderImages = [
   "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-37.jpg",
   "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-58-22.jpg",
   "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-36.jpg",
-  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-21.jpg",
+  "/images/projects/_content/tabletop_game/top/NCFU9172.jpg",
   "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-58-47.jpg",
   "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-18.jpg",
   "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-31.jpg",
@@ -35,13 +35,13 @@ const bottomSliderImages = [
 
 const mainText = `Наша команда провела турниры в семи республиках Северного\n Кавказа, показав нашу игру и зарядив всех позитивными\n эмоциями. В каждой республике мы оставили по одному комплекту\n настольной игры, чтобы участники могли продолжать проводить\n турниры на своих площадках.`;
 
-const sliderDuration = 28000;
+const sliderDuration = 10000;
 const normalPlaybackRate = 1;
-const slowPlaybackRate = 1 / 3;
-const baseCardWidth = "clamp(190px, 16vw, 310px)";
-const baseCardHeight = "clamp(106px, 9vw, 174px)";
-const expandedCardWidth = "clamp(228px, 19.2vw, 372px)";
-const expandedCardHeight = "clamp(127px, 10.8vw, 209px)";
+const slowPlaybackRate = 1 / 2;
+const baseCardWidth = "20%";
+const baseCardHeight = "20%";
+const expandedCardWidth = "25%";
+const expandedCardHeight = "25%";
 
 type SliderRowProps = {
   images: string[];
@@ -112,19 +112,18 @@ const SliderRow = ({ images, reverse = false, sectionName }: SliderRowProps) => 
 
   return (
     <div
-      className="relative z-10 flex h-[clamp(127px,10.8vw,209px)] w-full items-center overflow-hidden"
+      className="relative z-10 flex h-100 w-full items-center overflow-hidden"
       onMouseEnter={handleRowMouseEnter}
       onMouseLeave={handleRowMouseLeave}
     >
       <div
-        ref={trackRef}
-        className="flex w-max items-center gap-[clamp(8px,1.1vw,20px)] animate-slider-scroll"
+        className="flex items-center gap-[1%] animate-slider-scroll"
         style={{
           animationDuration: `${sliderDuration}ms`,
           animationDirection: reverse ? "reverse" : "normal",
         }}
       >
-        {[...images, ...images].map((src, index) => {
+        {[...images, ...images, ...images].map((src, index) => {
           const isHovered = hoveredCardIndex === index;
 
           return (
@@ -142,7 +141,7 @@ const SliderRow = ({ images, reverse = false, sectionName }: SliderRowProps) => 
                 alt={`Фотография турнира ${index + 1}`}
                 width={762}
                 height={426}
-                className="h-full w-full object-cover"
+                className="h-full w-auto object-cover"
                 priority={index < 6}
                 unoptimized
               />
@@ -156,11 +155,11 @@ const SliderRow = ({ images, reverse = false, sectionName }: SliderRowProps) => 
 
 export const KavkazLegendsGameProject = () => {
   return (
-    <section className="w-full h-250 overflow-hidden bg-white py-[clamp(42px,4.5vw,86px)]">
-      <div className="relative mx-auto flex w-full flex-col gap-[300px] mt-13 z-2">
+    <section className="w-full h-280 overflow-hidden bg-white">
+      <div className="relative mx-auto flex w-full flex-col gap-[140] mt-13 z-2">
         <SliderRow images={topSliderImages} sectionName="top" />
 
-        <div className="pointer-events-none absolute left-1/2 top-1/2 z-0 flex w-[48%] -translate-x-1/2 -translate-y-1/2 items-center justify-center">
+        <div className="pointer-events-none absolute left-1/2 top-1/2 z-0 flex w-[60%] -translate-x-1/2 -translate-y-1/2 items-center justify-center">
           <Image
             src="/images/projects/_content/tabletop_game/Vector.svg"
             alt=""
@@ -170,7 +169,7 @@ export const KavkazLegendsGameProject = () => {
             priority
             unoptimized
           />
-          <p className="text-main-2 absolute z-1 mx-auto w-[clamp(370px,39vw,760px)] text-center text-black whitespace-pre-line">
+          <p className="text-main-2 text-[160%] absolute z-1 mx-auto w-[90%] text-center text-black whitespace-pre-line">
             {mainText}
           </p>
         </div>

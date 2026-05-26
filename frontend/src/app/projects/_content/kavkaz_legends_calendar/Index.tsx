@@ -120,82 +120,86 @@ export const KavkazLegendsCalendarProject = () => {
   const nextIndex = activeIndex === totalSlides - 1 ? 0 : activeIndex + 1;
 
   return (
-    <section className="w-full overflow-hidden bg-[#293766]">
-      <div className="relative h-full w-full">
-        <button
-          type="button"
-          onClick={goPrev}
-          aria-label="Предыдущий слайд"
-          className="absolute top-1/2 z-10 -translate-y-1/2 cursor-pointer transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4e300] focus-visible:ring-offset-2 focus-visible:ring-offset-[#293766]"
-          style={{
-            left: `${arrowOffsetPercent}%`,
-            width: `${arrowSizePercent}%`,
-          }}
-        >
-          <Image
-            src="/images/projects/_content/calendar/slider/svg/slider_left.svg"
-            alt=""
-            width={72}
-            height={72}
-            className="h-auto w-full"
-            unoptimized
-          />
-        </button>
-
-        <div
-          className="relative w-full overflow-hidden touch-pan-y"
-          style={{ aspectRatio: `${sourceSlideWidth} / ${sourceSlideHeight}` }}
-          onTouchStart={handleTouchStart}
-          onTouchEnd={handleTouchEnd}
-        >
-          <div
-            className="flex h-full"
-            onTransitionEnd={handleTransitionEnd}
+    <>
+      <section className="bg-gray-900 w-lvw aspect-video" >
+        <h1>hello</h1>
+      </section>
+      <section className="w-lvw aspect-video overflow-hidden bg-[#293766]">
+        <div className="relative w-full h-full">
+          <button
+            type="button"
+            onClick={goPrev}
+            aria-label="Предыдущий слайд"
+            className="absolute top-1/2 ml-4 md:ml-15 z-10 -translate-y-1/2 cursor-pointer transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4e300] focus-visible:ring-offset-2 focus-visible:ring-offset-[#293766]"
             style={{
-              transform: `translate3d(${offsetPercent}%, 0, 0)`,
-              transition: isTransitioning ? "transform 360ms ease" : "none",
-              willChange: "transform",
+              left: `${arrowOffsetPercent}%`,
+              width: `${arrowSizePercent}%`,
             }}
           >
-            {[slides[prevIndex], slides[activeIndex], slides[nextIndex]].map((src, idx) => (
-              <div key={`${src}-${idx}`} className="flex h-full w-full shrink-0 justify-center">
-                <div className="relative h-full w-full max-w-none shrink-0">
-                  <Image
-                    src={src}
-                    alt={`Слайд календаря ${idx === 0 ? prevIndex + 1 : idx === 1 ? activeIndex + 1 : nextIndex + 1}`}
-                    fill
-                    sizes="100vw"
-                    className="block h-full w-full object-contain"
-                    priority={idx === 1}
-                    loading="eager"
-                    unoptimized
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+            <Image
+              src="/images/projects/_content/calendar/slider/svg/slider_left.svg"
+              alt=""
+              width={72}
+              height={72}
+              className="h-auto w-full"
+              unoptimized
+            />
+          </button>
 
-        <button
-          type="button"
-          onClick={goNext}
-          aria-label="Следующий слайд"
-          className="absolute top-1/2 z-10 -translate-y-1/2 cursor-pointer transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4e300] focus-visible:ring-offset-2 focus-visible:ring-offset-[#293766]"
-          style={{
-            right: `${arrowOffsetPercent}%`,
-            width: `${arrowSizePercent}%`,
-          }}
-        >
-          <Image
-            src="/images/projects/_content/calendar/slider/svg/slider_right.svg"
-            alt=""
-            width={72}
-            height={72}
-            className="h-auto w-full"
-            unoptimized
-          />
-        </button>
-      </div>
-    </section>
+          <div
+            className="relative w-full h-full overflow-hidden touch-pan-y"
+            style={{ aspectRatio: `${sourceSlideWidth} / ${sourceSlideHeight}` }}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+          >
+            <div
+              className="flex h-full"
+              onTransitionEnd={handleTransitionEnd}
+              style={{
+                transform: `translate3d(${offsetPercent}%, 0, 0)`,
+                transition: isTransitioning ? "transform 360ms ease" : "none",
+                willChange: "transform",
+              }}
+            >
+              {[slides[prevIndex], slides[activeIndex], slides[nextIndex]].map((src, idx) => (
+                <div key={`${src}-${idx}`} className="flex h-full w-full shrink-0 justify-center">
+                  <div className="relative w-full max-w-none shrink-0">
+                    <Image
+                      src={src}
+                      alt={`Слайд календаря ${idx === 0 ? prevIndex + 1 : idx === 1 ? activeIndex + 1 : nextIndex + 1}`}
+                      fill
+                      className="block scale-130 object-contain"
+                      priority={idx === 1}
+                      loading="eager"
+                      unoptimized
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <button
+            type="button"
+            onClick={goNext}
+            aria-label="Следующий слайд"
+            className="absolute top-1/2 mr-4 md:mr-15 z-10 -translate-y-1/2 cursor-pointer transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4e300] focus-visible:ring-offset-2 focus-visible:ring-offset-[#293766]"
+            style={{
+              right: `${arrowOffsetPercent}%`,
+              width: `${arrowSizePercent}%`,
+            }}
+          >
+            <Image
+              src="/images/projects/_content/calendar/slider/svg/slider_right.svg"
+              alt=""
+              width={72}
+              height={72}
+              className="h-auto w-full"
+              unoptimized
+            />
+          </button>
+        </div>
+      </section>
+    </>
   );
 };
