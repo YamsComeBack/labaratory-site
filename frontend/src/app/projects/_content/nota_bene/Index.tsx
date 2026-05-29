@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export const NotaBeneProject = () => {
   const headerImage = "/images/projects/_content/nota_bene/1-image.png";

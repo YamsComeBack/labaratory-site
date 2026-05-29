@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export const EtnoMerchProject = () => {
   const headerImage = "/images/projects/_content/etno_merch/1-image.png";

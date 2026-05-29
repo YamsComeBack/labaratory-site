@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export const NavigationProject = () => {
   const headerImage = "/images/projects/_content/navigation/1-image.png";

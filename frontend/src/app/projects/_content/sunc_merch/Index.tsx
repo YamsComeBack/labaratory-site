@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { SuncMerchHeroSection } from "./HeroSection";
 
 // Tune these values to make backgrounds shorter/taller everywhere.
@@ -17,7 +17,7 @@ export const SuncMerchProject = () => {
             <Image
               src="/images/projects/_content/sunc_merch/2-image.png"
               alt=""
-              fill
+              layout="fill"
               className="origin-bottom object-contain object-bottom-right scale-[1.5]"
               sizes="100vw"
               priority
@@ -28,7 +28,7 @@ export const SuncMerchProject = () => {
             <Image
               src="/images/projects/_content/sunc_merch/22-image.png"
               alt=""
-              fill
+              layout="fill"
               className="object-contain object-left-center"
               sizes="100vw"
               unoptimized
@@ -43,7 +43,7 @@ export const SuncMerchProject = () => {
             <Image
               src="/images/projects/_content/sunc_merch/3-image.png"
               alt=""
-              fill
+              layout="fill"
               className="origin-bottom ml-[20%] scale-[1.2] object-contain object-bottom-left"
               sizes="100vw"
               unoptimized
@@ -53,7 +53,7 @@ export const SuncMerchProject = () => {
             <Image
               src="/images/projects/_content/sunc_merch/33-image.png"
               alt=""
-              fill
+              layout="fill"
               className="object-contain object-right-center scale-100"
               sizes="100vw"
               unoptimized
@@ -68,7 +68,7 @@ export const SuncMerchProject = () => {
             <Image
               src="/images/projects/_content/sunc_merch/4-image.png"
               alt=""
-              fill
+              layout="fill"
               className="origin-bottom object-contain object-bottom-right scale-[1.5] pb-[5.6%]"
               sizes="100vw"
               unoptimized
@@ -78,7 +78,7 @@ export const SuncMerchProject = () => {
             <Image
               src="/images/projects/_content/sunc_merch/44-image.png"
               alt=""
-              fill
+              layout="fill"
               className="object-contain object-left-center scale-100"
               sizes="100vw"
               unoptimized
@@ -93,7 +93,7 @@ export const SuncMerchProject = () => {
             <Image
               src="/images/projects/_content/sunc_merch/5-image.png"
               alt=""
-              fill
+              layout="fill"
               className="origin-bottom object-contain object-bottom-left scale-[1.5]"
               sizes="100vw"
               unoptimized
@@ -103,7 +103,7 @@ export const SuncMerchProject = () => {
             <Image
               src="/images/projects/_content/sunc_merch/55-image.png"
               alt=""
-              fill
+              layout="fill"
               className="object-contain object-right-center scale-100"
               sizes="100vw"
               unoptimized
@@ -118,7 +118,7 @@ export const SuncMerchProject = () => {
             <Image
               src="/images/projects/_content/sunc_merch/6-image.png"
               alt=""
-              fill
+              layout="fill"
               className="object-cover object-bottom"
               sizes="100vw"
               unoptimized
@@ -128,7 +128,7 @@ export const SuncMerchProject = () => {
             <Image
               src="/images/projects/_content/sunc_merch/66-image.png"
               alt=""
-              fill
+              layout="fill"
               className="object-contain object-top"
               sizes="100vw"
               unoptimized

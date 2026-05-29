@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useEffect, useRef, useState, type TouchEvent } from "react";
 
 const slides = [
@@ -167,7 +167,7 @@ export const KavkazLegendsCalendarProject = () => {
                     <Image
                       src={src}
                       alt={`Слайд календаря ${idx === 0 ? prevIndex + 1 : idx === 1 ? activeIndex + 1 : nextIndex + 1}`}
-                      fill
+                      layout="fill"
                       className="block scale-130 object-contain"
                       priority={idx === 1}
                       loading="eager"

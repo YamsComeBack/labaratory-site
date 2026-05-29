@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export const PriemnayaCompanyProject = () => {
   const headerImage = "/images/projects/_content/priemnaya_company/1-image.png";

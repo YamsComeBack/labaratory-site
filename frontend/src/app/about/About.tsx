@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useRotateTyping } from "@/hooks/useRotateTyping";
 import { useHoverTyping } from "@/hooks/useHoverTyping";
 
@@ -88,7 +88,7 @@ export const About = () => {
           <Image
             src="/svg/About/dialog.svg"
             alt="dialog"
-            fill
+            layout="fill"
             className="object-contain"
             priority
             unoptimized

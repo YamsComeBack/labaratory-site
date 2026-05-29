@@ -1,7 +1,7 @@
 "use client";
 
 import PeopleSection from "@/components/ui/PeopleSection";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const tutors = [
   {

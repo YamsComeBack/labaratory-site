@@ -1,7 +1,7 @@
 "use client";
 
 import ProjectCard from "@/components/ui/ProjectCard";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { projectsData as projects } from "@/app/projects/data";
 
 export const Projects = () => {

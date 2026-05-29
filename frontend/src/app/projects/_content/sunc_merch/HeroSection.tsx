@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const HERO_BG = "/images/projects/_content/sunc_merch/1-image.png";
 const HERO_HOODIE = "/images/projects/_content/sunc_merch/11-image.png";

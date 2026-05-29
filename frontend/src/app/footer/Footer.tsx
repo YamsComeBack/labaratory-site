@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const PHONE = "+7 (962)-444-98-96";

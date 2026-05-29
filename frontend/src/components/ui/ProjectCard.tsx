@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 /* Utility — объединение классов */
@@ -55,7 +55,7 @@ export default function ProjectCard({
       <Image
         src={image.src}
         alt={image.alt ?? title}
-        fill
+        layout="fill"
         sizes={v.imgSz}
         className="object-cover"
         priority

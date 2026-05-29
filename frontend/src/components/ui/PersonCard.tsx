@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/cn";
 
@@ -48,7 +48,7 @@ export default function PersonCard({
               key={s}
               src={s}
               alt={alt}
-              fill
+              layout="fill"
               sizes="200px"
               className={cn(
                 "object-cover",
