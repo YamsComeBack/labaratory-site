@@ -1,6 +1,7 @@
 "use client";
 
-import Image from "next/legacy/image";
+// import Image from "next/legacy/image";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/cn";
 
@@ -36,24 +37,24 @@ export default function PersonCard({
     <div
       className={cn(
         // ключевые изменения ↓
-        "flex-none w-[200px] flex flex-col items-center",
+        "flex-none w-[200px] overflow-visible flex flex-col items-center",
         className
       )}
     >
-      <div className="relative group aspect-square w-full">
-        {/* используем fill, чтобы картинка масштабировалась ровно как родитель */}
-        <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0">
+      <div className="relative group aspect-square w-full overflow-visible">
+        {/* use fill so every image stacks in the same spot */}
+        <div className="absolute inset-0 overflow-visible pointer-events-none transition-opacity duration-300 group-hover:opacity-0">
           {images.map((s, i) => (
             <Image
               key={s}
               src={s}
               alt={alt}
-              layout="fill"
-              sizes="200px"
+              fill
               className={cn(
-                "object-cover",
+                "absolute inset-0 object-cover transition-none duration-300 pointer-events-none",
                 i === activeIndex ? "opacity-100" : "opacity-0"
               )}
+              style={{ transform: "scale(1.72) translateY(-7px)" }}
               priority
               unoptimized
             />

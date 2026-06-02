@@ -85,7 +85,7 @@ input[type="checkbox"].accent-primary {
   /* Текст для формы 2: Roboto, 24px, Regular */
   .text-form-2 {
     font-family: "Roboto", sans-serif;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 28px;
     font-weight: normal;
   }

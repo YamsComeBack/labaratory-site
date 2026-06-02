@@ -23,14 +23,13 @@ export const Header = () => {
   const isScrolled = useScrolled();
   useBodyScrollLock(menuOpen);
   const isMainPage = pathname === "/";
-  const headerBgClass = isMainPage && !isScrolled ? "bg-transparent" : "bg-primary";
+  // const headerBgClass = isMainPage && !isScrolled ? "bg-transparent" : "bg-primary";
 
   return (
     <div>
-      {/* <LiquidGlass> */}
         <header
           data-site-header
-          className={`fixed left-0 right-0 z-50 h-[69px] w-full max-w-full transition-colors ${headerBgClass}`}
+          className={`fixed left-0 right-0 z-50 h-12 w-full max-w-full transition-colors backdrop-blur-md backdrop-saturate-100 bg-white/10`}
         >
           <div className="mx-auto flex h-full w-full items-center justify-between px-[clamp(40px,4vw,160px)]">
             <nav className="mx-auto hidden items-center gap-[clamp(16px,calc(13.89vw-90.67px),176px)] whitespace-nowrap md:flex">
@@ -129,7 +128,6 @@ export const Header = () => {
           </div>
           </aside>
         )}
-      {/* </LiquidGlass> */}
-    </ div>
+    </div>
   );
 };
