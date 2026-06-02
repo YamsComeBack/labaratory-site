@@ -10,8 +10,8 @@ export const Projects = () => {
       <Image
         src={"/images/projects/last-image.png"}
         alt={``}
-        width={1920}
-        height={1080}
+        width={3840}
+        height={2804}
         className="h-auto w-full max-w-none"
         priority
         unoptimized

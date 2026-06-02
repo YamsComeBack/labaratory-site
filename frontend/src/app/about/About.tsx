@@ -1,6 +1,7 @@
 "use client";
 
-import Image from "next/legacy/image";
+// import Image from "next/legacy/image";
+import Image from "next/image";
 import { useRotateTyping } from "@/hooks/useRotateTyping";
 import { useHoverTyping } from "@/hooks/useHoverTyping";
 
@@ -42,7 +43,7 @@ export const About = () => {
     useHoverTyping(fullText);
 
   return (
-    <section className="relative w-full bg-black pb-[clamp(208px,17vw,400px)] z-[1]">
+    <section className="relative w-full bg-black pb-[clamp(208px,17vw,400px)] z-1">
       <Image
         src="/images/about/first-image.jpg"
         alt=""
@@ -60,7 +61,7 @@ export const About = () => {
           {[...images, ...images].map((src, idx) => (
             <div
               key={idx}
-              className="flex-shrink-0 w-[clamp(266px,calc(0.66px+34.55vw),664px)] mr-[clamp(10px,1.57vw,30px)] overflow-hidden rounded-[10px]"
+              className="shrink-0 w-[clamp(266px,calc(0.66px+34.55vw),664px)] mr-[clamp(10px,1.57vw,30px)] overflow-hidden rounded-[10px]"
             >
               <Image
                 src={src}
@@ -81,14 +82,14 @@ export const About = () => {
         className="flex items-center justify-end w-full py-13 scroll-mt-[45px]"
       >
         <div
-          className={`relative w-[274px] h-[76px] transition-transform duration-500 ease-out origin-bottom-right ${
+          className={`relative w-[274px] h-19 transition-transform duration-500 ease-out origin-bottom-right ${
             hovered ? "scale-100 opacity-100" : "scale-0 opacity-0"
           }`}
         >
           <Image
             src="/svg/About/dialog.svg"
             alt="dialog"
-            layout="fill"
+            fill
             className="object-contain"
             priority
             unoptimized
@@ -113,10 +114,10 @@ export const About = () => {
       <div className="box-border w-full max-w-full text-white px-[clamp(24px,7vw,80px)] whitespace-pre-line">
         <div className="mx-auto max-w-[1530px] flex flex-col gap-15">
           <h2 className="text-main">Давай к нам, у нас есть</h2>
-          <div className="flex items-start gap-[20px]">
+          <div className="flex items-start gap-5">
             <div
               lang="ru"
-              className="relative min-h-[264px] w-full max-w-[1377px] text-writing text-primary leading-snug hyphens-auto break-words"
+              className="relative min-h-66 w-full max-w-[1377px] text-writing text-primary leading-snug hyphens-auto wrap-break-words"
             >
               {text}
               <span className="inline-block align-text-bottom w-[15px] h-[1.2em] bg-white ml-1 animate-blink" />
@@ -137,7 +138,7 @@ export const About = () => {
             {`Мы встречаемся три раза в неделю.\nКаждое занятие – это погружение в реальный рабочий процесс, много практики, комментарии и наставления тьюторов, а ещё перерыв с вкусняшками и шутками-прибаутками.`}
           </p>
 
-          <div className="flex flex-col xl:flex-row items-center text-primary text-main gap-[30px] xl:gap-[clamp(30px,2vw,78px)] ">
+          <div className="flex flex-col xl:flex-row items-center text-primary text-main gap-7.5 xl:gap-[clamp(30px,2vw,78px)] ">
             <div className="flex flex-col xl:flex-row items-center gap-[7px] shrink-0">
               <p className="text-[clamp(80px,calc(359px-27.3vw),150px)] font-medium">
                 3
