@@ -37,7 +37,7 @@ export default function PersonCard({
     <div
       className={cn(
         // ключевые изменения ↓
-        "flex-none w-[200px] overflow-visible flex flex-col items-center",
+        "flex-none w-40 sm:w-50 overflow-visible flex flex-col items-center",
         className
       )}
     >

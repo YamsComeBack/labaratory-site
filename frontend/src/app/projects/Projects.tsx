@@ -6,7 +6,7 @@ import { projectsData as projects } from "@/app/projects/data";
 
 export const Projects = () => {
   return (
-    <section className="relative w-full -mt-34 z-2 overflow-x-clip bg-black">
+    <section className="relative w-full -mt-34 z-2 overflow-x-clip bg-white">
       <Image
         src={"/images/projects/last-image.png"}
         alt={``}
@@ -18,9 +18,9 @@ export const Projects = () => {
       />
       <div
         id="projects"
-        className="relative box-border py-[clamp(70px,8vw,90px)] px-[clamp(40px,calc(-137px+23.07vw),195px)]"
+        className="relative box-border pb-5 px-[clamp(40px,calc(-137px+23.07vw),195px)]"
       >
-        <h1 className="box-border text-w-full max-w-full pb-15 text-title text-white text-[clamp(2.5rem,11vw,9.375rem)] leading-[0.95]">
+        <h1 className="box-border text-w-full max-w-full pb-15 text-title text-black text-[4rem] leading-[0.95]">
           Наши проекты
         </h1>
         <div className="grid grid-cols-1 gap-y-10 gap-x-0 lg:grid-cols-2 md:gap-y-5 md:gap-x-5">
