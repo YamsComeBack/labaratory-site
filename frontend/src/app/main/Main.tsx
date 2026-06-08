@@ -4,27 +4,34 @@ import React from "react";
 
 export const Main = () => {
   return (
-    <section id="home" className="relative w-full">
+    <section id="home" className="relative w-full z-1 mb-[-60%]">
       <video
         id="bg-video"
         src="/_next-video/lab-video.mp4"
-        className="relative z-1 block h-auto w-full max-w-none"
+        className="relative z-0 block h-auto w-full max-w-none"
         muted
         autoPlay
         loop
         playsInline
       />
-      <div className="relative flex w-full items-center -mt-[clamp(118px,16vw,228px)] z-2 bg-[url('/svg/Main/Wave.svg')] bg-no-repeat bg-cover bg-bottom">
-        <div className=" grid box-border place-items-center w-full max-w-[1530px] 
-          h-[max(clamp(682px,calc(593px+11.61vw),760px),39.583vw)]
-          px-[clamp(40px,calc(-137px+23.07vw),195px)]
-          pt-[clamp(145px,calc(431px-13.54vw),236px)] 
-          pb-[clamp(121px,calc(272px-7.14vw),169px)]"
-        >
-          <p className="max-w-[1080px] w-full text-main text-left whitespace-pre-line">
+      <div className="z-2 mt-[-8%] mb-[50%]">
+        <img
+          src="/svg/Main/Wave-top.svg"
+          width={1000}
+          height={1000}
+          className="scale-250 shrink-0 w-fit"
+        />
+        <div className="bg-(--color-primary) py-[5%] my-[3%]">
+          <p className="w-fit max-w-290 h-auto px-[7%] pt-[5%] text-main text-left whitespace-pre-line">
             {`Лаборатория – это концентрат дизайна и медиа будущего. Здесь мы учимся на реальных кейсах в реальном времени, а тьюторы и кураторы задают работе правильное направление, делятся ценным опытом и секретами профессионального сообщества.`}
           </p>
         </div>
+        <img
+          src="/svg/Main/Wave-bottom.svg"
+          width={1000}
+          height={1000}
+          className="h-auto w-fit scale-250 shrink-0"
+        />
       </div>
     </section>
   );

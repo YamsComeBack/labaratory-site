@@ -30,7 +30,7 @@ export default function PeopleSection({
       </h2>
       <div className="flex flex-col items-center gap-y-15 sm:gap-y-25">
         {rows.map((row, i) => (
-          <div key={i} className="flex justify-center gap-x-15 md:gap-x-25">
+          <div key={i} className="flex justify-center gap-x-10 md:gap-x-25">
             {row.map(p => (<PersonCard key={p.name} {...p} />))}
           </div>
         ))}

@@ -31,7 +31,7 @@ export const Header = () => {
           data-site-header
           className={`fixed left-0 right-0 z-50 h-12 w-full max-w-full transition-colors backdrop-blur-md backdrop-saturate-100 bg-white/10`}
         >
-          <div className="mx-auto flex h-full w-full items-center justify-between px-[clamp(40px,4vw,160px)]">
+          <div className="mx-auto flex h-full w-full items-center text-black justify-between px-[clamp(40px,4vw,160px)]">
             <nav className="mx-auto hidden items-center gap-[clamp(16px,calc(13.89vw-90.67px),176px)] whitespace-nowrap md:flex">
               {navItems.map(({ href, name }) => (
                 <a
@@ -47,14 +47,14 @@ export const Header = () => {
             <button
               onClick={toggleMuted}
               aria-label={muted ? "Включить звук" : "Выключить звук"}
-              className="h-[90px] w-[90px] translate-x-[-30px]"
+              className="h-18 w-18 sm:h-14 sm:w-14 translate-x-[-30px] border-none outline-none cursor-pointer"
             >
               <Image
                 src={muted ? "/svg/Header/din-off.svg" : "/svg/Header/din-on.svg"}
                 alt=""
                 width={90}
                 height={90}
-                className="h-[90px] w-auto"
+                className="h-[90px] w-auto outline-0"
                 priority
                 unoptimized
               />
@@ -69,7 +69,7 @@ export const Header = () => {
                 alt=""
                 width={30}
                 height={30}
-                className="h-[30px] w-auto"
+                className="h-3 w-auto"
                 priority
                 unoptimized
               />

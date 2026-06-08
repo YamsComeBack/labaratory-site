@@ -165,7 +165,7 @@ export const Team = () => {
       <h1
         className="
       absolute z-2 left-1/2 box-border max-w-full -translate-x-1/2 px-4
-      pt-[8%] sm:pt-[10%] md:pt-[12%] lg:pt-[14%]
+      pt-[8%] md:pt-[12%] lg:pt-[14%]
       text-title text-center text-[4rem] leading-[0.95]"
       >
         командос
@@ -179,7 +179,7 @@ export const Team = () => {
         priority
         unoptimized
       />
-      <div className="z-10 mt-[-30%] pt-[30%] mx-auto flex flex-col items-center bg-black pb-11 gap-15">
+      <div className="z-10 mt-[-30%] pt-[30%] mx-auto flex flex-col items-center bg-black pb-15 gap-15">
         <PeopleSection
           id="team"
           className="scroll-mt-11.25"

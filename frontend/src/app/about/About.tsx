@@ -43,17 +43,17 @@ export const About = () => {
     useHoverTyping(fullText);
 
   return (
-    <section className="relative w-full bg-black pb-[clamp(208px,17vw,400px)] z-1">
+    <section className="relative w-full bg-black pb-[20%] z-0">
       <Image
         src="/images/about/first-image.jpg"
         alt=""
         width={1920}
         height={1080}
-        className="-mt-[clamp(160px,13vw,190px)] h-auto w-full max-w-none"
+        className="h-auto w-full max-w-none pb-[1.5%] z-0"
         priority
         unoptimized
       />
-      <div className="overflow-hidden w-full mt-[clamp(14px,calc(-10px+3.13vw),35px)]">
+      <div className="overflow-hidden w-full">
         <div
           className="flex animate-slider-scroll w-max"
           style={{ animationDuration: `${scrollSpeed}ms` }}
@@ -113,11 +113,13 @@ export const About = () => {
 
       <div className="box-border w-full max-w-full text-white px-[clamp(24px,7vw,80px)] whitespace-pre-line">
         <div className="mx-auto max-w-[1530px] flex flex-col gap-15">
-          <h2 className="text-main">Давай к нам, у нас есть</h2>
+          <h2 className="text-main">
+            Давай к нам, у нас есть
+          </h2>
           <div className="flex items-start gap-5">
             <div
               lang="ru"
-              className="relative min-h-66 w-full max-w-[1377px] text-writing text-primary leading-snug hyphens-auto wrap-break-words"
+              className="relative min-h-46 w-full max-w-[1377px] text-writing text-primary leading-snug hyphens-auto wrap-break-words"
             >
               {text}
               <span className="inline-block align-text-bottom w-[15px] h-[1.2em] bg-white ml-1 animate-blink" />
