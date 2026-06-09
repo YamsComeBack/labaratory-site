@@ -22,7 +22,6 @@ const ProjectLayout = async ({ children, params }: LayoutProps) => {
       <main
         role="main"
         aria-label={`Содержимое проекта ${project.title}`}
-        className="min-h-[60vh] pt-[69px] bg-primary text-black"
         tabIndex={0}
       >
         {children}

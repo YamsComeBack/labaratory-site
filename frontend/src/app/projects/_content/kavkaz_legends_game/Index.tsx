@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/legacy/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const topSliderImages = [
   "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-40.jpg",
@@ -36,8 +36,8 @@ const bottomSliderImages = [
 const mainText = `Наша команда провела турниры в семи республиках Северного\n Кавказа, показав нашу игру и зарядив всех позитивными\n эмоциями. В каждой республике мы оставили по одному комплекту\n настольной игры, чтобы участники могли продолжать проводить\n турниры на своих площадках.`;
 
 const sliderDuration = 10000;
-const normalPlaybackRate = 1;
-const slowPlaybackRate = 1 / 2;
+const normalPlaybackRate = 0.5;
+const slowPlaybackRate = 0.25;
 const baseCardWidth = "20%";
 const baseCardHeight = "20%";
 const expandedCardWidth = "25%";
@@ -52,7 +52,7 @@ type SliderRowProps = {
 const SliderRow = ({ images, reverse = false, sectionName }: SliderRowProps) => {
   const trackRef = useRef<HTMLDivElement | null>(null);
   const animationRef = useRef<Animation | null>(null);
-  const initRafRef = useRef<number | null>(null);
+  const [trackDistance, setTrackDistance] = useState<number>(0);
   const [hoveredCardIndex, setHoveredCardIndex] = useState<number | null>(null);
 
   const setPlaybackRate = (rate: number) => {
@@ -70,78 +70,98 @@ const SliderRow = ({ images, reverse = false, sectionName }: SliderRowProps) => 
     animation.playbackRate = rate;
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const track = trackRef.current;
 
     if (!track) {
       return;
     }
 
-    const resolveAnimation = () => {
-      const animation = track.getAnimations().find(
-        (candidate): candidate is CSSAnimation =>
-          candidate instanceof CSSAnimation && candidate.animationName === "slider-scroll",
-      );
-
-      if (animation) {
-        animationRef.current = animation;
-        setPlaybackRate(normalPlaybackRate);
+    const updateDistance = () => {
+      if (!trackRef.current) {
         return;
       }
 
-      initRafRef.current = window.requestAnimationFrame(resolveAnimation);
+      const distance = trackRef.current.scrollWidth / 2;
+      setTrackDistance(distance);
     };
 
-    resolveAnimation();
+    updateDistance();
+    window.addEventListener("resize", updateDistance);
 
     return () => {
-      if (initRafRef.current !== null) {
-        window.cancelAnimationFrame(initRafRef.current);
-      }
+      window.removeEventListener("resize", updateDistance);
     };
-  }, []);
+  }, [images.length]);
 
-  const handleRowMouseEnter = () => {
+  useEffect(() => {
+    const track = trackRef.current;
+
+    if (!track || trackDistance <= 0) {
+      return;
+    }
+
+    const currentTime = animationRef.current?.currentTime ?? 0;
+    animationRef.current?.cancel();
+
+    const animation = track.animate(
+      [
+        { transform: "translateX(0)" },
+        { transform: `translateX(-${trackDistance}px)` },
+      ],
+      {
+        duration: sliderDuration,
+        easing: "linear",
+        iterations: Infinity,
+        direction: reverse ? "reverse" : "normal",
+      },
+    );
+
+    animation.currentTime = currentTime;
+    animationRef.current = animation;
+    setPlaybackRate(normalPlaybackRate);
+
+    return () => animation.cancel();
+  }, [trackDistance, reverse]);
+
+  const handleCardMouseEnter = (index: number) => {
+    setHoveredCardIndex(index);
     setPlaybackRate(slowPlaybackRate);
   };
 
-  const handleRowMouseLeave = () => {
-    setPlaybackRate(normalPlaybackRate);
+  const handleCardMouseLeave = () => {
     setHoveredCardIndex(null);
+    setPlaybackRate(normalPlaybackRate);
   };
 
   return (
-    <div
-      className="relative z-10 flex h-100 w-full items-center overflow-hidden"
-      onMouseEnter={handleRowMouseEnter}
-      onMouseLeave={handleRowMouseLeave}
-    >
+    <div className="relative z-10 flex h-[30vw] w-full items-center overflow-hidden">
       <div
-        className="flex items-center gap-[1%] animate-slider-scroll"
-        style={{
-          animationDuration: `${sliderDuration}ms`,
-          animationDirection: reverse ? "reverse" : "normal",
-        }}
+        ref={trackRef}
+        className="flex items-center h-[185%] gap-[1%] w-max"
       >
-        {[...images, ...images, ...images].map((src, index) => {
+        {[...images, ...images].map((src, index) => {
           const isHovered = hoveredCardIndex === index;
 
           return (
             <div
               key={`${sectionName}-${src}-${index}`}
-              className={`relative shrink-0 overflow-hidden rounded-[clamp(8px,0.65vw,12px)] transition-[width,height] duration-300 ease-out ${isHovered ? "z-30" : "z-10"}`}
+              className={`relative h-full shrink-0 overflow-hidden rounded-[clamp(8px,0.65vw,12px)] transition-transform duration-300 ease-out ${isHovered ? "z-30" : "z-10"}`}
               style={{
-                width: isHovered ? expandedCardWidth : baseCardWidth,
-                height: isHovered ? expandedCardHeight : baseCardHeight,
+                width: baseCardWidth,
+                height: baseCardHeight,
+                transform: isHovered ? "scale(1.25)" : "scale(1)",
+                transformOrigin: "center center",
               }}
-              onMouseEnter={() => setHoveredCardIndex(index)}
+              onMouseEnter={() => handleCardMouseEnter(index)}
+              onMouseLeave={handleCardMouseLeave}
             >
               <Image
                 src={src}
                 alt={`Фотография турнира ${index + 1}`}
                 width={762}
                 height={426}
-                className="h-full w-auto object-cover"
+                className="object-cover"
                 priority={index < 6}
                 unoptimized
               />
@@ -155,27 +175,70 @@ const SliderRow = ({ images, reverse = false, sectionName }: SliderRowProps) => 
 
 export const KavkazLegendsGameProject = () => {
   return (
-    <section className="w-full h-280 overflow-hidden bg-white">
-      <div className="relative mx-auto flex w-full flex-col gap-[140] mt-13 z-2">
-        <SliderRow images={topSliderImages} sectionName="top" />
-
-        <div className="pointer-events-none absolute left-1/2 top-1/2 z-0 flex w-[60%] -translate-x-1/2 -translate-y-1/2 items-center justify-center">
-          <Image
-            src="/images/projects/_content/tabletop_game/Vector.svg"
-            alt=""
-            width={1086}
-            height={1086}
-            className="h-auto w-full"
-            priority
-            unoptimized
-          />
-          <p className="text-main-2 text-[160%] absolute z-1 mx-auto w-[90%] text-center text-black whitespace-pre-line">
-            {mainText}
+    <div className="mb-[10%] sm:mb-0">
+      <div>
+        <img 
+          src="/images/projects/_content/tabletop_game/tt1.png"
+        />
+        <div className="translate-y-[-35%] mb-[-20%]">
+          <h1 className="w-[25%] ml-[15%] mt-[6%] leading-[100%] absolute text-title text-[2.5vw]">
+            Настольная игра «Легенды Кавказа. Эхо древних гор»
+          </h1>
+          <p className="w-[35%] ml-[50%] mt-[6.5%] absolute text-main text-[1.3vw] leading-[110%]">
+            Проект-победитель грантового конкурса Росмолодёжи. Мы придумали механику, историю и визуальный язык игры — получился атмосферный мир, в котором сочетаются легенды, культура и азарт.
           </p>
+          <img
+            src="/images/projects/_content/tabletop_game/Vector-head.svg"
+          />
         </div>
-
-        <SliderRow images={bottomSliderImages} reverse sectionName="bottom" />
       </div>
-    </section>
+      <div className="pt-[8vw]">
+        <img 
+          src="/images/projects/_content/tabletop_game/tt2.png"
+        />
+      </div>
+      <div>
+        <img 
+          src="/images/projects/_content/tabletop_game/tt3.png"
+        />
+      </div>
+      <div>
+        <img 
+          src="/images/projects/_content/tabletop_game/tt4.png"
+        />
+      </div>
+      <div>
+        <img 
+          src="/images/projects/_content/tabletop_game/tt5.png"
+        />
+      </div>
+      <div>
+        <img 
+          src="/images/projects/_content/tabletop_game/tt6.png"
+        />
+      </div>
+      <section className="w-full overflow-hidden bg-white">
+        <div className="relative mx-auto flex w-full flex-col gap-[140] z-2">
+          <SliderRow images={topSliderImages} sectionName="top" />
+
+          <div className="pointer-events-none absolute left-1/2 top-1/2 z-0 flex w-[60%] -translate-x-1/2 -translate-y-1/2 items-center justify-center">
+            <Image
+              src="/images/projects/_content/tabletop_game/Vector.svg"
+              alt=""
+              width={1086}
+              height={1086}
+              className="h-auto w-full"
+              priority
+              unoptimized
+            />
+            <p className="text-main-2 text-[1.2vw] absolute z-1 mx-auto w-[45vw] text-center text-black whitespace-pre-line">
+              {mainText}
+            </p>
+          </div>
+
+          <SliderRow images={bottomSliderImages} reverse sectionName="bottom" />
+        </div>
+      </section>
+    </div>
   );
 };

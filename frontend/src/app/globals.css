@@ -34,7 +34,7 @@ input[type="checkbox"].accent-primary {
   }
   .text-main-2 {
     font-family: "Roboto", sans-serif;
-    font-size: 24px;
+    /* font-size: 24px; */
     line-height: 1.2;
     font-weight: normal;
   }

@@ -90,7 +90,7 @@ const supports = [
       "/images/team/Arianna-2.png",
     ],
     name: "Арианна Энгельгардт",
-    hoverText: "Убери, я ничего\n не вижу",
+    hoverText: "В резкости",
   },
   {
     src: [
