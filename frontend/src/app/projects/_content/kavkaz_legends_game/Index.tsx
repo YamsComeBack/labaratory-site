@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const topSliderImages = [
@@ -175,12 +175,15 @@ const SliderRow = ({ images, reverse = false, sectionName }: SliderRowProps) => 
 
 export const KavkazLegendsGameProject = () => {
   return (
-    <div className="mb-[10%] sm:mb-0">
-      <div>
-        <img 
+    <div className="mb-[10%] sm:mb-0 max-w-none">
+      <div className="relative z-10 max-w-none" style={{ aspectRatio:"1920/1308" }}>
+        <Image 
           src="/images/projects/_content/tabletop_game/tt1.png"
+          alt=""
+          fill
+          className="w-full"
         />
-        <div className="translate-y-[-35%] mb-[-20%]">
+        <div className="translate-y-[300%] z-10 overflow-visible mb-[-20%] max-w-none">
           <h1 className="w-[25%] ml-[15%] mt-[6%] leading-[100%] absolute text-title text-[2.5vw]">
             Настольная игра «Легенды Кавказа. Эхо древних гор»
           </h1>
@@ -189,35 +192,54 @@ export const KavkazLegendsGameProject = () => {
           </p>
           <img
             src="/images/projects/_content/tabletop_game/Vector-head.svg"
+            alt=""
+            className="w-full"
           />
         </div>
       </div>
-      <div className="pt-[8vw]">
-        <img 
+      <div className="relative z-1 w-full h-full mt-[8vw]" style={{ aspectRatio:"1920/1106" }}>
+        <Image 
           src="/images/projects/_content/tabletop_game/tt2.png"
+          alt=""
+          fill
+          className="w-full aspect-video"
         />
       </div>
-      <div>
-        <img 
-          src="/images/projects/_content/tabletop_game/tt3.png"
-        />
+      <div className="bg-[#142458]">
+        <div className="relative max-w-none" style={{ aspectRatio:"1920/1008" }}>
+          <Image 
+            src="/images/projects/_content/tabletop_game/tt3.png"
+            alt=""
+            fill
+            className="w-full"
+          />
+        </div>
+        <div className="relative" style={{ aspectRatio:"1920/1137" }}>
+          <Image 
+            src="/images/projects/_content/tabletop_game/tt4.png"
+            alt=""
+            fill
+            className="w-full"
+          />
+        </div>
+        <div className="relative" style={{ aspectRatio:"1920/1226" }}>
+          <Image 
+            src="/images/projects/_content/tabletop_game/tt5.png"
+            alt=""
+            fill
+            className="w-full"
+          />
+        </div>
       </div>
-      <div>
-        <img 
-          src="/images/projects/_content/tabletop_game/tt4.png"
-        />
-      </div>
-      <div>
-        <img 
-          src="/images/projects/_content/tabletop_game/tt5.png"
-        />
-      </div>
-      <div>
-        <img 
+      <div className="relative" style={{ aspectRatio:"1920/1080" }}>
+        <Image 
           src="/images/projects/_content/tabletop_game/tt6.png"
+          alt=""
+          fill
+          className="w-full"
         />
       </div>
-      <section className="w-full overflow-hidden bg-white">
+      <section className="relative w-full overflow-hidden bg-white">
         <div className="relative mx-auto flex w-full flex-col gap-[140] z-2">
           <SliderRow images={topSliderImages} sectionName="top" />
 

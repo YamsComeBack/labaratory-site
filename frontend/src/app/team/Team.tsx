@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import PeopleSection from "@/components/ui/PeopleSection";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const tutors = [
   {
@@ -165,20 +165,31 @@ export const Team = () => {
       <h1
         className="
       absolute z-2 left-1/2 box-border max-w-full -translate-x-1/2 px-4
-      pt-[8%] md:pt-[12%] lg:pt-[14%]
+      pt-[5%] md:pt-[12%] lg:pt-[14%]
       text-title text-center text-[4rem] leading-[0.95]"
       >
         командос
       </h1>
-      <Image
-        src="/images/Team/Team.png"
-        alt=""
-        width={1920}
-        height={1280}
-        className="z-1 h-full w-full max-w-none object-cover"
-        priority
-        unoptimized
-      />
+      <div className="relative w-full h-[65vw] max-w-none">
+        {/* <Image
+          src="/images/Team/Team.png"
+          alt=""
+          width={1920}
+          height={1280}
+          className="z-1 object-cover"
+          layout="fill"
+          priority
+          unoptimized
+        /> */}
+        <Image
+          src="/images/Team/Team.png"
+          alt="Общая фотография команды"
+          className="z-1 object-cover"
+          fill
+          priority
+          unoptimized
+        />
+      </div>
       <div className="z-10 mt-[-30%] pt-[30%] mx-auto flex flex-col items-center bg-black pb-15 gap-15">
         <PeopleSection
           id="team"
