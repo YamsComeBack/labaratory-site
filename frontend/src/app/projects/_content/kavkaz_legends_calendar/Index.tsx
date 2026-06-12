@@ -1,21 +1,21 @@
 "use client";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useEffect, useRef, useState, type TouchEvent } from "react";
 
 const slides = [
-  "/images/projects/_content/calendar/slider/kalendar_01.png",
-  "/images/projects/_content/calendar/slider/kalendar_02.png",
-  "/images/projects/_content/calendar/slider/kalendar_03.png",
-  "/images/projects/_content/calendar/slider/kalendar_04.png",
-  "/images/projects/_content/calendar/slider/kalendar_05.png",
-  "/images/projects/_content/calendar/slider/kalendar_06.png",
-  "/images/projects/_content/calendar/slider/kalendar_07.png",
-  "/images/projects/_content/calendar/slider/kalendar_08.png",
-  "/images/projects/_content/calendar/slider/kalendar_09.png",
-  "/images/projects/_content/calendar/slider/kalendar_10.png",
-  "/images/projects/_content/calendar/slider/kalendar_11.png",
-  "/images/projects/_content/calendar/slider/kalendar_12.png",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_01.png",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_02.png",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_03.png",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_04.png",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_05.png",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_06.png",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_07.png",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_08.png",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_09.png",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_10.png",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_11.png",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_12.png",
 ];
 
 const sourceSlideWidth = 6559;
@@ -121,9 +121,45 @@ export const KavkazLegendsCalendarProject = () => {
 
   return (
     <>
-      <section className="bg-gray-900 w-lvw aspect-video" >
-        <h1>hello</h1>
-      </section>
+      <div className="relative" style={{ aspectRatio:"1920/1090" }}>
+        <Image
+          src="/images/projects/_content/tabletop_calendar/tt1.png"
+          alt=""
+          className="w-full"
+          fill
+        />
+        <div className="absolute right-0">
+          <h1 className="z-30 w-[70%] ml-[15vw] top-[23vw] leading-[100%] absolute text-title text-[2.5vw]">
+            Календарь по мотивам игры «Легенды Кавказа» 
+          </h1>
+          <p className="z-30 w-[60%] ml-[15vw] top-[29vw] leading-[110%] absolute text-main text-[1.3vw]">
+            В его визуальном решении мы опирались на уже сформированный стиль проекта: использовали фотографии с тематической фотосессии от Ильи Хачатуряна, а также фирменные шрифты и кавказские орнаменты в цветах игры, формирующие цельный и выразительный образ.
+          </p>
+          <img
+            src="/images/projects/_content/tabletop_calendar/Vector.svg"
+            alt=""
+            width={1000}
+            height={1000}
+            className="z-20 w-[55vw] translate-y-[8vw]"
+          />
+        </div>
+      </div>
+      <div className="relative max-w-none" style={{ aspectRatio:"1920/2004"}}>
+        <Image
+          src="/images/projects/_content/tabletop_calendar/tt2.png"
+          alt=""
+          className="z-1 w-full"
+          fill
+        />
+      </div>
+      <div className="relative max-w-none" style={{ aspectRatio:"1920/1080"}}>
+        <Image
+          src="/images/projects/_content/tabletop_calendar/tt3.png"
+          alt=""
+          className="w-full"
+          fill
+        />
+      </div>
       <section className="w-lvw aspect-video overflow-hidden bg-[#293766]">
         <div className="relative w-full h-full">
           <button
@@ -137,7 +173,7 @@ export const KavkazLegendsCalendarProject = () => {
             }}
           >
             <Image
-              src="/images/projects/_content/calendar/slider/svg/slider_left.svg"
+              src="/images/projects/_content/tabletop_calendar/slider/svg/slider_left.svg"
               alt=""
               width={72}
               height={72}
@@ -147,7 +183,7 @@ export const KavkazLegendsCalendarProject = () => {
           </button>
 
           <div
-            className="relative w-full h-full overflow-hidden touch-pan-y"
+            className="relative z-1 w-full h-full overflow-hidden touch-pan-y"
             style={{ aspectRatio: `${sourceSlideWidth} / ${sourceSlideHeight}` }}
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
@@ -183,14 +219,14 @@ export const KavkazLegendsCalendarProject = () => {
             type="button"
             onClick={goNext}
             aria-label="Следующий слайд"
-            className="absolute top-1/2 mr-4 md:mr-15 z-10 -translate-y-1/2 cursor-pointer transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4e300] focus-visible:ring-offset-2 focus-visible:ring-offset-[#293766]"
+            className="absolute top-1/2 mr-4 md:mr-15 z-30 -translate-y-1/2 cursor-pointer transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4e300] focus-visible:ring-offset-2 focus-visible:ring-offset-[#293766]"
             style={{
               right: `${arrowOffsetPercent}%`,
               width: `${arrowSizePercent}%`,
             }}
           >
             <Image
-              src="/images/projects/_content/calendar/slider/svg/slider_right.svg"
+              src="/images/projects/_content/tabletop_calendar/slider/svg/slider_right.svg"
               alt=""
               width={72}
               height={72}
@@ -200,6 +236,14 @@ export const KavkazLegendsCalendarProject = () => {
           </button>
         </div>
       </section>
+      <div className="relative max-w-none" style={{ aspectRatio:"1920/1080"}}>
+        <Image
+          src="/images/projects/_content/tabletop_calendar/tt5.png"
+          alt=""
+          className="w-full"
+          fill
+        />
+      </div>
     </>
   );
 };
