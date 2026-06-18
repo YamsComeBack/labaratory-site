@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import SliderArrow from "@/components/ui/SliderArrow";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const topSliderImages = [
@@ -174,8 +175,43 @@ const SliderRow = ({ images, reverse = false, sectionName }: SliderRowProps) => 
 };
 
 export const KavkazLegendsGameProject = () => {
+  const slides = [
+    "/images/projects/_content/tabletop_game/slider/1.jpg",
+    "/images/projects/_content/tabletop_game/slider/2.jpg",
+    "/images/projects/_content/tabletop_game/slider/3.jpg",
+    "/images/projects/_content/tabletop_game/slider/4.jpg",
+    "/images/projects/_content/tabletop_game/slider/5.jpg",
+    "/images/projects/_content/tabletop_game/slider/6.jpg",
+    "/images/projects/_content/tabletop_game/slider/7.jpg",
+  ]
+  const totalSlides = slides.length;
+  const currentIndex = useRef<number>(0)
+  const [currentSlidePath, setCurrentSlidePath] = useState(slides[currentIndex.current]);
+  console.log('TOTAL', totalSlides)
+
+  const goPrev = () => {
+    console.log('go prev')
+    if(currentIndex.current !== 0){
+      currentIndex.current -= 1
+    }
+    else{
+      currentIndex.current = totalSlides - 1;
+    };
+    setCurrentSlidePath(slides[currentIndex.current])
+  }
+  const goNext = () => {
+    console.log('go next')
+    if(currentIndex.current !== (totalSlides - 1)){
+      currentIndex.current += 1;
+    }
+    else{
+      currentIndex.current = 0;
+    };
+    setCurrentSlidePath(slides[currentIndex.current])
+  }
+
   return (
-    <div className="mb-[10%] sm:mb-0 max-w-none">
+    <div className="max-w-none">
       <div className="relative z-10 max-w-none" style={{ aspectRatio:"1920/1308" }}>
         <Image 
           src="/images/projects/_content/tabletop_game/tt1.png"
@@ -261,6 +297,24 @@ export const KavkazLegendsGameProject = () => {
           <SliderRow images={bottomSliderImages} reverse sectionName="bottom" />
         </div>
       </section>
+      <div className="relative" style={{ aspectRatio:"6000/4000" }}>
+        {/* <div className="absolute z-30 mt-[2vw] w-[30vw] h-[15vw] rounded-r-[17px] bg-white/10 backdrop:saturate-100 backdrop-blur-md transition-colors"> */}
+        <div className="absolute z-30 mt-[2vw] w-[30vw] h-[15vw] rounded-r-[17px] bg-(--color-primary)">
+          <p className="w-[20vw] ml-[5vw] mt-[3.7vw] absolute text-main text-[1.3vw] leading-[110%]">
+            Специально для этого проекта Лаборатория организовала профессиональную фотосессию вместе с фотографом Ильёй Хачатуряном в тематике игры.
+          </p>
+        </div>
+        <SliderArrow direction="left" onClick={goPrev}></SliderArrow>
+        <Image 
+          src={ currentSlidePath }
+          alt=""
+          fill
+          className="w-full"
+          priority
+          unoptimized
+        />
+        <SliderArrow direction="right" onClick={goNext}></SliderArrow>
+      </div>
     </div>
   );
 };

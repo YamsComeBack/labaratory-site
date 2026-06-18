@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState, type TouchEvent } from "react";
+import SliderArrow from "@/components/ui/SliderArrow";
 
 const slides = [
   "/images/projects/_content/tabletop_calendar/slider/kalendar_01.png",
@@ -20,11 +21,6 @@ const slides = [
 
 const sourceSlideWidth = 6559;
 const sourceSlideHeight = 2792;
-const designWidth = 1920;
-const designArrowSize = 72;
-const designArrowOffset = 22;
-const arrowSizePercent = (designArrowSize / designWidth) * 100;
-const arrowOffsetPercent = (designArrowOffset / designWidth) * 100;
 
 export const KavkazLegendsCalendarProject = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -162,26 +158,7 @@ export const KavkazLegendsCalendarProject = () => {
       </div>
       <section className="w-lvw aspect-video overflow-hidden bg-[#293766]">
         <div className="relative w-full h-full">
-          <button
-            type="button"
-            onClick={goPrev}
-            aria-label="Предыдущий слайд"
-            className="absolute top-1/2 ml-4 md:ml-15 z-10 -translate-y-1/2 cursor-pointer transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4e300] focus-visible:ring-offset-2 focus-visible:ring-offset-[#293766]"
-            style={{
-              left: `${arrowOffsetPercent}%`,
-              width: `${arrowSizePercent}%`,
-            }}
-          >
-            <Image
-              src="/images/projects/_content/tabletop_calendar/slider/svg/slider_left.svg"
-              alt=""
-              width={72}
-              height={72}
-              className="h-auto w-full"
-              unoptimized
-            />
-          </button>
-
+          <SliderArrow direction="left" onClick={goPrev}></SliderArrow>
           <div
             className="relative z-1 w-full h-full overflow-hidden touch-pan-y"
             style={{ aspectRatio: `${sourceSlideWidth} / ${sourceSlideHeight}` }}
@@ -215,25 +192,7 @@ export const KavkazLegendsCalendarProject = () => {
             </div>
           </div>
 
-          <button
-            type="button"
-            onClick={goNext}
-            aria-label="Следующий слайд"
-            className="absolute top-1/2 mr-4 md:mr-15 z-30 -translate-y-1/2 cursor-pointer transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4e300] focus-visible:ring-offset-2 focus-visible:ring-offset-[#293766]"
-            style={{
-              right: `${arrowOffsetPercent}%`,
-              width: `${arrowSizePercent}%`,
-            }}
-          >
-            <Image
-              src="/images/projects/_content/tabletop_calendar/slider/svg/slider_right.svg"
-              alt=""
-              width={72}
-              height={72}
-              className="h-auto w-full"
-              unoptimized
-            />
-          </button>
+          <SliderArrow direction="right" onClick={goNext}></SliderArrow>
         </div>
       </section>
       <div className="relative max-w-none" style={{ aspectRatio:"1920/1080"}}>
