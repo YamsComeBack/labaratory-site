@@ -3,17 +3,15 @@
 import Image from "next/legacy/image";
 
 export const NavigationProject = () => {
-  const headerImage = "/images/projects/_content/navigation/1-image.png";
+  const headerImage = "/images/projects/_content/navigation/nav1.png";
   const images = [
-    "/images/projects/_content/navigation/2-image.png",
-    "/images/projects/_content/navigation/3-image.png",
-    "/images/projects/_content/navigation/4-image.png",
-    "/images/projects/_content/navigation/5-image.png",
-    "/images/projects/_content/navigation/6-image.png",
-    "/images/projects/_content/navigation/7-image.png",
-    "/images/projects/_content/navigation/8-image.png",
-    "/images/projects/_content/navigation/9-image.png",
-    "/images/projects/_content/navigation/10-image.png",
+    "/images/projects/_content/navigation/nav2.png",
+    "/images/projects/_content/navigation/nav3.png",
+    "/images/projects/_content/navigation/nav4.png",
+    "/images/projects/_content/navigation/nav5.png",
+    "/images/projects/_content/navigation/nav6.png",
+    "/images/projects/_content/navigation/nav7.png",
+    "/images/projects/_content/navigation/nav8.png",
   ];
 
   return (
@@ -22,27 +20,18 @@ export const NavigationProject = () => {
         <img src={headerImage} alt="Навигация для СКФУ" className="block h-auto w-full" />
 
         <div className="pointer-events-none absolute right-0 top-[35%] z-10 w-[50%]">
-          <div className="relative">
-            <Image
+          <div className="absolute right-0">
+            <img
               src="/images/projects/_content/navigation/vector.svg"
               alt=""
-              width={941}
-              height={1234}
-              className="h-auto w-full"
-              unoptimized
+              className="h-auto mt-[12vw] w-[45vw]"
             />
             <div className="pointer-events-auto absolute inset-0 px-[10%] py-[10%]">
-              <h2 className="text-title text-[clamp(0.26rem,2.2vw,2.6rem)] ml-[10%] mt-[15%] leading-[0.8] text-black">
+              <h2 className="w-full ml-[6%] mt-[27%] leading-[100%] absolute text-title text-[2.5vw]">
                 Навигация для СКФУ
               </h2>
-              <p className="mt-[2%] ml-[10%] max-w-[60%] text-main text-[clamp(0.12rem,0.9vw,1.06rem)] leading-[1.16] text-black">
-                Проект включает в себя три блока: внешнюю, внутреннюю и цифровую навигацию.
-                Концепция проекта направлена на создание дружелюбной атмосферы и коммуникации с
-                посетителем университета, чтобы каждый смог легко сориентироваться в пространстве.
-              </p>
-              <p className="mt-[25%] ml-[60%] max-w-[30%] text-main text-[clamp(0.12rem,0.9vw,1.06rem)] leading-[1.16] text-black">
-                Помимо указателей и табличек было разработано приложение, как главный инструмент
-                цифровой навигации.
+              <p className="w-[70%] ml-[6%] mt-[35%] absolute text-main text-[1.3vw] leading-[120%]">
+                  Проект включает в себя три блока: внешнюю, внутреннюю и цифровую навигацию. Концепция проекта направлена на создание дружелюбной атмосферы и коммуникации с посетителем университета, чтобы каждый смог легко сориентироваться в пространстве.
               </p>
             </div>
           </div>
