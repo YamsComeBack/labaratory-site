@@ -20,7 +20,6 @@ export const NapetchatanoFestProject = () => {
           muted={muted}
           playsInline
           preload="metadata"
-          controls
         />
       </div>
     </section>

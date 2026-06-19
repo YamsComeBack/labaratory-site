@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 import { CalendarProject } from "./_content/calendar/Index";
-import { ErnestPrintIdentityProject } from "@/app/projects/_content/ernest_print_identity/Index";
+import { ErnestPrintIdentityProject } from "@/app/projects/_content/ernest/Index";
 import { EtnoMerchProject } from "./_content/etno_merch/Index";
 import { KavkazLegendsCalendarProject } from "@/app/projects/_content/kavkaz_legends_calendar/Index";
 import { KavkazLegendsGameProject } from "@/app/projects/_content/kavkaz_legends_game/Index";
