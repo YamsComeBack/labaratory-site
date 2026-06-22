@@ -1,141 +1,68 @@
 "use client";
 
-import Image from "next/legacy/image";
-import { SuncMerchHeroSection } from "./HeroSection";
-
-// Tune these values to make backgrounds shorter/taller everywhere.
-// Bigger first number or smaller second number => shorter section.
-const SHARED_BG_ASPECT_RATIO = "48 / 30";
+import Image from "next/image";
 
 export const SuncMerchProject = () => {
+  const body = [
+    "/images/projects/_content/sunc_merch/sunc2.png",
+    "/images/projects/_content/sunc_merch/sunc3.png",
+    "/images/projects/_content/sunc_merch/sunc4.png",
+    "/images/projects/_content/sunc_merch/sunc5.png",
+  ]
   return (
-    <article className="w-full overflow-x-clip bg-black text-black">
-      <SuncMerchHeroSection />
-      <section className="w-full overflow-hidden bg-white">
-        <div className="relative w-full overflow-hidden" style={{ aspectRatio: SHARED_BG_ASPECT_RATIO }}>
-          <div className="absolute bottom-0 right-[10%] h-full w-[34%]">
-            <Image
-              src="/images/projects/_content/sunc_merch/2-image.png"
-              alt=""
-              layout="fill"
-              className="origin-bottom object-contain object-bottom-right scale-[1.5]"
-              sizes="100vw"
-              priority
-              unoptimized
-            />
-          </div>
-          <div className="absolute left-[9%] top-1/2 h-[35%] w-[35%] -translate-y-1/2">
-            <Image
-              src="/images/projects/_content/sunc_merch/22-image.png"
-              alt=""
-              layout="fill"
-              className="object-contain object-left-center"
-              sizes="100vw"
-              unoptimized
-            />
-          </div>
+    <div>
+      <div className="relative" style={{ aspectRatio:"1920/1080" }}>
+        <div className="absolute z-10 w-[62vw] h-full flex inset-0">
+          <h1 className="absolute z-30 w-[35vw] ml-[4vw] mt-[21vw] leading-[100%] text-title text-[2.5vw]">
+            Мерч для СУНЦ СКФУ
+          </h1>
+          <p className="absolute z-30 w-[50vw] ml-[4vw] mt-[25vw] text-main text-[1.3vw] leading-[120%] whitespace-pre-wrap">
+              {"СУНЦ — это профильная школа нового типа, в которой учатся\nталантливые и крутые старшеклассники. Специально для таких\nклассных ребят мы разработали мерч, который передаёт их упорство\nи стремление достигать новые вершины. Именно в этих футболках наши\nюные учёные ездят на различные форумы и олимпиады, демонстрируя\nтам свои знания и достижения и прославляя университет"}
+          </p>
+          <Image
+            alt=""
+            src="/images/projects/_content/sunc_merch/sunc1-tshirt.png"
+            priority
+            className="absolute scale-[105%] right-[-34vw] bottom-[-7vw]"
+            width={1935}
+            height={1833}
+            unoptimized
+          />
+          <img
+            src="/images/projects/_content/sunc_merch/vector.svg"
+          />
         </div>
-      </section>
+        <Image
+          alt=""
+          src="/images/projects/_content/sunc_merch/sunc1-bg.png"
+          className="w-full"
+          fill
+          priority
+          unoptimized
+        />
+      </div>
 
-      <section className="w-full overflow-hidden" style={{ backgroundColor: "#ECECEC" }}>
-        <div className="relative w-full overflow-hidden" style={{ aspectRatio: SHARED_BG_ASPECT_RATIO }}>
-          <div className="absolute bottom-0 left-0 h-full w-[40%]">
-            <Image
-              src="/images/projects/_content/sunc_merch/3-image.png"
-              alt=""
-              layout="fill"
-              className="origin-bottom ml-[20%] scale-[1.2] object-contain object-bottom-left"
-              sizes="100vw"
-              unoptimized
-            />
-          </div>
-          <div className="absolute right-[-15%] top-1/2 h-[60%] w-full -translate-y-1/2">
-            <Image
-              src="/images/projects/_content/sunc_merch/33-image.png"
-              alt=""
-              layout="fill"
-              className="object-contain object-right-center scale-100"
-              sizes="100vw"
-              unoptimized
-            />
-          </div>
+      {body.map((src, i) => (
+        <div key={i} className="relative bg-gray-700" style={{ aspectRatio:"1920/1238" }}>
+          <Image
+            alt=""
+            src={src}
+            className="w-full"
+            fill
+            unoptimized
+          />
         </div>
-      </section>
+      ))}
 
-      <section className="w-full overflow-hidden bg-white">
-        <div className="relative w-full overflow-hidden" style={{ aspectRatio: SHARED_BG_ASPECT_RATIO }}>
-          <div className="absolute bottom-[-4%] right-[10%] h-full w-[41%]">
-            <Image
-              src="/images/projects/_content/sunc_merch/4-image.png"
-              alt=""
-              layout="fill"
-              className="origin-bottom object-contain object-bottom-right scale-[1.5] pb-[5.6%]"
-              sizes="100vw"
-              unoptimized
-            />
-          </div>
-          <div className="absolute left-[15%] top-1/2 h-full w-[25%] -translate-y-1/2">
-            <Image
-              src="/images/projects/_content/sunc_merch/44-image.png"
-              alt=""
-              layout="fill"
-              className="object-contain object-left-center scale-100"
-              sizes="100vw"
-              unoptimized
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full overflow-hidden" style={{ backgroundColor: "#ECECEC" }}>
-        <div className="relative w-full overflow-hidden" style={{ aspectRatio: SHARED_BG_ASPECT_RATIO }}>
-          <div className="absolute bottom-[5%] left-[9%] h-full w-[38%]">
-            <Image
-              src="/images/projects/_content/sunc_merch/5-image.png"
-              alt=""
-              layout="fill"
-              className="origin-bottom object-contain object-bottom-left scale-[1.5]"
-              sizes="100vw"
-              unoptimized
-            />
-          </div>
-          <div className="absolute right-0 top-1/2 h-[60%] w-[60%] -translate-y-1/2">
-            <Image
-              src="/images/projects/_content/sunc_merch/55-image.png"
-              alt=""
-              layout="fill"
-              className="object-contain object-right-center scale-100"
-              sizes="100vw"
-              unoptimized
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full overflow-hidden bg-white">
-        <div className="relative mx-auto w-full overflow-hidden aspect-12/8">
-          <div className="absolute inset-x-0 bottom-0 h-full w-full">
-            <Image
-              src="/images/projects/_content/sunc_merch/6-image.png"
-              alt=""
-              layout="fill"
-              className="object-cover object-bottom"
-              sizes="100vw"
-              unoptimized
-            />
-          </div>
-          <div className="absolute left-1/2 top-[9%] h-[16%] w-full -translate-x-1/2">
-            <Image
-              src="/images/projects/_content/sunc_merch/66-image.png"
-              alt=""
-              layout="fill"
-              className="object-contain object-top"
-              sizes="100vw"
-              unoptimized
-            />
-          </div>
-        </div>
-      </section>
-    </article>
+      <div className="relative bg-gray-700" style={{ aspectRatio:"1920/1351" }}>
+        <Image
+          alt=""
+          src="/images/projects/_content/sunc_merch/sunc6.png"
+          className="w-full"
+          fill
+          unoptimized
+        />
+      </div>
+    </div>
   );
 };
