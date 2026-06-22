@@ -22,7 +22,7 @@ export const Main = () => {
           className="scale-250 shrink-0 w-fit"
         />
         <div className="bg-(--color-primary) py-[5%] my-[3%]">
-          <p className="w-fit max-w-290 h-auto px-[7%] pt-[5%] text-main text-left whitespace-pre-line">
+          <p className="w-fit lg:w-[70vw] h-auto px-[7%] pt-[5%] text-main text-left whitespace-pre-line">
             {`Лаборатория – это концентрат дизайна и медиа будущего. Здесь мы учимся на реальных кейсах в реальном времени, а тьюторы и кураторы задают работе правильное направление, делятся ценным опытом и секретами профессионального сообщества.`}
           </p>
         </div>
