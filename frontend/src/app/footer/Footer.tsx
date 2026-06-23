@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const PHONE = "+7 (962)-444-98-96";
@@ -40,7 +40,7 @@ export const Footer = () => {
       id="footer"
       className="flex flex-col xl:flex-row items-start gap-15 w-full bg-black outline-0 pb-15 px-[clamp(40px,calc(-137px+23.07vw),195px)] xl:px-[clamp(50px,6vw,112px)]"
     >
-      <div className="relative w-[115%] sm:w-2xl translate-[-30px] sm:translate-5 inline-block order-1 xl:order-2 shrink-0 overflow-visible">
+      <div className="relative outline-none w-[130vw] sm:w-2xl translate-x-[-20vw] sm:translate-[-30px] sm:translate-5 inline-block order-1 xl:order-2 shrink-0 overflow-visible">
         <Image
           src="/svg/Footer/Star.svg"
           alt="star"

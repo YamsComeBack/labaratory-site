@@ -112,14 +112,6 @@ const supports = [
   },
   {
     src: [
-      "/images/team/NastyaG-1.png",
-      "/images/team/NastyaG-2.png",
-    ],
-    name: "Анастасия Горская",
-    hoverText: "Плачьте девки,\n я снова в прайме",
-  },
-  {
-    src: [
       "/images/team/Rada-1.png",
       "/images/team/Rada-2.png",
       "/images/team/Rada-3.png",
@@ -171,16 +163,6 @@ export const Team = () => {
         командос
       </h1>
       <div className="relative w-full h-[65vw] max-w-none">
-        {/* <Image
-          src="/images/Team/Team.png"
-          alt=""
-          width={1920}
-          height={1280}
-          className="z-1 object-cover"
-          layout="fill"
-          priority
-          unoptimized
-        /> */}
         <Image
           src="/images/Team/Team.png"
           alt="Общая фотография команды"

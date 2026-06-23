@@ -23,7 +23,7 @@ export const Projects = () => {
         <h1 className="box-border text-w-full max-w-full pb-15 text-title text-black text-[4rem] leading-[0.95]">
           Наши проекты
         </h1>
-        <div className="grid grid-cols-1 gap-y-10 gap-x-0 lg:grid-cols-2 md:gap-y-5 md:gap-x-5">
+        <div className="grid grid-cols-1 gap-y-10 gap-x-0 lg:grid-cols-2 md:gap-y-5 lg:gap-x-5">
           {projects.map((p) => (
             <ProjectCard
               key={`${p.slug}-${p.img}`}
