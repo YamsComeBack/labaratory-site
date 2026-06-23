@@ -1,44 +1,80 @@
 "use client";
+import Image from "next/image";
 
 export const MerchNcfuProject = () => {
-  const headerImage = "/images/projects/_content/merch_ncfu/1-image.png";
   const images = [
-    "/images/projects/_content/merch_ncfu/2-image.png",
-    "/images/projects/_content/merch_ncfu/3-image.png",
-    "/images/projects/_content/merch_ncfu/4-image.png",
-    "/images/projects/_content/merch_ncfu/5-image.png",
-    "/images/projects/_content/merch_ncfu/6-image.png",
+    {
+      src: "/images/projects/_content/merch_ncfu/merch_store2.png",
+      height: 1920,
+      width: 1080
+    },
+    {
+      src: "/images/projects/_content/merch_ncfu/merch_store3.png",
+      height: 1920,
+      width: 1085
+    },
+    {
+      src: "/images/projects/_content/merch_ncfu/merch_store4.png",
+      height: 1920,
+      width: 1221
+    },
+    {
+      src: "/images/projects/_content/merch_ncfu/merch_store5.png",
+      height: 1920,
+      width: 977
+    },
+    {
+      src: "/images/projects/_content/merch_ncfu/merch_store6.png",
+      height: 1920,
+      width: 1061
+    },
+    {
+      src: "/images/projects/_content/merch_ncfu/merch_store7.png",
+      height: 1920,
+      width: 1082
+    },
+    {
+      src: "/images/projects/_content/merch_ncfu/merch_store8.png",
+      height: 1920,
+      width: 1174
+    },
   ];
 
   return (
     <article className="w-full">
-      <section className="relative w-full">
-        <img src={headerImage} alt="Одеждомагазин" className="block h-auto w-full" />
+      <div className="relative w-full" style={{ aspectRatio: 1920/1456 }}>
+        <Image
+          src="/images/projects/_content/merch_ncfu/merch_store1.png"
+          alt="Одеждомагазин"
+          fill
+          className="block h-auto w-full"
+          priority
+          unoptimized
+        />
+  
 
-        <div className="pointer-events-none absolute left-[37%] top-[8%] w-[45%]">
-          <h2 className="text-title text-[clamp(0.3rem,2.7vw,3.2rem)] leading-[1.03] text-black">
+        <div className="absolute right-[6.5vw] top-[3.8vw] w-[50%]">
+          <h1 className="absolute z-30 w-[25vw] ml-[16vw] mt-[1vw] leading-[100%] text-title text-[2.5vw]">
             Одеждомагазин
-          </h2>
-          <p className="mt-[1%] text-main text-[clamp(0.12rem,0.9vw,1.06rem)] text-black">
-            Мы переосмыслили идею университетского мерча, основывая дизайн одежды и сувенирной
-            продукции на юморе и актуальных темах для студентов и сотрудников СКФУ. Наш мерч — это
-            способ выразить себя и свою уникальность в контексте большого дружного сообщества
-            университета — Будь собой, будь любым, будь в СКФУ. У нас получилась стильная
-            коллекция, в которой каждый может найти что-то для себя — наш мерч подходит как для
-            официальных мероприятий, так и для повседневной жизни. Результатом проекта стал показ
-            коллекции на сцене университета и создание сайта Одеждомагазина — интернет-площадки для
-            продажи мерча.
+          </h1>
+          <p className="absolute z-30 ml-[16vw] mt-[5vw] text-main text-[1.3vw] leading-[120%] whitespace-pre-wrap">
+            {"Мы переосмыслили университетский мерч СКФУ,\nсделав его стильным, актуальным и близким\nстудентам и сотрудникам. Коллекция сочетает\nюмор, современные темы и универсальный\nдизайн для учёбы, мероприятий и повседневной\nжизни. Итогом проекта стали показ коллекции\nна сцене университета и запуск сайта\nОдеждомагазина для продажи мерча."}
           </p>
         </div>
-      </section>
+      </div>
 
-      <section className="w-full">
-        {images.map((src, i) => (
-          <div key={i} className="w-full">
-            <img src={src} alt={`Мерч СКФУ ${i + 2}`} className="block h-auto w-full" />
+        {images.map((img, i) => (
+          <div key={i} className="relative w-full">
+            <Image
+              src={img.src}
+              alt={`Мерч СКФУ ${i + 2}`}
+              width={img.width}
+              height={img.height}
+              className="block h-auto w-full"
+              unoptimized
+            />
           </div>
         ))}
-      </section>
     </article>
   );
 };
