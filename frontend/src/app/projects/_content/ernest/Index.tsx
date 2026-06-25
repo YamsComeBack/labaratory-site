@@ -6,42 +6,42 @@ export const ErnestPrintIdentityProject = () => {
     const postcards = [
         {
             id: "1",
-            image:"/images/projects/_content/ernest/postcards/1.jpg",
+            image:"/images/projects/_content/ernest/postcards/1.webp",
             video:"/images/projects/_content/ernest/postcards/animation/1.mp4"
         },
         {
             id: "2",
-            image:"/images/projects/_content/ernest/postcards/2.jpg",
+            image:"/images/projects/_content/ernest/postcards/2.webp",
             video:"/images/projects/_content/ernest/postcards/animation/2.mp4"
         },
         {
             id: "3",
-            image:"/images/projects/_content/ernest/postcards/3.jpg",
+            image:"/images/projects/_content/ernest/postcards/3.webp",
             video:"/images/projects/_content/ernest/postcards/animation/3.mp4"
         },
         {
             id: "4",
-            image:"/images/projects/_content/ernest/postcards/4.jpg",
+            image:"/images/projects/_content/ernest/postcards/4.webp",
             video:"/images/projects/_content/ernest/postcards/animation/4.mp4"
         },
         {
             id: "5",
-            image:"/images/projects/_content/ernest/postcards/5.jpg",
+            image:"/images/projects/_content/ernest/postcards/5.webp",
             video:"/images/projects/_content/ernest/postcards/animation/5.mp4"
         },
         {
             id: "6",
-            image:"/images/projects/_content/ernest/postcards/6.jpg",
+            image:"/images/projects/_content/ernest/postcards/6.webp",
             video:"/images/projects/_content/ernest/postcards/animation/6.mp4"
         },
         {
             id: "7",
-            image:"/images/projects/_content/ernest/postcards/7.jpg",
+            image:"/images/projects/_content/ernest/postcards/7.webp",
             video:"/images/projects/_content/ernest/postcards/animation/7.mp4"
         },
         {
             id: "8",
-            image:"/images/projects/_content/ernest/postcards/8.jpg",
+            image:"/images/projects/_content/ernest/postcards/8.webp",
             video:"/images/projects/_content/ernest/postcards/animation/8.mp4"
         },
     ]

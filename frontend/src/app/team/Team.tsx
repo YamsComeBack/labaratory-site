@@ -108,7 +108,7 @@ const supports = [
       "/images/team/NastyaB-3.webp",
     ],
     name: "Анастасия Борисова",
-    hoverText: "Убери, я ничего\n не вижу",
+    hoverText: "Судьба такая",
   },
   {
     src: [
@@ -164,7 +164,7 @@ export const Team = () => {
       </h1>
       <div className="relative w-full h-[65vw] max-w-none">
         <Image
-          src="/images/Team/Team.webp"
+          src="/images/team/Team.webp"
           alt="Общая фотография команды"
           className="z-1 object-cover"
           fill

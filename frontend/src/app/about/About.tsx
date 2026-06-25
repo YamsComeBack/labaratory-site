@@ -87,7 +87,7 @@ export const About = () => {
           }`}
         >
           <Image
-            src="/svg/About/dialog.svg"
+            src="/svg/about/dialog.svg"
             alt="dialog"
             fill
             className="object-contain"
@@ -100,7 +100,7 @@ export const About = () => {
         </div>
         <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <Image
-            src="/svg/About/cat.svg"
+            src="/svg/about/cat.svg"
             alt="cat"
             width={125}
             height={138}
@@ -148,7 +148,7 @@ export const About = () => {
               <p className="leading-tight text-center xl:text-left">{`раза \nв неделю`}</p>
             </div>
             <Image
-              src="/svg/About/More.svg"
+              src="/svg/about/more.svg"
               alt="more"
               width={45}
               height={68}
@@ -163,7 +163,7 @@ export const About = () => {
               <p className="leading-tight text-center xl:text-left">{`академических\nчаса`}</p>
             </div>
             <Image
-              src="/svg/About/Plus.svg"
+              src="/svg/about/plus.svg"
               alt="plus"
               width={58}
               height={58}
