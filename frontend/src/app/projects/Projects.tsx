@@ -6,7 +6,7 @@ import { projectsData as projects } from "@/app/projects/data";
 
 export const Projects = () => {
   return (
-    <section className="relative w-full -mt-[10%] z-2 overflow-x-clip">
+    <section className="relative w-full mt-[-10%] z-2 overflow-x-clip">
       <Image
         src={"/images/projects/last-image.webp"}
         alt={``}
