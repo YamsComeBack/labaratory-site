@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export const SuncMerchProject = () => {
   const body = [
-    "/images/projects/_content/sunc_merch/sunc2.png",
-    "/images/projects/_content/sunc_merch/sunc3.png",
-    "/images/projects/_content/sunc_merch/sunc4.png",
-    "/images/projects/_content/sunc_merch/sunc5.png",
+    "/images/projects/_content/sunc_merch/sunc2.webp",
+    "/images/projects/_content/sunc_merch/sunc3.webp",
+    "/images/projects/_content/sunc_merch/sunc4.webp",
+    "/images/projects/_content/sunc_merch/sunc5.webp",
   ]
   return (
     <div>
@@ -21,7 +21,7 @@ export const SuncMerchProject = () => {
           </p>
           <Image
             alt=""
-            src="/images/projects/_content/sunc_merch/sunc1-tshirt.png"
+            src="/images/projects/_content/sunc_merch/sunc1-tshirt.webp"
             priority
             className="absolute scale-[105%] right-[-34vw] bottom-[-7vw]"
             width={1935}
@@ -34,7 +34,7 @@ export const SuncMerchProject = () => {
         </div>
         <Image
           alt=""
-          src="/images/projects/_content/sunc_merch/sunc1-bg.png"
+          src="/images/projects/_content/sunc_merch/sunc1-bg.webp"
           className="w-full"
           fill
           priority
@@ -57,7 +57,7 @@ export const SuncMerchProject = () => {
       <div className="relative bg-gray-700" style={{ aspectRatio:"1920/1351" }}>
         <Image
           alt=""
-          src="/images/projects/_content/sunc_merch/sunc6.png"
+          src="/images/projects/_content/sunc_merch/sunc6.webp"
           className="w-full"
           fill
           unoptimized

@@ -5,18 +5,18 @@ import { useEffect, useRef, useState, type TouchEvent } from "react";
 import SliderArrow from "@/components/ui/SliderArrow";
 
 const slides = [
-  "/images/projects/_content/tabletop_calendar/slider/kalendar_01.png",
-  "/images/projects/_content/tabletop_calendar/slider/kalendar_02.png",
-  "/images/projects/_content/tabletop_calendar/slider/kalendar_03.png",
-  "/images/projects/_content/tabletop_calendar/slider/kalendar_04.png",
-  "/images/projects/_content/tabletop_calendar/slider/kalendar_05.png",
-  "/images/projects/_content/tabletop_calendar/slider/kalendar_06.png",
-  "/images/projects/_content/tabletop_calendar/slider/kalendar_07.png",
-  "/images/projects/_content/tabletop_calendar/slider/kalendar_08.png",
-  "/images/projects/_content/tabletop_calendar/slider/kalendar_09.png",
-  "/images/projects/_content/tabletop_calendar/slider/kalendar_10.png",
-  "/images/projects/_content/tabletop_calendar/slider/kalendar_11.png",
-  "/images/projects/_content/tabletop_calendar/slider/kalendar_12.png",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_01.webp",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_02.webp",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_03.webp",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_04.webp",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_05.webp",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_06.webp",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_07.webp",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_08.webp",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_09.webp",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_10.webp",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_11.webp",
+  "/images/projects/_content/tabletop_calendar/slider/kalendar_12.webp",
 ];
 
 const sourceSlideWidth = 6559;
@@ -119,7 +119,7 @@ export const KavkazLegendsCalendarProject = () => {
     <>
       <div className="relative" style={{ aspectRatio:"1920/1090" }}>
         <Image
-          src="/images/projects/_content/tabletop_calendar/tt1.png"
+          src="/images/projects/_content/tabletop_calendar/ttc1.webp"
           alt=""
           className="w-full"
           fill
@@ -142,7 +142,7 @@ export const KavkazLegendsCalendarProject = () => {
       </div>
       <div className="relative max-w-none" style={{ aspectRatio:"1920/2004"}}>
         <Image
-          src="/images/projects/_content/tabletop_calendar/tt2.png"
+          src="/images/projects/_content/tabletop_calendar/ttc2.jpg"
           alt=""
           className="z-1 w-full"
           fill
@@ -150,7 +150,7 @@ export const KavkazLegendsCalendarProject = () => {
       </div>
       <div className="relative max-w-none" style={{ aspectRatio:"1920/1080"}}>
         <Image
-          src="/images/projects/_content/tabletop_calendar/tt3.png"
+          src="/images/projects/_content/tabletop_calendar/ttc3.webp"
           alt=""
           className="w-full"
           fill
@@ -197,7 +197,7 @@ export const KavkazLegendsCalendarProject = () => {
       </section>
       <div className="relative max-w-none" style={{ aspectRatio:"1920/1080"}}>
         <Image
-          src="/images/projects/_content/tabletop_calendar/tt5.png"
+          src="/images/projects/_content/tabletop_calendar/ttc5.webp"
           alt=""
           className="w-full"
           fill

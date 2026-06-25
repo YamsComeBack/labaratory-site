@@ -4,37 +4,37 @@ import Image from "next/image";
 export const MerchNcfuProject = () => {
   const images = [
     {
-      src: "/images/projects/_content/merch_ncfu/merch_store2.png",
+      src: "/images/projects/_content/merch_ncfu/merch_store2.webp",
       height: 1920,
       width: 1080
     },
     {
-      src: "/images/projects/_content/merch_ncfu/merch_store3.png",
+      src: "/images/projects/_content/merch_ncfu/merch_store3.webp",
       height: 1920,
       width: 1085
     },
     {
-      src: "/images/projects/_content/merch_ncfu/merch_store4.png",
+      src: "/images/projects/_content/merch_ncfu/merch_store4.webp",
       height: 1920,
       width: 1221
     },
     {
-      src: "/images/projects/_content/merch_ncfu/merch_store5.png",
+      src: "/images/projects/_content/merch_ncfu/merch_store5.webp",
       height: 1920,
       width: 977
     },
     {
-      src: "/images/projects/_content/merch_ncfu/merch_store6.png",
+      src: "/images/projects/_content/merch_ncfu/merch_store6.webp",
       height: 1920,
       width: 1061
     },
     {
-      src: "/images/projects/_content/merch_ncfu/merch_store7.png",
+      src: "/images/projects/_content/merch_ncfu/merch_store7.webp",
       height: 1920,
       width: 1082
     },
     {
-      src: "/images/projects/_content/merch_ncfu/merch_store8.png",
+      src: "/images/projects/_content/merch_ncfu/merch_store8.webp",
       height: 1920,
       width: 1174
     },
@@ -44,7 +44,7 @@ export const MerchNcfuProject = () => {
     <article className="w-full">
       <div className="relative w-full" style={{ aspectRatio: 1920/1456 }}>
         <Image
-          src="/images/projects/_content/merch_ncfu/merch_store1.png"
+          src="/images/projects/_content/merch_ncfu/merch_store1.webp"
           alt="Одеждомагазин"
           fill
           className="block h-auto w-full"

@@ -14,11 +14,11 @@ export const SkfuPostcardsProject = () => {
                     </p>
                     <img
                         src="/images/projects/_content/ncfu_postcards/vector1.svg"
-                        className="absolute z-10 right-0"
+                        className="absolute z-10"
                     />
                 </div>
                 <Image 
-                src="/images/projects/_content/ncfu_postcards/postcards1.png"
+                src="/images/projects/_content/ncfu_postcards/postcards1.webp"
                 alt=""
                 fill
                 className="w-full"
@@ -26,7 +26,7 @@ export const SkfuPostcardsProject = () => {
             </div>
             <div className="relative" style={{ aspectRatio:"1920/1867" }}>
                 <Image 
-                src="/images/projects/_content/ncfu_postcards/postcards2.png"
+                src="/images/projects/_content/ncfu_postcards/postcards2.webp"
                 alt=""
                 fill
                 className="w-full"

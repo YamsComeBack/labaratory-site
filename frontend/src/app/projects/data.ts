@@ -25,7 +25,7 @@ export type ProjectItem = {
 export const projectsData: readonly ProjectItem[] = [
   {
     size: "large",
-    img: "cover_ttgame.png",
+    img: "cover_ttgame.webp",
     title: "Настольная игра\n «Легенды Кавказа. Эхо древних гор»",
     descriptor:
       "Игра по мотивам легенд Северного Кавказа.\nПроект-победитель грантового конкурса Росмолодёжи",
@@ -34,7 +34,7 @@ export const projectsData: readonly ProjectItem[] = [
   },
   {
     size: "small",
-    img: "cover_ttgame_calendar.png",
+    img: "cover_ttgame_calendar.webp",
     title: "Календарь по мотивам игры\n «Легенды Кавказа»",
     descriptor: "Календарь по мотивам нашей настольной игры",
     slug: "Kavkaz_legends_calendar",
@@ -42,7 +42,7 @@ export const projectsData: readonly ProjectItem[] = [
   },
   {
     size: "small",
-    img: "cover_ernest.png",
+    img: "cover_ernest.webp",
     title: 'Разработка айдентики\n для «Эрнест печатает»',
     descriptor: "Айдентика и полиграфическая продукция\n для мастерской печати",
     slug: "Ernest_print_identity",
@@ -50,7 +50,7 @@ export const projectsData: readonly ProjectItem[] = [
   },
   {
     size: "large",
-    img: "cover_napechatano.png",
+    img: "cover_napechatano.webp",
     title: 'Арт-фестиваль\n «Напечатано!»',
     descriptor: "Печать, мерч, музыка и многое другое",
     slug: "Napetchatano_fest",
@@ -58,7 +58,7 @@ export const projectsData: readonly ProjectItem[] = [
   },
   {
     size: "small",
-    img: "cover_printstore.png",
+    img: "cover_printstore.webp",
     title: 'Онлайн-магазин\n «Отпечатано»',
     descriptor: "Наш магазин крутого мерча",
     slug: "Otpechatano_shop",
@@ -66,7 +66,7 @@ export const projectsData: readonly ProjectItem[] = [
   },
   {
     size: "small",
-    img: "cover_postcards.png",
+    img: "cover_postcards.webp",
     title: "Разработка серии\n открыток для СКФУ",
     descriptor:
       "Две серии уникальных открыток\n для Северо-Кавказского федерального университета",
@@ -75,7 +75,7 @@ export const projectsData: readonly ProjectItem[] = [
   },
   {
     size: "large",
-    img: "Priemnaya_company.png",
+    img: "Priemnaya_company.webp",
     title: "Приёмная кампания СКФУ",
     descriptor: "Университет в медиа-трендах – на одной волне\n с абитуриентами",
     slug: "Priemnaya_company",
@@ -83,7 +83,7 @@ export const projectsData: readonly ProjectItem[] = [
   },
   {
     size: "small",
-    img: "Sunc_merch.png",
+    img: "Sunc_merch.webp",
     title: "Мерч СУНЦ",
     descriptor: "Умная одежда для целеустремлённых школьников",
     slug: "Sunc_merch",
@@ -91,7 +91,7 @@ export const projectsData: readonly ProjectItem[] = [
   },
   {
     size: "small",
-    img: "Nota_bene.png",
+    img: "Nota_bene.webp",
     title: "Журнальная вёрстка",
     descriptor: "Правила типографики на страницах журналов",
     slug: "Nota_bene",
@@ -99,7 +99,7 @@ export const projectsData: readonly ProjectItem[] = [
   },
   {
     size: "large",
-    img: "Calendar.png",
+    img: "Calendar.webp",
     title: "Календарь СКФУ 2024",
     descriptor: "Три календаря — три взгляда на жизнь университета",
     slug: "Calendar",
@@ -107,7 +107,7 @@ export const projectsData: readonly ProjectItem[] = [
   },
   {
     size: "small",
-    img: "Etno_merch.png",
+    img: "Etno_merch.webp",
     title: "Этномерч",
     descriptor: "Синтез культурных традиций и современной моды",
     slug: "Etno_merch",
@@ -115,7 +115,7 @@ export const projectsData: readonly ProjectItem[] = [
   },
   {
     size: "small",
-    img: "Merch_ncfu.png",
+    img: "Merch_ncfu.webp",
     title: "Одеждомагазин",
     descriptor: "Стиль и ирония в университетском мерче",
     slug: "Merch_ncfu",
@@ -123,7 +123,7 @@ export const projectsData: readonly ProjectItem[] = [
   },
   {
     size: "large",
-    img: "Navigation.png",
+    img: "Navigation.webp",
     title: "Брендиро\u00ADвание СКФУ",
     descriptor: "Удобство и коммуникация в современном университете",
     slug: "Navigation",

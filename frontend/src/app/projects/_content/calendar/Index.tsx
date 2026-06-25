@@ -21,7 +21,7 @@ export const CalendarProject = () => {
           </div>
         </div>
         <Image
-          src="/images/projects/_content/calendar/calendar1.png"
+          src="/images/projects/_content/calendar/calendar1.webp"
           alt="Корпоративные календари СКФУ 2024"
           fill
           className="block h-auto w-full"
@@ -38,7 +38,7 @@ export const CalendarProject = () => {
         </p>
         <Image
           alt=""
-          src="/images/projects/_content/calendar/calendar2.png"
+          src="/images/projects/_content/calendar/calendar2.webp"
           className="relative h-auto w-full"
           fill
           unoptimized
@@ -47,7 +47,7 @@ export const CalendarProject = () => {
       <div className="relative w-full" style={{ aspectRatio: 3840/2174}}>
         <Image
           alt=""
-          src="/images/projects/_content/calendar/calendar3.png"
+          src="/images/projects/_content/calendar/calendar3.webp"
           className="h-auto w-full"
           fill
           unoptimized
@@ -56,7 +56,7 @@ export const CalendarProject = () => {
       <div className="relative w-full" style={{ aspectRatio: 3840/2562}}>
         <Image
           alt=""
-          src="/images/projects/_content/calendar/calendar4.png"
+          src="/images/projects/_content/calendar/calendar4.webp"
           className="h-auto w-full"
           fill
           unoptimized
@@ -65,7 +65,7 @@ export const CalendarProject = () => {
       <div className="relative w-full" style={{ aspectRatio: 3840/1860}}>
         <Image
           alt=""
-          src="/images/projects/_content/calendar/calendar5.png"
+          src="/images/projects/_content/calendar/calendar5.webp"
           className="h-auto w-full"
           fill
           unoptimized

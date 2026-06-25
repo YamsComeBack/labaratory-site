@@ -4,18 +4,18 @@ import { useMuteVideo } from "@/hooks/useMuteVideo";
 import Image from "next/image";
 
 const FEST_VIDEO_ID = "napetchatano-fest-video";
-const FEST_VIDEO_SRC = "/_next-video/fest-video.optimized.mp4";
+const FEST_VIDEO_SRC = "/_next-video/fest-video.mp4";
 
 export const NapetchatanoFestProject = () => {
   const { muted } = useMuteVideo(FEST_VIDEO_ID, true);
   const images = [
-    "/images/projects/_content/print_fest/fest3.png",
-    "/images/projects/_content/print_fest/fest4.png",
-    "/images/projects/_content/print_fest/fest5.png",
-    "/images/projects/_content/print_fest/fest6.png",
-    "/images/projects/_content/print_fest/fest7.png",
-    "/images/projects/_content/print_fest/fest8.png",
-    "/images/projects/_content/print_fest/fest9.png",
+    "/images/projects/_content/print_fest/fest3.webp",
+    "/images/projects/_content/print_fest/fest4.webp",
+    "/images/projects/_content/print_fest/fest5.webp",
+    "/images/projects/_content/print_fest/fest6.webp",
+    "/images/projects/_content/print_fest/fest7.webp",
+    "/images/projects/_content/print_fest/fest8.webp",
+    "/images/projects/_content/print_fest/fest9.webp",
   ];
 
   return (

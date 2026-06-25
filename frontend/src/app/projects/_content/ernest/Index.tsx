@@ -61,7 +61,7 @@ export const ErnestPrintIdentityProject = () => {
                     className="absolute z-1 mt-[8vw] right-0 h-[40vw]"
                 />
                 <Image 
-                    src="/images/projects/_content/ernest/ernest1.png"
+                    src="/images/projects/_content/ernest/ernest1.webp"
                     alt=""
                     fill
                     className="z-0 w-full aspect-video"
@@ -72,7 +72,7 @@ export const ErnestPrintIdentityProject = () => {
                     {"В новом решении мы переосмыслили предыдущий\n логотип и сделали его частью обновленной айдентики.\n Концепция строится вокруг палитры Pantone:\n возможность гибко работать с оттенками подчеркивает\n точность, качество печати и широкий спектр задач,\n с которыми работает мастерская."}
                 </p>
                 <Image 
-                src="/images/projects/_content/ernest/ernest2.png"
+                src="/images/projects/_content/ernest/ernest2.webp"
                 alt=""
                 fill
                 className="w-full aspect-video"
@@ -88,7 +88,7 @@ export const ErnestPrintIdentityProject = () => {
                     className="absolute z-1 mt-[4vw] h-[21vw]"
                 />
                 <Image 
-                src="/images/projects/_content/ernest/ernest3.png"
+                src="/images/projects/_content/ernest/ernest3.webp"
                 alt=""
                 fill
                 className="w-full aspect-video"
@@ -124,7 +124,7 @@ export const ErnestPrintIdentityProject = () => {
             </div>
             <div className="relative z-1 w-full h-full" style={{ aspectRatio:"1920/1292" }}>
                 <Image 
-                src="/images/projects/_content/ernest/ernest5.png"
+                src="/images/projects/_content/ernest/ernest5.webp"
                 alt=""
                 fill
                 className="w-full aspect-video"

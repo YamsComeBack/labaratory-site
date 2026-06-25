@@ -69,7 +69,7 @@ export const Header = () => {
                 alt=""
                 width={30}
                 height={30}
-                className="h-3 w-auto"
+                className="h-3 w-auto translate-y-0.5"
                 priority
                 unoptimized
               />
@@ -100,7 +100,7 @@ export const Header = () => {
                   alt=""
                   width={40}
                   height={40}
-                  className="h-[40px] w-auto"
+                  className="h-10 w-auto"
                   priority
                   unoptimized
                 />

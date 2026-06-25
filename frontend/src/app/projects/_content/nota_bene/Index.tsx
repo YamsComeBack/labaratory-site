@@ -3,13 +3,13 @@
 import Image from "next/image";
 
 export const NotaBeneProject = () => {
-  const headerImage = "/images/projects/_content/nota_bene/1-image.png";
+  const headerImage = "/images/projects/_content/nota_bene/1-image.webp";
   const images = [
-    "/images/projects/_content/nota_bene/2-image.png",
-    "/images/projects/_content/nota_bene/3-image.png",
-    "/images/projects/_content/nota_bene/4-image.png",
-    "/images/projects/_content/nota_bene/5-image.png",
-    "/images/projects/_content/nota_bene/6-image.png",
+    "/images/projects/_content/nota_bene/2-image.webp",
+    "/images/projects/_content/nota_bene/3-image.webp",
+    "/images/projects/_content/nota_bene/4-image.webp",
+    "/images/projects/_content/nota_bene/5-image.webp",
+    "/images/projects/_content/nota_bene/6-image.webp",
   ];
 
   return (
@@ -29,7 +29,7 @@ export const NotaBeneProject = () => {
         </div>
         <Image
           alt=""
-          src="/images/projects/_content/nota_bene/nota1.png"
+          src="/images/projects/_content/nota_bene/nota1.webp"
           width={2880}
           height={1920}
           className="block h-auto w-full"
@@ -46,7 +46,7 @@ export const NotaBeneProject = () => {
         </div>
         <Image
           alt=""
-          src="/images/projects/_content/nota_bene/nota2.png"
+          src="/images/projects/_content/nota_bene/nota2.webp"
           fill
           unoptimized
         />
@@ -54,7 +54,7 @@ export const NotaBeneProject = () => {
       <div className="relative w-full bg-[#868DA1]" style={{ aspectRatio: 2880/1920}}>
         <Image
           alt=""
-          src="/images/projects/_content/nota_bene/nota3.png"
+          src="/images/projects/_content/nota_bene/nota3.webp"
           fill
           unoptimized
         />
@@ -68,7 +68,7 @@ export const NotaBeneProject = () => {
         </div>
         <Image
           alt=""
-          src="/images/projects/_content/nota_bene/nota4.png"
+          src="/images/projects/_content/nota_bene/nota4.webp"
           fill
           unoptimized
         />
@@ -76,7 +76,7 @@ export const NotaBeneProject = () => {
       <div className="relative w-full bg-[#868DA1]" style={{ aspectRatio: 2880/1920}}>
         <Image
           alt=""
-          src="/images/projects/_content/nota_bene/nota5.png"
+          src="/images/projects/_content/nota_bene/nota5.webp"
           fill
           unoptimized
         />
@@ -84,7 +84,7 @@ export const NotaBeneProject = () => {
       <div className="relative w-full bg-[#868DA1]" style={{ aspectRatio: 2880/1920}}>
         <Image
           alt=""
-          src="/images/projects/_content/nota_bene/nota6.png"
+          src="/images/projects/_content/nota_bene/nota6.webp"
           fill
           unoptimized
         />

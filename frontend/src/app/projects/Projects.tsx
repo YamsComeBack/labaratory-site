@@ -8,7 +8,7 @@ export const Projects = () => {
   return (
     <section className="relative w-full -mt-[10%] z-2 overflow-x-clip">
       <Image
-        src={"/images/projects/last-image.png"}
+        src={"/images/projects/last-image.webp"}
         alt={``}
         width={3840}
         height={2804}

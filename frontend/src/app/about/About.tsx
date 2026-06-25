@@ -6,11 +6,11 @@ import { useRotateTyping } from "@/hooks/useRotateTyping";
 import { useHoverTyping } from "@/hooks/useHoverTyping";
 
 const images = [
-  "/images/about/slider-1.jpg",
-  "/images/about/slider-2.jpg",
-  "/images/about/slider-3.jpg",
-  "/images/about/slider-4.jpg",
-  "/images/about/slider-5.jpg",
+  "/images/about/slider-1.webp",
+  "/images/about/slider-2.webp",
+  "/images/about/slider-3.webp",
+  "/images/about/slider-4.webp",
+  "/images/about/slider-5.webp",
 ];
 
 const phrases = [
@@ -45,7 +45,7 @@ export const About = () => {
   return (
     <section className="relative w-full bg-black pb-[20%] z-0">
       <Image
-        src="/images/about/first-image.jpg"
+        src="/images/about/first-image.webp"
         alt=""
         width={1920}
         height={1080}

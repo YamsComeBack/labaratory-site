@@ -7,9 +7,9 @@ import Image from "next/image";
 const tutors = [
   {
     src: [
-      "/images/team/Andrey-1.png",
-      "/images/team/Andrey-2.png",
-      "/images/team/Andrey-3.png"
+      "/images/team/Andrey-1.webp",
+      "/images/team/Andrey-2.webp",
+      "/images/team/Andrey-3.webp"
     ],
     name: "Андрей Охонько",
     descriptor: "руководитель направления «Дизайн»",
@@ -17,9 +17,9 @@ const tutors = [
   },
   {
     src: [
-      "/images/team/Maxim-1.png",
-      "/images/team/Maxim-2.png",
-      "/images/team/Maxim-3.png"
+      "/images/team/Maxim-1.webp",
+      "/images/team/Maxim-2.webp",
+      "/images/team/Maxim-3.webp"
     ],
     name: "Максим Тизенгаузен",
     descriptor: "руководитель направления «Медиа»",
@@ -28,9 +28,9 @@ const tutors = [
   },
   {
     src: [
-      "/images/team/Shamil-1.png",
-      "/images/team/Shamil-2.png",
-      "/images/team/Shamil-3.png"
+      "/images/team/Shamil-1.webp",
+      "/images/team/Shamil-2.webp",
+      "/images/team/Shamil-3.webp"
     ],
     name: "Шамиль Баракаев",
     descriptor: "руководитель направления «Медиа»",
@@ -41,98 +41,98 @@ const tutors = [
 const supports = [
   {
     src: [
-      "/images/team/Daniil-1.png",
-      "/images/team/Daniil-2.png",
-      "/images/team/Daniil-3.png",
+      "/images/team/Daniil-1.webp",
+      "/images/team/Daniil-2.webp",
+      "/images/team/Daniil-3.webp",
     ],
     name: "Даниил Слезавин",
     hoverText: "Категорически всех приветствую",
   },
   {
     src: [
-      "/images/team/Margo-1.png",
-      "/images/team/Margo-2.png",
-      "/images/team/Margo-3.png",
+      "/images/team/Margo-1.webp",
+      "/images/team/Margo-2.webp",
+      "/images/team/Margo-3.webp",
     ],
     name: "Маргарита Гриценко",
     hoverText: "Здесь могла быть\n ваша реклама",
   },
   {
     src: [
-      "/images/team/Sopha-1.png",
-      "/images/team/Sopha-2.png",
-      "/images/team/Sopha-3.png",
+      "/images/team/Sopha-1.webp",
+      "/images/team/Sopha-2.webp",
+      "/images/team/Sopha-3.webp",
     ],
     name: "София Акопян",
     hoverText: "Не копайся в себе, докапывайся\n до других",
   },
   {
     src: [
-      "/images/team/Arina-1.png",
-      "/images/team/Arina-2.png",
-      "/images/team/Arina-3.png",
+      "/images/team/Arina-1.webp",
+      "/images/team/Arina-2.webp",
+      "/images/team/Arina-3.webp",
     ],
     name: "Чотчаева Арина",
     hoverText: "Меня попросили здесь\n что-то написать",
   },
   {
     src: [
-      "/images/team/Islam-1.png",
-      "/images/team/Islam-2.png",
-      "/images/team/Islam-3.png",
+      "/images/team/Islam-1.webp",
+      "/images/team/Islam-2.webp",
+      "/images/team/Islam-3.webp",
     ],
     name: "Кагазежев Ислам",
     hoverText: "Убери, я ничего\n не вижу",
   },
   {
     src: [
-      "/images/team/Arianna-1.png",
-      "/images/team/Arianna-2.png",
+      "/images/team/Arianna-1.webp",
+      "/images/team/Arianna-2.webp",
     ],
     name: "Арианна Энгельгардт",
     hoverText: "В резкости",
   },
   {
     src: [
-      "/images/team/Lena-1.png",
-      "/images/team/Lena-2.png",
-      "/images/team/Lena-3.png",
+      "/images/team/Lena-1.webp",
+      "/images/team/Lena-2.webp",
+      "/images/team/Lena-3.webp",
     ],
     name: "Елена Воробьева",
     hoverText: "Вставай, суперзвезда,\n капитализм требует\n твоих подношений",
   },
   {
     src: [
-      "/images/team/NastyaB-1.png",
-      "/images/team/NastyaB-2.png",
-      "/images/team/NastyaB-3.png",
+      "/images/team/NastyaB-1.webp",
+      "/images/team/NastyaB-2.webp",
+      "/images/team/NastyaB-3.webp",
     ],
     name: "Анастасия Борисова",
     hoverText: "Убери, я ничего\n не вижу",
   },
   {
     src: [
-      "/images/team/Rada-1.png",
-      "/images/team/Rada-2.png",
-      "/images/team/Rada-3.png",
+      "/images/team/Rada-1.webp",
+      "/images/team/Rada-2.webp",
+      "/images/team/Rada-3.webp",
     ],
     name: "Рада Пашкова",
     hoverText: "график дизайн\n из май пэшн",
   },
   {
     src: [
-      "/images/team/Stepan-1.png",
-      "/images/team/Stepan-2.png",
-      "/images/team/Stepan-3.png",
+      "/images/team/Stepan-1.webp",
+      "/images/team/Stepan-2.webp",
+      "/images/team/Stepan-3.webp",
     ],
     name: "Степан Гонтарь",
     hoverText: "Смысла нет,\n но вы ищите",
   },
   {
     src: [
-      "/images/team/Varya-1.png",
-      "/images/team/Varya-2.png",
-      "/images/team/Varya-3.png",
+      "/images/team/Varya-1.webp",
+      "/images/team/Varya-2.webp",
+      "/images/team/Varya-3.webp",
     ],
     name: "Варвара Долгорук",
     hoverText: "Лучше иметь друга\n чем друг друга",
@@ -164,7 +164,7 @@ export const Team = () => {
       </h1>
       <div className="relative w-full h-[65vw] max-w-none">
         <Image
-          src="/images/Team/Team.png"
+          src="/images/Team/Team.webp"
           alt="Общая фотография команды"
           className="z-1 object-cover"
           fill

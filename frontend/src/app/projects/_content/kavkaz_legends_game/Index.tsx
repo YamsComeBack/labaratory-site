@@ -5,33 +5,33 @@ import SliderArrow from "@/components/ui/SliderArrow";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const topSliderImages = [
-  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-40.jpg",
-  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-37.jpg",
-  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-58-22.jpg",
-  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-36.jpg",
-  "/images/projects/_content/tabletop_game/top/NCFU9172.jpg",
-  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-58-47.jpg",
-  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-18.jpg",
-  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-31.jpg",
-  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-35.jpg",
-  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-58-17.jpg",
-  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-58-37.jpg",
-  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-33.jpg",
+  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-40.webp",
+  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-37.webp",
+  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-58-22.webp",
+  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-36.webp",
+  "/images/projects/_content/tabletop_game/top/NCFU9172.webp",
+  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-58-47.webp",
+  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-18.webp",
+  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-31.webp",
+  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-35.webp",
+  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-58-17.webp",
+  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-58-37.webp",
+  "/images/projects/_content/tabletop_game/top/photo_2026-05-11_14-57-33.webp",
 ];
 
 const bottomSliderImages = [
-  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-30.jpg",
-  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-36.jpg",
-  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-43.jpg",
-  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-00.jpg",
-  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-57-08.jpg",
-  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-28.jpg",
-  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-57-16.jpg",
-  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-18.jpg",
-  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-57-11.jpg",
-  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-17.jpg",
-  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-37.jpg",
-  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-41.jpg",
+  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-30.webp",
+  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-36.webp",
+  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-43.webp",
+  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-00.webp",
+  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-57-08.webp",
+  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-28.webp",
+  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-57-16.webp",
+  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-18.webp",
+  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-57-11.webp",
+  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-17.webp",
+  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-37.webp",
+  "/images/projects/_content/tabletop_game/bottom/photo_2026-05-11_14-56-41.webp",
 ];
 
 const mainText = `Наша команда провела турниры в семи республиках Северного\n Кавказа, показав нашу игру и зарядив всех позитивными\n эмоциями. В каждой республике мы оставили по одному комплекту\n настольной игры, чтобы участники могли продолжать проводить\n турниры на своих площадках.`;
@@ -176,13 +176,13 @@ const SliderRow = ({ images, reverse = false, sectionName }: SliderRowProps) => 
 
 export const KavkazLegendsGameProject = () => {
   const slides = [
-    "/images/projects/_content/tabletop_game/slider/1.jpg",
-    "/images/projects/_content/tabletop_game/slider/2.jpg",
-    "/images/projects/_content/tabletop_game/slider/3.jpg",
-    "/images/projects/_content/tabletop_game/slider/4.jpg",
-    "/images/projects/_content/tabletop_game/slider/5.jpg",
-    "/images/projects/_content/tabletop_game/slider/6.jpg",
-    "/images/projects/_content/tabletop_game/slider/7.jpg",
+    "/images/projects/_content/tabletop_game/slider/1.webp",
+    "/images/projects/_content/tabletop_game/slider/2.webp",
+    "/images/projects/_content/tabletop_game/slider/3.webp",
+    "/images/projects/_content/tabletop_game/slider/4.webp",
+    "/images/projects/_content/tabletop_game/slider/5.webp",
+    "/images/projects/_content/tabletop_game/slider/6.webp",
+    "/images/projects/_content/tabletop_game/slider/7.webp",
   ]
   const totalSlides = slides.length;
   const currentIndex = useRef<number>(0)
@@ -212,18 +212,20 @@ export const KavkazLegendsGameProject = () => {
 
   return (
     <div className="max-w-none">
-      <div className="relative z-10 max-w-none" style={{ aspectRatio:"1920/1308" }}>
-        <Image 
-          src="/images/projects/_content/tabletop_game/tt1.png"
-          alt=""
-          fill
-          className="w-full"
-        />
-        <div className="translate-y-[300%] z-10 overflow-visible mb-[-20%] max-w-none">
+      <div className="relative z-10 max-w-none">
+        <div className="relative z-10 max-w-none" style={{ aspectRatio:"5830/3487" }}>
+          <Image 
+            src="/images/projects/_content/tabletop_game/tt1.webp"
+            alt=""
+            fill
+            className="w-full"
+          />
+        </div>
+        <div className="absolute translate-y-[-34%] z-10 overflow-visible mb-[-20%] w-full max-w-none">
           <h1 className="w-[25%] ml-[15%] mt-[6%] leading-[100%] absolute text-title text-[2.5vw]">
             Настольная игра «Легенды Кавказа. Эхо древних гор»
           </h1>
-          <p className="w-[35%] ml-[50%] mt-[6.5%] absolute text-main text-[1.3vw] leading-[110%]">
+          <p className="w-[35%] ml-[50%] mt-[6.5%] absolute text-main text-[1.3vw] leading-[120%]">
             Проект-победитель грантового конкурса Росмолодёжи. Мы придумали механику, историю и визуальный язык игры — получился атмосферный мир, в котором сочетаются легенды, культура и азарт.
           </p>
           <img
@@ -235,7 +237,7 @@ export const KavkazLegendsGameProject = () => {
       </div>
       <div className="relative z-1 w-full h-full mt-[8vw]" style={{ aspectRatio:"1920/1106" }}>
         <Image 
-          src="/images/projects/_content/tabletop_game/tt2.png"
+          src="/images/projects/_content/tabletop_game/tt2.webp"
           alt=""
           fill
           className="w-full aspect-video"
@@ -244,7 +246,7 @@ export const KavkazLegendsGameProject = () => {
       <div className="bg-[#142458]">
         <div className="relative max-w-none" style={{ aspectRatio:"1920/1008" }}>
           <Image 
-            src="/images/projects/_content/tabletop_game/tt3.png"
+            src="/images/projects/_content/tabletop_game/tt3.webp"
             alt=""
             fill
             className="w-full"
@@ -252,7 +254,7 @@ export const KavkazLegendsGameProject = () => {
         </div>
         <div className="relative" style={{ aspectRatio:"1920/1137" }}>
           <Image 
-            src="/images/projects/_content/tabletop_game/tt4.png"
+            src="/images/projects/_content/tabletop_game/tt4.webp"
             alt=""
             fill
             className="w-full"
@@ -260,7 +262,7 @@ export const KavkazLegendsGameProject = () => {
         </div>
         <div className="relative" style={{ aspectRatio:"1920/1226" }}>
           <Image 
-            src="/images/projects/_content/tabletop_game/tt5.png"
+            src="/images/projects/_content/tabletop_game/tt5.webp"
             alt=""
             fill
             className="w-full"
@@ -269,7 +271,7 @@ export const KavkazLegendsGameProject = () => {
       </div>
       <div className="relative" style={{ aspectRatio:"1920/1080" }}>
         <Image 
-          src="/images/projects/_content/tabletop_game/tt6.png"
+          src="/images/projects/_content/tabletop_game/tt6.webp"
           alt=""
           fill
           className="w-full"

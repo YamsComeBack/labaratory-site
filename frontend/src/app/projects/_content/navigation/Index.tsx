@@ -3,15 +3,15 @@
 import Image from "next/legacy/image";
 
 export const NavigationProject = () => {
-  const headerImage = "/images/projects/_content/navigation/nav1.png";
+  const headerImage = "/images/projects/_content/navigation/nav1.webp";
   const images = [
-    "/images/projects/_content/navigation/nav2.png",
-    "/images/projects/_content/navigation/nav3.png",
-    "/images/projects/_content/navigation/nav4.png",
-    "/images/projects/_content/navigation/nav5.png",
-    "/images/projects/_content/navigation/nav6.png",
-    "/images/projects/_content/navigation/nav7.png",
-    "/images/projects/_content/navigation/nav8.png",
+    "/images/projects/_content/navigation/nav2.webp",
+    "/images/projects/_content/navigation/nav3.webp",
+    "/images/projects/_content/navigation/nav4.webp",
+    "/images/projects/_content/navigation/nav5.webp",
+    "/images/projects/_content/navigation/nav6.webp",
+    "/images/projects/_content/navigation/nav7.webp",
+    "/images/projects/_content/navigation/nav8.webp",
   ];
 
   return (

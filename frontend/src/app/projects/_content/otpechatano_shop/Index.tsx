@@ -17,7 +17,7 @@ export const OtpechatanoShopProject = () => {
                     className="absolute w-[40vw] mt-[20vw]"
                 />
                 <img 
-                    src="/images/projects/_content/otpechatano/logo.png"
+                    src="/images/projects/_content/otpechatano/logo.webp"
                     className="absolute w-[30vw] right-0"
                 />
                 <video
@@ -39,7 +39,7 @@ export const OtpechatanoShopProject = () => {
                 {"Насыщенный розовый цвет сразу\nпритягивает взгляд, а забавная\nкрыса в кармане добавляет\nобразу характер и легкую иронию.\nМягкий, комфортный и визуально\nцепляющий, этот мерч легко\nстановится акцентом любого\nобраза: от повседневного\nдо максимально креативного."}
                 </p>
                 <Image 
-                src="/images/projects/_content/otpechatano/otp2.png"
+                src="/images/projects/_content/otpechatano/otp2.webp"
                 alt=""
                 fill
                 className="w-full"
@@ -58,7 +58,7 @@ export const OtpechatanoShopProject = () => {
                     />
                 </div>
                 <Image 
-                src="/images/projects/_content/otpechatano/otp3.png"
+                src="/images/projects/_content/otpechatano/otp3.webp"
                 alt=""
                 fill
                 className="w-full"
@@ -66,7 +66,7 @@ export const OtpechatanoShopProject = () => {
             </div>
             <div className="relative" style={{ aspectRatio:"1920/1080" }}>
                 <Image 
-                src="/images/projects/_content/otpechatano/otp4.png"
+                src="/images/projects/_content/otpechatano/otp4.webp"
                 alt=""
                 fill
                 className="w-full"
@@ -85,7 +85,7 @@ export const OtpechatanoShopProject = () => {
                     />
                 </div>
                 <Image 
-                src="/images/projects/_content/otpechatano/otp5.png"
+                src="/images/projects/_content/otpechatano/otp5.webp"
                 alt=""
                 fill
                 className="w-full"
@@ -101,7 +101,7 @@ export const OtpechatanoShopProject = () => {
                     </p>
                 </div>
                 <Image 
-                src="/images/projects/_content/otpechatano/otp6.png"
+                src="/images/projects/_content/otpechatano/otp6.webp"
                 alt=""
                 fill
                 className="w-full"
@@ -120,7 +120,7 @@ export const OtpechatanoShopProject = () => {
                     />
                 </div>
                 <Image 
-                src="/images/projects/_content/otpechatano/otp7.png"
+                src="/images/projects/_content/otpechatano/otp7.webp"
                 alt=""
                 fill
                 className="w-full"
@@ -139,7 +139,7 @@ export const OtpechatanoShopProject = () => {
                     />
                 </div>
                 <Image 
-                src="/images/projects/_content/otpechatano/otp8.png"
+                src="/images/projects/_content/otpechatano/otp8.webp"
                 alt=""
                 fill
                 className="w-full"
@@ -153,7 +153,7 @@ export const OtpechatanoShopProject = () => {
                 {"В межсезонье в Ставрополе бывают до такой\nстепени непроглядные туманы, что сказать\nчто-либо конкретнее, чем «я в Ставрополе»,\nо своём местоположении становится сложно."}
                 </p>
                 <Image 
-                src="/images/projects/_content/otpechatano/otp9.png"
+                src="/images/projects/_content/otpechatano/otp9.webp"
                 alt=""
                 fill
                 className="w-full"
@@ -172,7 +172,7 @@ export const OtpechatanoShopProject = () => {
                     />
                 </div>
                 <Image 
-                src="/images/projects/_content/otpechatano/otp10.png"
+                src="/images/projects/_content/otpechatano/otp10.webp"
                 alt=""
                 fill
                 className="w-full"
@@ -180,7 +180,7 @@ export const OtpechatanoShopProject = () => {
             </div>
             <div className="relative" style={{ aspectRatio:"1920/1080" }}>
                 <Image 
-                src="/images/projects/_content/otpechatano/otp11.png"
+                src="/images/projects/_content/otpechatano/otp11.webp"
                 alt=""
                 fill
                 className="w-full"
@@ -196,7 +196,7 @@ export const OtpechatanoShopProject = () => {
                     </p>
                 </div>
                 <Image 
-                src="/images/projects/_content/otpechatano/otp12.png"
+                src="/images/projects/_content/otpechatano/otp12.webp"
                 alt=""
                 fill
                 className="w-full"

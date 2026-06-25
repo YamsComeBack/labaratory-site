@@ -1,1 +1,5 @@
 node_modules/
+
+frontend/public/_next-video/
+*.mp4
+*.psd

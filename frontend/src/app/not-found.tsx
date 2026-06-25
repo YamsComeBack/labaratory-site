@@ -1,21 +1,20 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <section className="w-full bg-black grid place-items-center">
+    <section className="absolute w-full h-screen bg-black grid place-items-center overflow-hidden">
       <div
         className="
           w-full
-          max-w-[min(100%,1366px)]
           mx-auto
           py-8
           flex flex-col items-center text-center
-          gap-[clamp(80px,10vw,100px)]
+          gap-0
         "
       >
-        <p className="text-not-found text-primary">
-          Друг, меня не существует...
+        <p className="text-not-found text-primary leading-10 text-[2rem] md:text-[3rem] lg:text-[4rem] whitespace-pre-line sm:whitespace-normal">
+          {"Друг, меня\nне существует..."}
         </p>
         <Link href="/">
           <Image
@@ -24,11 +23,12 @@ export default function NotFound() {
             width={420}
             height={514}
             priority
+            className="scale-80"
             unoptimized
           />
         </Link>
 
-        <p className="text-not-found text-primary">
+        <p className="text-not-found text-primary leading-10 text-[2rem] md:text-[3rem] lg:text-[4rem]">
           Перейди на другую страницу
         </p>
       </div>

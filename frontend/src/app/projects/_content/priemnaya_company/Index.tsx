@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 export const PriemnayaCompanyProject = () => {
-  // "/images/projects/_content/priemnaya_company/priemka2.png"
+  // "/images/projects/_content/priemnaya_company/priemka2.webp"
 
   return (
     <article className="w-full">
@@ -22,7 +22,7 @@ export const PriemnayaCompanyProject = () => {
           />
         </div>
         <Image
-          src="/images/projects/_content/priemnaya_company/priemka1.png"
+          src="/images/projects/_content/priemnaya_company/priemka1.webp"
           alt="Оформление приёмной кампании СКФУ 2024"
           fill
           className="h-auto w-full"
@@ -35,7 +35,7 @@ export const PriemnayaCompanyProject = () => {
           Соцсети
         </h1>
         <Image
-          src="/images/projects/_content/priemnaya_company/priemka2.png"
+          src="/images/projects/_content/priemnaya_company/priemka2.webp"
           alt="Оформление приёмной кампании СКФУ 2024"
           fill
           className="h-auto w-full"
@@ -51,7 +51,7 @@ export const PriemnayaCompanyProject = () => {
           {"Уникальный продукт\nв рамках приёмной кампании"}
         </p>
         <Image
-          src="/images/projects/_content/priemnaya_company/priemka3.png"
+          src="/images/projects/_content/priemnaya_company/priemka3.webp"
           alt="Оформление приёмной кампании СКФУ 2024"
           fill
           className="h-auto w-full"
@@ -61,7 +61,7 @@ export const PriemnayaCompanyProject = () => {
       </div>
       <div className="relative z-0 w-full mt-[-13.5vw]" style={{ aspectRatio: 1920/1102}}>
         <Image
-          src="/images/projects/_content/priemnaya_company/priemka4.png"
+          src="/images/projects/_content/priemnaya_company/priemka4.webp"
           alt="Оформление приёмной кампании СКФУ 2024"
           fill
           className="h-auto w-full"
@@ -77,7 +77,7 @@ export const PriemnayaCompanyProject = () => {
           {"Для приёмной кампании были разработаны два\nуникальных персонажа: абитуриент, подающий\nдокументы в СКФУ, и Алиса, активная студентка\nи сотрудница приёмной кампании."}
         </p>
         <Image
-          src="/images/projects/_content/priemnaya_company/priemka5.png"
+          src="/images/projects/_content/priemnaya_company/priemka5.webp"
           alt="Оформление приёмной кампании СКФУ 2024"
           fill
           className="h-auto w-full"
@@ -90,7 +90,7 @@ export const PriemnayaCompanyProject = () => {
           {"В рамках проекта также были разработаны:\n26-страничный комикс в печатном и digital-форматах,\nнабор стикеров и буклет для абитуриентов.\nВсе материалы были собраны в единой визуальной\nсистеме, чтобы сделать коммуникацию более живой,\nпонятной и вовлекающей для молодой аудитории."}
         </p>
         <Image
-          src="/images/projects/_content/priemnaya_company/priemka6.png"
+          src="/images/projects/_content/priemnaya_company/priemka6.webp"
           alt="Оформление приёмной кампании СКФУ 2024"
           fill
           className="h-auto w-full"
@@ -100,7 +100,7 @@ export const PriemnayaCompanyProject = () => {
       </div>
       <div className="relative z-0 w-full mt-[-5vw]" style={{ aspectRatio: 1920/1594}}>
         <Image
-          src="/images/projects/_content/priemnaya_company/priemka7.png"
+          src="/images/projects/_content/priemnaya_company/priemka7.webp"
           alt="Оформление приёмной кампании СКФУ 2024"
           fill
           className="h-auto w-full"
@@ -110,7 +110,7 @@ export const PriemnayaCompanyProject = () => {
       </div>
       <div className="relative z-0 w-full mt-[-10vw]" style={{ aspectRatio: 1920/1492}}>
         <Image
-          src="/images/projects/_content/priemnaya_company/priemka8.png"
+          src="/images/projects/_content/priemnaya_company/priemka8.webp"
           alt="Оформление приёмной кампании СКФУ 2024"
           fill
           className="h-auto w-full"
@@ -123,7 +123,7 @@ export const PriemnayaCompanyProject = () => {
           Мерч
         </h1>
         <Image
-          src="/images/projects/_content/priemnaya_company/priemka9.png"
+          src="/images/projects/_content/priemnaya_company/priemka9.webp"
           alt="Оформление приёмной кампании СКФУ 2024"
           fill
           className="h-auto w-full"

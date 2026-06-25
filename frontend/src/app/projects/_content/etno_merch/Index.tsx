@@ -3,13 +3,13 @@
 import Image from "next/legacy/image";
 
 export const EtnoMerchProject = () => {
-  const headerImage = "/images/projects/_content/etno_merch/etno1.png";
+  const headerImage = "/images/projects/_content/etno_merch/etno1.webp";
   const images = [
-    "/images/projects/_content/etno_merch/etno2.png",
-    "/images/projects/_content/etno_merch/etno3.png",
-    "/images/projects/_content/etno_merch/etno4.png",
-    "/images/projects/_content/etno_merch/etno5.png",
-    "/images/projects/_content/etno_merch/etno6.png",
+    "/images/projects/_content/etno_merch/etno2.webp",
+    "/images/projects/_content/etno_merch/etno3.webp",
+    "/images/projects/_content/etno_merch/etno4.webp",
+    "/images/projects/_content/etno_merch/etno5.webp",
+    "/images/projects/_content/etno_merch/etno6.webp",
   ];
 
   return (
