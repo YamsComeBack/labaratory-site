@@ -5,7 +5,7 @@ import Image from "next/image";
 export const OtpechatanoShopProject = () => {
     return(
         <div>
-            <div className="w-full h-fit bg-amber-400">
+            <div className="w-full h-fit">
                 <h1 className="absolute z-30 w-[25vw] ml-[4vw] mt-[28vw] leading-[100%] text-title text-[2.5vw]">
                     Онлайн-магазин «Отпечатано»
                 </h1>
@@ -46,7 +46,7 @@ export const OtpechatanoShopProject = () => {
                 />
             </div>
             <div className="relative" style={{ aspectRatio:"1920/1080" }}>
-                <div className="absolute z-10 right-0 bottom-[-6.5vw] w-[45vw] mt-[20vw]">
+                <div className="absolute z-10 right-[0%] bottom-[-6.5vw] w-[45vw] mt-[20vw]">
                     <h1 className="absolute z-30 w-[25vw] ml-[4vw] mt-[2vw] leading-[100%] text-title text-[2.5vw]">
                         Музыка города
                     </h1>
@@ -55,6 +55,7 @@ export const OtpechatanoShopProject = () => {
                     </p>
                     <img
                         src="/images/projects/_content/otpechatano/vector2.svg"
+                        className="w-full"
                     />
                 </div>
                 <Image 

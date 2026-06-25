@@ -4,7 +4,6 @@ import { useMuteVideo } from "@/hooks/useMuteVideo";
 import Image from "next/image";
 
 const FEST_VIDEO_ID = "napetchatano-fest-video";
-const FEST_VIDEO_SRC = "/_next-video/fest-video.mp4";
 
 export const NapetchatanoFestProject = () => {
   const { muted } = useMuteVideo(FEST_VIDEO_ID, true);
@@ -33,7 +32,7 @@ export const NapetchatanoFestProject = () => {
           className="absolute z-10 h-full w-[45vw] mt-[12vw] ml-[4vw]"
         />
         <Image
-          src="/images/projects/_content/print_fest/fest1.png"
+          src="/images/projects/_content/print_fest/fest1.webp"
           alt=""
           fill
           className="block z-0 h-auto w-full"
@@ -42,7 +41,7 @@ export const NapetchatanoFestProject = () => {
       <div className="mx-auto w-full max-w-480">
         <video
           id={FEST_VIDEO_ID}
-          src={FEST_VIDEO_SRC}
+          src="/_next-video/fest-video.mp4"
           className="block h-auto w-full"
           autoPlay
           loop
