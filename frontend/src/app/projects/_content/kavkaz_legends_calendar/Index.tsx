@@ -142,7 +142,7 @@ export const KavkazLegendsCalendarProject = () => {
       </div>
       <div className="relative max-w-none" style={{ aspectRatio:"1920/2004"}}>
         <Image
-          src="/images/projects/_content/tabletop_calendar/ttc2.jpg"
+          src="/images/projects/_content/tabletop_calendar/ttc2.webp"
           alt=""
           className="z-1 w-full"
           fill

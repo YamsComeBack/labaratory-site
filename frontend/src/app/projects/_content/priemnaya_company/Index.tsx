@@ -108,18 +108,18 @@ export const PriemnayaCompanyProject = () => {
           unoptimized
         />
       </div>
-      <div className="relative z-0 w-full mt-[-10vw]" style={{ aspectRatio: 1920/1492}}>
+      <div className="relative z-10 w-full mt-[-10vw]" style={{ aspectRatio: 1920/1492}}>
         <Image
           src="/images/projects/_content/priemnaya_company/priemka8.webp"
           alt="Оформление приёмной кампании СКФУ 2024"
           fill
-          className="h-auto w-full"
+          className="h-auto w-full translate-x-[1vw]"
           priority
           unoptimized
         />
       </div>
       <div className="relative z-0 w-full" style={{ aspectRatio: 1920/916}}>
-        <h1 className="absolute z-30 w-full flex justify-center leading-[100%] text-title text-[7vw]">
+        <h1 className="absolute z-00 w-full flex justify-center leading-[100%] text-title text-[7vw]">
           Мерч
         </h1>
         <Image

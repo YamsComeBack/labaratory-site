@@ -51,8 +51,6 @@ export const MerchNcfuProject = () => {
           priority
           unoptimized
         />
-  
-
         <div className="absolute right-[6.5vw] top-[3.8vw] w-[50%]">
           <h1 className="absolute z-30 w-[25vw] ml-[16vw] mt-[1vw] leading-[100%] text-title text-[2.5vw]">
             Одеждомагазин

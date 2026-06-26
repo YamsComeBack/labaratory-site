@@ -55,7 +55,7 @@ export const OtpechatanoShopProject = () => {
                     </p>
                     <img
                         src="/images/projects/_content/otpechatano/vector2.svg"
-                        className="w-full"
+                        className="block w-full mx-auto"
                     />
                 </div>
                 <Image 
@@ -161,15 +161,16 @@ export const OtpechatanoShopProject = () => {
                 />
             </div>
             <div className="relative" style={{ aspectRatio:"1920/1080" }}>
-                <div className="absolute z-10 right-0 bottom-[-12.4vw] w-[46vw] mt-[20vw]">
-                    <h1 className="absolute z-30 w-[35vw] ml-[8vw] mt-[7vw] leading-[100%] text-title text-[2.5vw] whitespace-pre-wrap">
+                <div className="absolute z-10 right-0 bottom-[-12.4vw] w-[48vw]  mt-[20vw]">
+                    <h1 className="absolute z-30 w-[35vw] ml-[8vw] mt-[7.5vw] leading-[100%] text-title text-[2.5vw] whitespace-pre-wrap">
                         {`Иногда для счастья\nне хватает одной детали`}
                     </h1>
-                    <p className="absolute z-30 w-[30vw] ml-[8vw] mt-[13vw] text-main text-[1.3vw] leading-[120%] whitespace-pre-wrap">
+                    <p className="absolute z-30 w-[30vw] ml-[8vw] mt-[13.5vw] text-main text-[1.3vw] leading-[120%] whitespace-pre-wrap">
                     {"Концепция основана на знакомых с детства «рисунках по точкам», где изображение появляется при соединении элементов. "}
                     </p>
                     <img
                         src="/images/projects/_content/otpechatano/vector6.svg"
+                        className="block w-full"
                     />
                 </div>
                 <Image 

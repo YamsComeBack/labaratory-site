@@ -122,12 +122,12 @@ export const ErnestPrintIdentityProject = () => {
                     )
                 })}
             </div>
-            <div className="relative z-1 w-full h-full" style={{ aspectRatio:"1920/1292" }}>
+            <div className="relative z-0 w-full h-full" style={{ aspectRatio:"1920/1292" }}>
                 <Image 
                 src="/images/projects/_content/ernest/ernest5.webp"
                 alt=""
                 fill
-                className="w-full aspect-video"
+                className="w-full"
                 />
             </div>
         </div>

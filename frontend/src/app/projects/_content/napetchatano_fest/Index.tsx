@@ -36,9 +36,11 @@ export const NapetchatanoFestProject = () => {
           alt=""
           fill
           className="block z-0 h-auto w-full"
+          priority
+          unoptimized
         />
       </div>
-      <div className="mx-auto w-full max-w-480">
+      <div className="relative mx-auto w-full max-w-480">
         <video
           id={FEST_VIDEO_ID}
           src="/_next-video/fest-video.mp4"
@@ -51,8 +53,14 @@ export const NapetchatanoFestProject = () => {
         />
       </div>
       {images.map((src, i) => (
-        <div key={i} className="w-full">
-          <img src={src} alt={`Навигация ${i + 2}`} className="block h-auto w-full" />
+        <div key={i} className="relative w-full" style={{ aspectRatio:1920/1080 }}>
+          <Image
+            src={src}
+            alt={`Навигация ${i + 2}`}
+            className="block h-auto w-full"
+            fill
+            unoptimized
+          />
         </div>
       ))}
     </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export const EtnoMerchProject = () => {
   const headerImage = "/images/projects/_content/etno_merch/etno1.webp";
@@ -14,8 +14,15 @@ export const EtnoMerchProject = () => {
 
   return (
     <div className="w-full">
-      <section className="relative w-full">
-        <img src={headerImage} alt="Этномерч" className="block h-auto w-full" />
+      <section className="relative w-full" style={{ aspectRatio:3840/2598 }}>
+        <Image
+          src={headerImage}
+          alt="Этномерч"
+          className="block h-auto w-full"
+          fill
+          priority
+          unoptimized
+        />
 
         <div className="absolute left-0 top-[11%] z-10 w-[38%]">
           <h1 className="absolute z-30 w-[25vw] ml-[4vw] mt-[2.5vw] leading-[100%] text-title text-[2.5vw]">
@@ -26,13 +33,20 @@ export const EtnoMerchProject = () => {
           </p>
           <img
             src="/images/projects/_content/etno_merch/vector.svg"
+            className="w-full"
           />
         </div>
       </section>
 
       {images.map((src, i) => (
-        <div key={i} className="w-full">
-          <img src={src} alt={`Этно мерч ${i + 2}`} className="block h-auto w-full" />
+        <div key={i} className="relative w-full" style={{ aspectRatio: 3854/2162 }}>
+          <Image
+            src={src}
+            alt={`Этно мерч ${i + 2}`}
+            className="block h-auto w-full"
+            fill
+            unoptimized
+          />
         </div>
       ))}
     </div>

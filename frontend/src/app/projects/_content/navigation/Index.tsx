@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export const NavigationProject = () => {
   const headerImage = "/images/projects/_content/navigation/nav1.webp";
@@ -15,28 +15,32 @@ export const NavigationProject = () => {
   ];
 
   return (
-    <article className="w-full">
-      <section className="relative w-full">
-        <img src={headerImage} alt="Навигация для СКФУ" className="block h-auto w-full" />
-
-        <div className="pointer-events-none absolute right-0 top-[35%] z-10 w-[50%]">
-          <div className="absolute right-0">
-            <img
-              src="/images/projects/_content/navigation/vector.svg"
-              alt=""
-              className="h-auto mt-[12vw] w-[45vw]"
-            />
-            <div className="pointer-events-auto absolute inset-0 px-[10%] py-[10%]">
-              <h2 className="w-full ml-[6%] mt-[27%] leading-[100%] absolute text-title text-[2.5vw]">
-                Навигация для СКФУ
-              </h2>
-              <p className="w-[70%] ml-[6%] mt-[35%] absolute text-main text-[1.3vw] leading-[120%]">
-                  Проект включает в себя три блока: внешнюю, внутреннюю и цифровую навигацию. Концепция проекта направлена на создание дружелюбной атмосферы и коммуникации с посетителем университета, чтобы каждый смог легко сориентироваться в пространстве.
-              </p>
-            </div>
+    <div className="w-full">
+      <div className="relative z-0 w-full" style={{ aspectRatio: 3840/2608}} >
+        <div className="absolute right-0 mt-[24vw] z-10">
+          <img
+            src="/images/projects/_content/navigation/vector.svg"
+            alt=""
+            className="h-auto mt-[12vw] w-[45vw]"
+          />
+          <div className="pointer-events-auto absolute inset-0 px-[10%] py-[10%]">
+            <h2 className="w-full ml-[6%] mt-[27%] leading-[100%] absolute text-title text-[2.5vw]">
+              Навигация для СКФУ
+            </h2>
+            <p className="w-[70%] ml-[6%] mt-[35%] absolute text-main text-[1.3vw] leading-[120%]">
+                Проект включает в себя три блока: внешнюю, внутреннюю и цифровую навигацию. Концепция проекта направлена на создание дружелюбной атмосферы и коммуникации с посетителем университета, чтобы каждый смог легко сориентироваться в пространстве.
+            </p>
           </div>
         </div>
-      </section>
+        <Image
+          src={headerImage}
+          alt="Навигация для СКФУ"
+          className="block h-auto w-full"
+          fill
+          priority
+          unoptimized
+        />
+      </div>
 
       <section>
         {images.map((src, i) => (
@@ -45,6 +49,6 @@ export const NavigationProject = () => {
           </div>
         ))}
       </section>
-    </article>
+    </div>
   );
 };
