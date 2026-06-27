@@ -312,7 +312,8 @@ export const KavkazLegendsGameProject = () => {
           alt=""
           fill
           className="w-full"
-          priority
+          priority={currentIndex.current === 1}
+          loading="eager"
           unoptimized
         />
         <SliderArrow direction="right" onClick={goNext}></SliderArrow>

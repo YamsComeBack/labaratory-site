@@ -47,7 +47,7 @@ export const Footer = () => {
     >
       <div className="relative outline-none w-[150vw] sm:w-2xl translate-x-[-35vw] -translate-y-5 sm:translate-x-0 mx-auto inline-block order-1 xl:order-2 shrink-0 overflow-visible">
         <Image
-          src="/svg/Footer/Star.svg"
+          src="/svg/footer/Star.svg"
           alt="star"
           width={646}
           height={331}
@@ -60,7 +60,7 @@ export const Footer = () => {
             <div>
               <a href={TG_LINK} target="blank">
                 <img
-                  src="/svg/Footer/tg.svg"
+                  src="/svg/footer/tg.svg"
                   width={45}
                   height={45}
                   title="Наш телеграм-канал"
@@ -71,7 +71,7 @@ export const Footer = () => {
             <div>
               <a href={BEHANCE_LINK} target="blank">
                 <img
-                  src="/svg/Footer/behance.svg"
+                  src="/svg/footer/behance.svg"
                   width={50}
                   height={50}
                   title="Мы на Behance"
@@ -82,7 +82,7 @@ export const Footer = () => {
             <div>
               <a href={DPROFILE_LINK} target="blank">
                 <img
-                  src="/svg/Footer/Dprofile.svg"
+                  src="/svg/footer/Dprofile.svg"
                   width={48}
                   height={48}
                   title="Мы на Dprofile"
@@ -101,7 +101,7 @@ export const Footer = () => {
                 <div
                   className="inline-flex min-h-20 w-max max-w-[min(340px,calc(100vw-48px))] items-center justify-center bg-center bg-no-repeat px-14 py-4"
                   style={{
-                    backgroundImage: "url(/svg/Footer/blob.svg)",
+                    backgroundImage: "url(/svg/footer/blob.svg)",
                     backgroundSize: "90% 90%",
                   }}
                 >
@@ -128,7 +128,7 @@ export const Footer = () => {
                 <div
                   className="inline-flex min-h-20 w-max max-w-[min(340px,calc(100vw-48px))] items-center justify-center bg-center bg-no-repeat px-14 py-4"
                   style={{
-                    backgroundImage: "url(/svg/Footer/blob.svg)",
+                    backgroundImage: "url(/svg/footer/blob.svg)",
                     backgroundSize: "90% 90%",
                   }}
                 >

@@ -62,7 +62,7 @@ export const Header = () => {
               className="h-18 w-18 sm:h-14 sm:w-14 translate-x-[-30px] border-none outline-none cursor-pointer"
             >
               <Image
-                src={muted ? "/svg/Header/din-off.svg" : "/svg/Header/din-on.svg"}
+                src={muted ? "/svg/header/din-off.svg" : "/svg/header/din-on.svg"}
                 alt=""
                 width={90}
                 height={90}
@@ -77,7 +77,7 @@ export const Header = () => {
               aria-label="Открыть меню"
             >
               <Image
-                src="/svg/Header/burger-on.svg"
+                src="/svg/header/burger-on.svg"
                 alt=""
                 width={25}
                 height={25}
@@ -108,7 +108,7 @@ export const Header = () => {
                 className="pt-6"
               >
                 <Image
-                  src="/svg/Header/burger-off.svg"
+                  src="/svg/header/burger-off.svg"
                   alt=""
                   width={25}
                   height={25}

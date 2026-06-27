@@ -18,7 +18,7 @@ export const Main = () => {
       </div>
       <div className="z-2 mt-[-8%] mb-[50%]">
         <img
-          src="/svg/Main/Wave-top.svg"
+          src="/svg/main/Wave-top.svg"
           width={1000}
           height={1000}
           className="scale-250 shrink-0 w-fit"
@@ -29,7 +29,7 @@ export const Main = () => {
           </p>
         </div>
         <img
-          src="/svg/Main/Wave-bottom.svg"
+          src="/svg/main/Wave-bottom.svg"
           width={1000}
           height={1000}
           className="h-auto w-fit scale-250 shrink-0"

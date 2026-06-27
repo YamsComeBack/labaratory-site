@@ -42,7 +42,7 @@ export const Contact = () => {
       <div className="flex flex-col gap-y-30 xl:flex-row xl:gap-y-0 xl:items-center">
         <div className="relative w-full max-w-[792px] overflow-x-clip">
           <Image
-            src="/svg/Contact/Circle.svg"
+            src="/svg/contact/Circle.svg"
             alt="Логотип"
             width={792}
             height={519}
@@ -122,7 +122,7 @@ export const Contact = () => {
               )}
             </form>
             <Image
-              src="/svg/Contact/Cat.svg"
+              src="/svg/contact/Cat.svg"
               alt="cat"
               className="hidden h-auto w-[226px] md:block"
               width={226}

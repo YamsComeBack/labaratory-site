@@ -6,11 +6,11 @@ import { useRotateTyping } from "@/hooks/useRotateTyping";
 import { useHoverTyping } from "@/hooks/useHoverTyping";
 
 const images = [
-  "/images/About/slider-1.webp",
-  "/images/About/slider-2.webp",
-  "/images/About/slider-3.webp",
-  "/images/About/slider-4.webp",
-  "/images/About/slider-5.webp",
+  "/images/about/slider-1.webp",
+  "/images/about/slider-2.webp",
+  "/images/about/slider-3.webp",
+  "/images/about/slider-4.webp",
+  "/images/about/slider-5.webp",
 ];
 
 const phrases = [
@@ -87,7 +87,7 @@ export const About = () => {
           }`}
         >
           <img
-            src="/svg/About/dialog.svg"
+            src="/svg/about/dialog.svg"
             alt="dialog"
             className="object-contain"
           />
@@ -97,7 +97,7 @@ export const About = () => {
         </div>
         <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <img
-            src="/svg/About/cat.svg"
+            src="/svg/about/cat.svg"
             alt="cat"
             width={125}
             height={138}
@@ -140,7 +140,7 @@ export const About = () => {
               <p className="leading-tight text-center xl:text-left">{`раза \nв неделю`}</p>
             </div>
             <img
-              src="/svg/About/more.svg"
+              src="/svg/about/more.svg"
               alt="more"
               width={45}
               height={68}
@@ -153,7 +153,7 @@ export const About = () => {
               <p className="leading-tight text-center xl:text-left">{`академических\nчаса`}</p>
             </div>
             <img
-              src="/svg/About/plus.svg"
+              src="/svg/about/plus.svg"
               alt="plus"
               width={58}
               height={58}

@@ -59,6 +59,7 @@ export const NapetchatanoFestProject = () => {
             alt={`Навигация ${i + 2}`}
             className="block h-auto w-full"
             fill
+            priority
             unoptimized
           />
         </div>
