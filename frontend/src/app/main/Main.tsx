@@ -5,15 +5,17 @@ import React from "react";
 export const Main = () => {
   return (
     <section id="home" className="relative w-full z-1 mb-[-60%]">
-      <video
-        id="bg-video"
-        src="/_next-video/lab-video.mp4"
-        className="relative z-0 block h-auto w-full max-w-none"
-        muted
-        autoPlay
-        loop
-        playsInline
-      />
+      <div className="h-fit w-full bg-(--color-primary)">
+        <video
+          id="bg-video"
+          src="/_next-video/lab-video.mp4"
+          className="relative z-0 block h-auto w-full max-w-none"
+          muted
+          autoPlay
+          loop
+          playsInline
+        />
+      </div>
       <div className="z-2 mt-[-8%] mb-[50%]">
         <img
           src="/svg/Main/Wave-top.svg"

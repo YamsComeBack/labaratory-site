@@ -6,11 +6,11 @@ import { useRotateTyping } from "@/hooks/useRotateTyping";
 import { useHoverTyping } from "@/hooks/useHoverTyping";
 
 const images = [
-  "/images/about/slider-1.webp",
-  "/images/about/slider-2.webp",
-  "/images/about/slider-3.webp",
-  "/images/about/slider-4.webp",
-  "/images/about/slider-5.webp",
+  "/images/About/slider-1.webp",
+  "/images/About/slider-2.webp",
+  "/images/About/slider-3.webp",
+  "/images/About/slider-4.webp",
+  "/images/About/slider-5.webp",
 ];
 
 const phrases = [
@@ -69,7 +69,7 @@ export const About = () => {
                 width={664}
                 height={507}
                 className="h-auto w-full object-cover"
-                priority={idx < 2}
+                priority
                 unoptimized
               />
             </div>
@@ -86,27 +86,22 @@ export const About = () => {
             hovered ? "scale-100 opacity-100" : "scale-0 opacity-0"
           }`}
         >
-          <Image
-            src="/svg/about/dialog.svg"
+          <img
+            src="/svg/About/dialog.svg"
             alt="dialog"
-            fill
             className="object-contain"
-            priority
-            unoptimized
           />
           <p className="absolute inset-0 flex items-center justify-center pr-4 text-[15px] font-normal font-['Roboto'] text-black text-left leading-tight whitespace-pre-line">
             {typedText}
           </p>
         </div>
         <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-          <Image
-            src="/svg/about/cat.svg"
+          <img
+            src="/svg/About/cat.svg"
             alt="cat"
             width={125}
             height={138}
             className="h-auto w-[125px] shrink-0 cursor-pointer"
-            priority
-            unoptimized
           />
         </div>
       </div>
@@ -124,20 +119,17 @@ export const About = () => {
               {text}
               <span className="inline-block align-text-bottom w-[15px] h-[1.2em] bg-white ml-1 animate-blink" />
             </div>
-            <Image
+            <img
               src="/svg/Logo.svg"
               alt="logo"
               width={135}
               height={155}
-              className="hidden sm:block shrink-0 object-contain self-start
-               h-auto w-[clamp(68px,calc(43.35px+4.77vw),135px)] "
-              priority
-              unoptimized
+              className="hidden sm:block shrink-0 object-contain self-start h-auto w-[clamp(68px,calc(43.35px+4.77vw),135px)] "
             />
           </div>
 
           <p className="max-w-[1085px] text-main leading-relaxed">
-            {`Мы встречаемся три раза в неделю.\nКаждое занятие – это погружение в реальный рабочий процесс, много практики, комментарии и наставления тьюторов, а ещё перерыв с вкусняшками и шутками-прибаутками.`}
+            Мы встречаемся три раза в неделю. Каждое занятие – это погружение в реальный рабочий процесс, много практики, комментарии и наставления тьюторов, а ещё перерыв с вкусняшками и шутками-прибаутками.
           </p>
 
           <div className="flex flex-col xl:flex-row items-center text-primary text-main gap-7.5 xl:gap-[clamp(30px,2vw,78px)] ">
@@ -147,14 +139,12 @@ export const About = () => {
               </p>
               <p className="leading-tight text-center xl:text-left">{`раза \nв неделю`}</p>
             </div>
-            <Image
-              src="/svg/about/more.svg"
+            <img
+              src="/svg/About/more.svg"
               alt="more"
               width={45}
               height={68}
               className="h-auto w-[45px] rotate-90 object-contain xl:rotate-0"
-              priority
-              unoptimized
             />
             <div className="flex flex-col xl:flex-row items-center gap-[7px]">
               <p className="text-[clamp(80px,calc(359px-27.3vw),150px)] font-medium">
@@ -162,14 +152,12 @@ export const About = () => {
               </p>
               <p className="leading-tight text-center xl:text-left">{`академических\nчаса`}</p>
             </div>
-            <Image
-              src="/svg/about/plus.svg"
+            <img
+              src="/svg/About/plus.svg"
               alt="plus"
               width={58}
               height={58}
               className="h-[58px] w-auto object-contain"
-              priority
-              unoptimized
             />
             <p className="leading-tight text-center xl:text-left w-auto">
               {`дополнительные занятия с тьюторами,\nмастер-классы и воркшопы`}

@@ -7,7 +7,8 @@ const TG_LINK = "https://t.me/laboratory_laba"
 const BEHANCE_LINK = "https://www.behance.net/laboratoria"
 const DPROFILE_LINK = "https://dprofile.ru/laboratoria"
 const PHONE = "+7 (962)-444-98-96";
-const EMAIL = "laboratory_media_design@mail.ru";
+const EMAIL = "laboratory_media_design";
+const EMAIL_AT = "@mail.ru";
 const FORM_LINK = "laboratory_media_design@mail.ru";
 
 type CopiedField = "phone" | "email" | null;
@@ -44,7 +45,7 @@ export const Footer = () => {
       id="footer"
       className="flex flex-col xl:flex-row items-start gap-12 w-full bg-black outline-0 pb-15 px-[clamp(40px,calc(-137px+23.07vw),195px)] xl:px-[clamp(50px,6vw,112px)] z-30"
     >
-      <div className="relative outline-none w-[150vw] sm:w-2xl translate-x-[-35vw] -translate-y-5 sm:translate-x-0 inline-block order-1 xl:order-2 shrink-0 overflow-visible">
+      <div className="relative outline-none w-[150vw] sm:w-2xl translate-x-[-35vw] -translate-y-5 sm:translate-x-0 mx-auto inline-block order-1 xl:order-2 shrink-0 overflow-visible">
         <Image
           src="/svg/Footer/Star.svg"
           alt="star"
@@ -54,7 +55,7 @@ export const Footer = () => {
           priority
           unoptimized
         />
-        <div className="absolute inset-0 mx-auto flex max-w-[min(720px,calc(100%-32px))] flex-col items-center justify-center gap-2 overflow-visible px-2 pb-4 text-center font-[roboto] text-[1.5rem] text-black">
+        <div className="absolute inset-0 mx-auto flex max-w-[min(720px,calc(100%-32px))] flex-col items-center justify-center gap-2 overflow-visible px-2 pb-4 text-center font-[roboto] text-[1.3rem] text-black">
           <div className="relative flex flex-row gap-4 py-1 place-items-center">
             <div>
               <a href={TG_LINK} target="blank">
@@ -138,20 +139,21 @@ export const Footer = () => {
             <button
               type="button"
               onClick={() => copyToClipboard(EMAIL, "email")}
-              className="max-w-full hover:scale-102 transition-transform cursor-pointer whitespace-nowrap rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              className="max-w-full hover:scale-102 transition-transform cursor-pointer rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black flex flex-col sm:flex-row leading-6"
               title="Копировать почту"
             >
-              {EMAIL}
+              <span>{EMAIL}</span>
+              <span>{EMAIL_AT}</span>
             </button>
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-16 flex-1 order-2 xl:order-1">
-        <p className="text-primary text-main text-[1.5rem] xl:max-w-175 whitespace-pre-wrap"> 
+      <div className="flex flex-col gap-16 flex-1 order-2 xl:order-1 text-main text-[1.3rem]">
+        <p className="text-primary text-main xl:max-w-175 sm:whitespace-pre-wrap"> 
           {"Интересует сотрудничество с нами?\nОбращайтесь"} <a href={FORM_LINK} target="_blank" title="Форма обратной связи" className="underline hover:text-white">сюда</a>
         </p>
-        <nav className="flex flex-col items-start gap-6 whitespace-nowrap text-main text-white sm:max-w-[758px] sm:flex-row sm:items-center sm:justify-between sm:gap-0">
-          <a href="/#home" className="shrink-0 w-[clamp(156px,12vw,212px)]">
+        <nav className="flex flex-col items-center gap-6 whitespace-nowrap text-white sm:max-w-[758px] sm:flex-row sm:items-center sm:justify-between sm:gap-0">
+          <a href="/#home" className="hidden sm:block shrink-0 w-[clamp(156px,12vw,212px)]">
             <Image
               src="/svg/Logo_white.svg"
               alt="Логотип"
@@ -162,7 +164,7 @@ export const Footer = () => {
               unoptimized
             />
           </a>
-          <div className="flex items-center gap-8 sm:contents text-[1.5rem]">
+          <div className="flex w-full justify-center gap-8 sm:contents">
             <a
               href="/#about"
               className="hover-underline-animation"
@@ -179,7 +181,20 @@ export const Footer = () => {
             </a>
           </div>
         </nav>
-        <p className="text-white text-form">© Лаборатория, {new Date().getFullYear()}</p>
+        <div className="flex flex-row justify-between place-items-center">
+          <p className="text-white text-form">© Лаборатория, {new Date().getFullYear()}</p>
+          <a href="/#home" className="block sm:hidden shrink-0">
+            <Image
+              src="/svg/logomark.svg"
+              alt="Логотип"
+              width={50}
+              height={50}
+              className="h-auto w-12"
+              priority
+              unoptimized
+            />
+          </a>
+        </div>
       </div>
     </section>
   );

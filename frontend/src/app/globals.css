@@ -28,13 +28,13 @@ input[type="checkbox"].accent-primary {
   }
   .text-main {
     font-family: "Roboto", sans-serif;
-    font-size: 32px;
+    font-size: 1.5rem;
     line-height: 1.2;
     font-weight: normal;
   }
   .text-main-2 {
     font-family: "Roboto", sans-serif;
-    /* font-size: 24px; */
+    font-size: 1.3rem;
     line-height: 1.2;
     font-weight: normal;
   }
@@ -77,7 +77,7 @@ input[type="checkbox"].accent-primary {
   /* Текст для формы: Roboto, 24px, Light */
   .text-form {
     font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 28px;
     font-weight: 300; /* Light */
   }
