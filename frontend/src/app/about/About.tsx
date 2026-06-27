@@ -49,7 +49,7 @@ export const About = () => {
         alt=""
         width={1920}
         height={1080}
-        className="h-auto w-full max-w-none pb-[1.5%] z-0"
+        className="h-auto w-full max-w-none pb-[2vw] sm:pb-[1.5vw] z-0"
         priority
         unoptimized
       />

@@ -29,7 +29,19 @@ export const Header = () => {
     <div>
         <header
           data-site-header
-          className={`fixed left-0 right-0 z-50 h-9 w-full max-w-full transition-colors backdrop-blur-md backdrop-saturate-100 bg-white/10`}
+          className={`
+            fixed
+            left-0
+            right-0
+            z-50
+            h-9
+            w-full
+            max-w-full
+            transition-colors
+            backdrop-blur-md
+            backdrop-saturate-100
+            pt-[env(safe-area-inset-top)]
+            bg-white/10`}
         >
           <div className="mx-auto flex h-full w-full items-center text-black justify-between px-[clamp(40px,4vw,160px)]">
             <nav className="mx-auto hidden items-center gap-[clamp(16px,calc(13.89vw-90.67px),176px)] whitespace-nowrap md:flex">
@@ -67,8 +79,8 @@ export const Header = () => {
               <Image
                 src="/svg/Header/burger-on.svg"
                 alt=""
-                width={30}
-                height={30}
+                width={25}
+                height={25}
                 className="h-3 w-auto translate-y-0.5"
                 priority
                 unoptimized
@@ -98,8 +110,8 @@ export const Header = () => {
                 <Image
                   src="/svg/Header/burger-off.svg"
                   alt=""
-                  width={40}
-                  height={40}
+                  width={25}
+                  height={25}
                   className="h-10 w-auto"
                   priority
                   unoptimized

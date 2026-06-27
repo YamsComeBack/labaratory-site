@@ -28,7 +28,7 @@ export const Projects = () => {
             <ProjectCard
               key={`${p.slug}-${p.img}`}
               size={p.size}
-              className={p.size === "large" ? "md:col-span-2" : undefined}
+              className={(p.size === "large") ? "lg:col-span-2" : undefined}
               slug={p.slug}
               title={p.title}
               descriptor={p.descriptor}
