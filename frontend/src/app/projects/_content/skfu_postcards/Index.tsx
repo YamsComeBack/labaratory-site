@@ -21,6 +21,7 @@ export const SkfuPostcardsProject = () => {
                 src="/images/projects/_content/ncfu_postcards/postcards1.webp"
                 alt=""
                 fill
+                unoptimized
                 className="w-full"
                 />
             </div>
@@ -29,6 +30,7 @@ export const SkfuPostcardsProject = () => {
                 src="/images/projects/_content/ncfu_postcards/postcards2.webp"
                 alt=""
                 fill
+                unoptimized
                 className="w-full"
                 />
             </div>

@@ -44,8 +44,14 @@ export const NavigationProject = () => {
 
       <section>
         {images.map((src, i) => (
-          <div key={i} className="w-full">
-            <img src={src} alt={`Навигация ${i + 2}`} className="block h-auto w-full" />
+          <div key={i} className="relative w-full" style={{ aspectRatio: 1920/1080 }}>
+            <Image
+              src={src}
+              alt={`Навигация ${i + 2}`}
+              className="block h-auto w-full"
+              fill
+              unoptimized
+            />
           </div>
         ))}
       </section>

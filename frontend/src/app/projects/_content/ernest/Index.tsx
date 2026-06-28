@@ -64,6 +64,8 @@ export const ErnestPrintIdentityProject = () => {
                     src="/images/projects/_content/ernest/ernest1.webp"
                     alt=""
                     fill
+                    priority
+                    unoptimized
                     className="z-0 w-full aspect-video"
                 />
             </div>
@@ -75,6 +77,7 @@ export const ErnestPrintIdentityProject = () => {
                 src="/images/projects/_content/ernest/ernest2.webp"
                 alt=""
                 fill
+
                 className="w-full aspect-video"
                 />
             </div>
@@ -91,6 +94,7 @@ export const ErnestPrintIdentityProject = () => {
                 src="/images/projects/_content/ernest/ernest3.webp"
                 alt=""
                 fill
+                unoptimized
                 className="w-full aspect-video"
                 />
             </div>
@@ -115,6 +119,7 @@ export const ErnestPrintIdentityProject = () => {
                                 src={src.image}
                                 alt=""
                                 fill
+                                unoptimized
                                 className="z-0 absolute object-cover h-full w-full inset-0"
                                 onMouseEnter={() => setHoveredIndex(index)}
                             />
@@ -127,6 +132,7 @@ export const ErnestPrintIdentityProject = () => {
                 src="/images/projects/_content/ernest/ernest5.webp"
                 alt=""
                 fill
+                unoptimized
                 className="w-full"
                 />
             </div>

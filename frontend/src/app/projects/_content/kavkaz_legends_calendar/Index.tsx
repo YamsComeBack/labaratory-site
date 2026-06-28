@@ -123,6 +123,8 @@ export const KavkazLegendsCalendarProject = () => {
           alt=""
           className="w-full"
           fill
+          priority
+          unoptimized
         />
         <div className="absolute right-0">
           <h1 className="z-30 w-[70%] ml-[15vw] top-[23vw] leading-[100%] absolute text-title text-[2.5vw]">
@@ -146,6 +148,7 @@ export const KavkazLegendsCalendarProject = () => {
           alt=""
           className="z-1 w-full"
           fill
+          unoptimized
         />
       </div>
       <div className="relative max-w-none" style={{ aspectRatio:"1920/1080"}}>
@@ -154,6 +157,7 @@ export const KavkazLegendsCalendarProject = () => {
           alt=""
           className="w-full"
           fill
+          unoptimized
         />
       </div>
       <section className="w-lvw aspect-video overflow-hidden bg-[#293766]">

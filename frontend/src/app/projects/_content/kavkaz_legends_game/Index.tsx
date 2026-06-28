@@ -219,6 +219,8 @@ export const KavkazLegendsGameProject = () => {
             alt=""
             fill
             className="w-full"
+            priority
+            unoptimized
           />
         </div>
         <div className="absolute translate-y-[-34%] z-10 overflow-visible mb-[-20%] w-full max-w-none">
@@ -241,6 +243,7 @@ export const KavkazLegendsGameProject = () => {
           alt=""
           fill
           className="w-full aspect-video"
+          unoptimized
         />
       </div>
       <div className="bg-[#142458]">
@@ -250,6 +253,7 @@ export const KavkazLegendsGameProject = () => {
             alt=""
             fill
             className="w-full"
+            unoptimized
           />
         </div>
         <div className="relative" style={{ aspectRatio:"1920/1137" }}>
@@ -258,6 +262,7 @@ export const KavkazLegendsGameProject = () => {
             alt=""
             fill
             className="w-full"
+            unoptimized
           />
         </div>
         <div className="relative" style={{ aspectRatio:"1920/1226" }}>
@@ -266,6 +271,7 @@ export const KavkazLegendsGameProject = () => {
             alt=""
             fill
             className="w-full"
+            unoptimized
           />
         </div>
       </div>
@@ -275,6 +281,7 @@ export const KavkazLegendsGameProject = () => {
           alt=""
           fill
           className="w-full"
+          unoptimized
         />
       </div>
       <section className="relative w-full overflow-hidden bg-white">

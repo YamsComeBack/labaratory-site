@@ -3,15 +3,6 @@
 import Image from "next/image";
 
 export const NotaBeneProject = () => {
-  const headerImage = "/images/projects/_content/nota_bene/1-image.webp";
-  const images = [
-    "/images/projects/_content/nota_bene/2-image.webp",
-    "/images/projects/_content/nota_bene/3-image.webp",
-    "/images/projects/_content/nota_bene/4-image.webp",
-    "/images/projects/_content/nota_bene/5-image.webp",
-    "/images/projects/_content/nota_bene/6-image.webp",
-  ];
-
   return (
     <div className="w-full overflow-hidden">
       <section className="relative w-full">

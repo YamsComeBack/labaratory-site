@@ -42,6 +42,8 @@ export const OtpechatanoShopProject = () => {
                 src="/images/projects/_content/otpechatano/otp2.webp"
                 alt=""
                 fill
+                priority
+                unoptimized
                 className="w-full"
                 />
             </div>
@@ -62,6 +64,7 @@ export const OtpechatanoShopProject = () => {
                 src="/images/projects/_content/otpechatano/otp3.webp"
                 alt=""
                 fill
+                unoptimized
                 className="w-full"
                 />
             </div>
@@ -70,6 +73,7 @@ export const OtpechatanoShopProject = () => {
                 src="/images/projects/_content/otpechatano/otp4.webp"
                 alt=""
                 fill
+                unoptimized
                 className="w-full"
                 />
             </div>
@@ -89,6 +93,7 @@ export const OtpechatanoShopProject = () => {
                 src="/images/projects/_content/otpechatano/otp5.webp"
                 alt=""
                 fill
+                unoptimized
                 className="w-full"
                 />
             </div>
@@ -105,6 +110,7 @@ export const OtpechatanoShopProject = () => {
                 src="/images/projects/_content/otpechatano/otp6.webp"
                 alt=""
                 fill
+                unoptimized
                 className="w-full"
                 />
             </div>
@@ -124,6 +130,7 @@ export const OtpechatanoShopProject = () => {
                 src="/images/projects/_content/otpechatano/otp7.webp"
                 alt=""
                 fill
+                unoptimized
                 className="w-full"
                 />
             </div>
@@ -143,6 +150,7 @@ export const OtpechatanoShopProject = () => {
                 src="/images/projects/_content/otpechatano/otp8.webp"
                 alt=""
                 fill
+                unoptimized
                 className="w-full"
                 />
             </div>
@@ -157,6 +165,7 @@ export const OtpechatanoShopProject = () => {
                 src="/images/projects/_content/otpechatano/otp9.webp"
                 alt=""
                 fill
+                unoptimized
                 className="w-full"
                 />
             </div>
@@ -177,6 +186,7 @@ export const OtpechatanoShopProject = () => {
                 src="/images/projects/_content/otpechatano/otp10.webp"
                 alt=""
                 fill
+                unoptimized
                 className="w-full"
                 />
             </div>
@@ -185,6 +195,7 @@ export const OtpechatanoShopProject = () => {
                 src="/images/projects/_content/otpechatano/otp11.webp"
                 alt=""
                 fill
+                unoptimized
                 className="w-full"
                 />
             </div>
@@ -201,6 +212,7 @@ export const OtpechatanoShopProject = () => {
                 src="/images/projects/_content/otpechatano/otp12.webp"
                 alt=""
                 fill
+                unoptimized
                 className="w-full"
                 />
             </div>
