@@ -58,7 +58,7 @@ export default function ProjectCard({
         fill
         sizes={v.imgSz}
         className="object-cover"
-        // priority
+        priority
         unoptimized
       />
       <div
