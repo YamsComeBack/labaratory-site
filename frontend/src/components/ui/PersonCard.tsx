@@ -55,7 +55,7 @@ export default function PersonCard({
                 i === activeIndex ? "opacity-100" : "opacity-0"
               )}
               style={{ transform: "scale(1.72) translateY(-7px)" }}
-              priority
+              // priority
               unoptimized
             />
           ))}
